@@ -65,7 +65,7 @@ def mavgen(opts, args) :
     print("Found %u MAVLink message types in %u XML files" % (
         mavparse.total_msgs(xml), len(xml)))
 
-    mavgen_thrift.generate_messages(opts.output, xml)
+    mavgen_thrift.generate(xml, opts.output)
 
 def mavgen_validate(fname, schema, errorLimitNumber) :
     """Uses minixsv to validate an XML file with a given XSD schema file."""
@@ -89,7 +89,8 @@ if __name__=="__main__":
     (opts, args) = parser.parse_args()
 
     if len(args) < 1:
-        args = ["../message_definitions/common.xml"]
+        args = [ "../message_definitions/ardupilotmega.xml"
+               ]
     opts.wire_protocol = '1.0'
     mavgen(opts, args)
 

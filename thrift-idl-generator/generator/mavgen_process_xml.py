@@ -1,8 +1,10 @@
 
-def process_xml(basename, xml):
-    '''generate headers for one XML file'''
+class mav_include(object):
+    def __init__(self,base):
+        self.base = base
 
-    directory = basename
+def process_xml(xml):
+    '''generate headers for one XML file'''
 
     if xml.little_endian:
         xml.mavlink_endian = "MAVLINK_LITTLE_ENDIAN"

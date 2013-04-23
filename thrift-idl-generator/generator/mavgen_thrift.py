@@ -13,8 +13,9 @@ import mavparse, mavtemplate, mavgen_process_xml
 
 t = mavtemplate.MAVTemplate()
 
-def thrift_name(field , m):
-    f = field.name.encode('ascii')
+# escape reserved words
+def thrift_name(field, m):
+    f = field.encode('ascii')
     # catch reserved words
     if (f == "type" and m.name == "HEARTBEAT"):
         return "mavtype"
@@ -39,16 +40,17 @@ def thrift_type(t):
         'uint64_t' : 'i64'}
     return table[t]
 
-def thrift_array(t):
-    return ('list<' + thrift_type(t) + '>')
-
 ##########################
 
 def enumname(s):
+    r = ""
     if (string.find(s,"MAV_") >= 0):
-        return string.capwords(string.replace(s,"MAV_","",1).encode('ascii'))
+        r = string.replace(s,"MAV_","",1)
     elif (string.find(s,"MAVLINK_") >= 0):
-        return string.capwords(string.replace(s,"MAVLINK_","",1).encode('ascii'))
+        r = string.replace(s,"MAVLINK_","",1)
+    else:
+        r = s
+    return string.capwords(r.encode('ascii'))
 
 def enumentryname(s, parent):
     parent = parent.encode('ascii')
@@ -59,6 +61,10 @@ def enumentryname(s, parent):
         return string.replace(s,"MAV_COMP_ID_","",1).encode('ascii')
     elif parent == "MAVLINK_DATA_STREAM_TYPE":
         return string.replace(s,"MAVLINK_DATA_STREAM_","",1).encode('ascii')
+    elif parent == "LIMITS_STATE":
+        return string.replace(s,"LIMITS_","",1).encode('ascii')
+    elif parent == "LIMIT_MODULE":
+        return string.replace(s,"LIMIT_","",1).encode('ascii')
     elif string.find(s,parent) >= 0:
         # base case
         return string.replace(s,parent+"_","",1).encode('ascii')
@@ -79,35 +85,44 @@ def generate_mavlink_thrift(xml):
                 te.entry(entryname, ee.value)
         doc.enum(te)
 
-    print (doc.pp())
-    return
     for msg in xml.message:
-        print ("  message " + msg.name)
+        ts = TStruct(msg.name_module)
         for field in msg.fields:
+            tname = thrift_name(field.name, msg)
+            ttype = thrift_type(field.type)
             if field.array_length == 0:
-                print ("    field " + field.name + " :: " + field.type)
+                ts.atom_field(tname, ttype)
             else:
-                print ("    field " + field.name + " :: " + field.type
-                        + "[" + str(field.array_length) + "]")
+                ts.list_field(tname, ttype)
+        doc.struct(ts)
+    return doc.pp()
 
-def generate_message_debug(xml):
+def generate_mavlink_debug(xml):
     print ("debug mavlink for " + xml.basename)
-
-    for enum in xml.enum:
-        print ("  enum " + enum.name)
-        for entry in enum.entry:
-            print ("    entry " + entry.name + " = " + str(entry.value))
-    return
+    if False:
+        for enum in xml.enum:
+            print ("  enum " + enum.name)
+            for entry in enum.entry:
+                print ("    entry " + entry.name + " = " + str(entry.value))
     for msg in xml.message:
-        print ("  message " + msg.name)
+        print ("  message " + msg.name_module)
         for field in msg.fields:
             if field.array_length == 0:
                 print ("    field " + field.name + " :: " + field.type)
             else:
                 print ("    field " + field.name + " :: " + field.type
                         + "[" + str(field.array_length) + "]")
-def generate_messages(basename, xml_list):
+
+def writethrift(t, outputdir, basename):
+    fname = os.path.join(outputdir, basename + ".thrift")
+    f = open(fname, 'w')
+    f.write(t)
+    f.close()
+
+def generate(xml_list, outputdirectory):
+    mavparse.mkdir_p(outputdirectory)
     for xml in xml_list:
-        mavgen_process_xml.process_xml(basename, xml);
-        mavparse.mkdir_p(basename)
-        generate_mavlink_thrift(xml)
+        mavgen_process_xml.process_xml(xml)
+        r = generate_mavlink_thrift(xml)
+        writethrift(r,outputdirectory,xml.basename)
+
