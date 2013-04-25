@@ -31,6 +31,11 @@ int fetchServer(void) {
   shared_ptr<TProtocolFactory> protocolFactory(new TBinaryProtocolFactory());
 
   TSimpleServer server(processor, serverTransport, transportFactory, protocolFactory);
+
+  Heartbeat hb;
+  hb.mavtype = 1; hb.autopilot = 13; hb.mavlink_version = 3;
+  handler->postHeartbeat(hb);
+
   server.serve();
   return 0;
 }
@@ -46,14 +51,20 @@ int fetchClient (void) {
     getchar();
     transport->open();
     client.availableMessages(available);
+    std::vector<Heartbeat> hbmessages;
+    client.fetchHeartbeat(hbmessages);
+
     transport->close();
 
     return 0;
 }
 
-int main(void) {
-    fetchServer();
-    fetchClient();
+int main(int argc, char* argv[]) {
+    if (argc > 1) {
+        fetchServer();
+    } else {
+        fetchClient();
+    }
     return 0;
 }
 

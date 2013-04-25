@@ -9,9 +9,15 @@ MAVTHRIFT_OBJS = $(MAVTHRIFT_CPPS:.cpp=.o)
 
 THRIFT_CXXFLAGS = -DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H
 
+CXXFLAGS += -Wall -g3
+
 %.o : CXXFLAGS += $(THRIFT_CXXFLAGS)
 %.o : %.cpp
 	$(CXX) -c $(CXXFLAGS) -o $@ $^
 
 libmavthrift.a: $(MAVTHRIFT_OBJS)
 	$(AR) rcs $@ $^
+
+clean:
+	-rm gen-cpp/*.o
+	-rm libmavthrift.a

@@ -1,7 +1,7 @@
 
 CFLAGS = -Wall
 
-CXXFLAGS = -Wall
+CXXFLAGS = -Wall -g3
 CXXFLAGS += -I../generated-thrift/gen-cpp/ 
 CXXFLAGS += -DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H
 
