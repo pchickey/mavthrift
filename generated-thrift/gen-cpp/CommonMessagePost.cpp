@@ -4,11 +4,11 @@
  * DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
  *  @generated
  */
-#include "CommonMessagePostService.h"
+#include "CommonMessagePost.h"
 
 namespace mavlink { namespace thrift {
 
-uint32_t CommonMessagePostService_postHeartbeat_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHeartbeat_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -48,9 +48,9 @@ uint32_t CommonMessagePostService_postHeartbeat_args::read(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHeartbeat_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHeartbeat_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHeartbeat_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHeartbeat_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -61,9 +61,9 @@ uint32_t CommonMessagePostService_postHeartbeat_args::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHeartbeat_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHeartbeat_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHeartbeat_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHeartbeat_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -74,7 +74,7 @@ uint32_t CommonMessagePostService_postHeartbeat_pargs::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHeartbeat_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHeartbeat_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -114,11 +114,11 @@ uint32_t CommonMessagePostService_postHeartbeat_result::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHeartbeat_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHeartbeat_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHeartbeat_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHeartbeat_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -130,7 +130,7 @@ uint32_t CommonMessagePostService_postHeartbeat_result::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHeartbeat_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHeartbeat_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -170,7 +170,7 @@ uint32_t CommonMessagePostService_postHeartbeat_presult::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSysStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSysStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -210,9 +210,9 @@ uint32_t CommonMessagePostService_postSysStatus_args::read(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSysStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSysStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSysStatus_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSysStatus_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -223,9 +223,9 @@ uint32_t CommonMessagePostService_postSysStatus_args::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSysStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSysStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSysStatus_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSysStatus_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -236,7 +236,7 @@ uint32_t CommonMessagePostService_postSysStatus_pargs::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSysStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSysStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -276,11 +276,11 @@ uint32_t CommonMessagePostService_postSysStatus_result::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSysStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSysStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSysStatus_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSysStatus_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -292,7 +292,7 @@ uint32_t CommonMessagePostService_postSysStatus_result::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSysStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSysStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -332,7 +332,7 @@ uint32_t CommonMessagePostService_postSysStatus_presult::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSystemTime_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSystemTime_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -372,9 +372,9 @@ uint32_t CommonMessagePostService_postSystemTime_args::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSystemTime_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSystemTime_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSystemTime_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSystemTime_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -385,9 +385,9 @@ uint32_t CommonMessagePostService_postSystemTime_args::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSystemTime_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSystemTime_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSystemTime_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSystemTime_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -398,7 +398,7 @@ uint32_t CommonMessagePostService_postSystemTime_pargs::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSystemTime_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSystemTime_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -438,11 +438,11 @@ uint32_t CommonMessagePostService_postSystemTime_result::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSystemTime_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSystemTime_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSystemTime_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSystemTime_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -454,7 +454,7 @@ uint32_t CommonMessagePostService_postSystemTime_result::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSystemTime_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSystemTime_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -494,7 +494,7 @@ uint32_t CommonMessagePostService_postSystemTime_presult::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postPing_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postPing_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -534,9 +534,9 @@ uint32_t CommonMessagePostService_postPing_args::read(::apache::thrift::protocol
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postPing_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postPing_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postPing_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postPing_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -547,9 +547,9 @@ uint32_t CommonMessagePostService_postPing_args::write(::apache::thrift::protoco
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postPing_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postPing_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postPing_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postPing_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -560,7 +560,7 @@ uint32_t CommonMessagePostService_postPing_pargs::write(::apache::thrift::protoc
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postPing_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postPing_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -600,11 +600,11 @@ uint32_t CommonMessagePostService_postPing_result::read(::apache::thrift::protoc
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postPing_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postPing_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postPing_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postPing_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -616,7 +616,7 @@ uint32_t CommonMessagePostService_postPing_result::write(::apache::thrift::proto
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postPing_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postPing_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -656,7 +656,7 @@ uint32_t CommonMessagePostService_postPing_presult::read(::apache::thrift::proto
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControl_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postChangeOperatorControl_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -696,9 +696,9 @@ uint32_t CommonMessagePostService_postChangeOperatorControl_args::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControl_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postChangeOperatorControl_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postChangeOperatorControl_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postChangeOperatorControl_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -709,9 +709,9 @@ uint32_t CommonMessagePostService_postChangeOperatorControl_args::write(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControl_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postChangeOperatorControl_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postChangeOperatorControl_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postChangeOperatorControl_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -722,7 +722,7 @@ uint32_t CommonMessagePostService_postChangeOperatorControl_pargs::write(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControl_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postChangeOperatorControl_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -762,11 +762,11 @@ uint32_t CommonMessagePostService_postChangeOperatorControl_result::read(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControl_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postChangeOperatorControl_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postChangeOperatorControl_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postChangeOperatorControl_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -778,7 +778,7 @@ uint32_t CommonMessagePostService_postChangeOperatorControl_result::write(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControl_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postChangeOperatorControl_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -818,7 +818,7 @@ uint32_t CommonMessagePostService_postChangeOperatorControl_presult::read(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControlAck_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postChangeOperatorControlAck_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -858,9 +858,9 @@ uint32_t CommonMessagePostService_postChangeOperatorControlAck_args::read(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControlAck_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postChangeOperatorControlAck_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postChangeOperatorControlAck_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postChangeOperatorControlAck_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -871,9 +871,9 @@ uint32_t CommonMessagePostService_postChangeOperatorControlAck_args::write(::apa
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControlAck_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postChangeOperatorControlAck_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postChangeOperatorControlAck_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postChangeOperatorControlAck_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -884,7 +884,7 @@ uint32_t CommonMessagePostService_postChangeOperatorControlAck_pargs::write(::ap
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControlAck_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postChangeOperatorControlAck_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -924,11 +924,11 @@ uint32_t CommonMessagePostService_postChangeOperatorControlAck_result::read(::ap
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControlAck_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postChangeOperatorControlAck_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postChangeOperatorControlAck_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postChangeOperatorControlAck_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -940,7 +940,7 @@ uint32_t CommonMessagePostService_postChangeOperatorControlAck_result::write(::a
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postChangeOperatorControlAck_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postChangeOperatorControlAck_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -980,7 +980,7 @@ uint32_t CommonMessagePostService_postChangeOperatorControlAck_presult::read(::a
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAuthKey_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postAuthKey_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1020,9 +1020,9 @@ uint32_t CommonMessagePostService_postAuthKey_args::read(::apache::thrift::proto
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAuthKey_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postAuthKey_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postAuthKey_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postAuthKey_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1033,9 +1033,9 @@ uint32_t CommonMessagePostService_postAuthKey_args::write(::apache::thrift::prot
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAuthKey_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postAuthKey_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postAuthKey_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postAuthKey_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1046,7 +1046,7 @@ uint32_t CommonMessagePostService_postAuthKey_pargs::write(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAuthKey_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postAuthKey_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1086,11 +1086,11 @@ uint32_t CommonMessagePostService_postAuthKey_result::read(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAuthKey_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postAuthKey_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postAuthKey_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postAuthKey_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1102,7 +1102,7 @@ uint32_t CommonMessagePostService_postAuthKey_result::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAuthKey_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postAuthKey_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1142,7 +1142,7 @@ uint32_t CommonMessagePostService_postAuthKey_presult::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetMode_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetMode_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1182,9 +1182,9 @@ uint32_t CommonMessagePostService_postSetMode_args::read(::apache::thrift::proto
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetMode_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetMode_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetMode_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetMode_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1195,9 +1195,9 @@ uint32_t CommonMessagePostService_postSetMode_args::write(::apache::thrift::prot
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetMode_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetMode_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetMode_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetMode_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1208,7 +1208,7 @@ uint32_t CommonMessagePostService_postSetMode_pargs::write(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetMode_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetMode_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1248,11 +1248,11 @@ uint32_t CommonMessagePostService_postSetMode_result::read(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetMode_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetMode_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetMode_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetMode_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1264,7 +1264,7 @@ uint32_t CommonMessagePostService_postSetMode_result::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetMode_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetMode_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1304,7 +1304,7 @@ uint32_t CommonMessagePostService_postSetMode_presult::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestRead_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamRequestRead_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1344,9 +1344,9 @@ uint32_t CommonMessagePostService_postParamRequestRead_args::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestRead_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamRequestRead_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamRequestRead_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamRequestRead_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1357,9 +1357,9 @@ uint32_t CommonMessagePostService_postParamRequestRead_args::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestRead_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamRequestRead_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamRequestRead_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamRequestRead_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1370,7 +1370,7 @@ uint32_t CommonMessagePostService_postParamRequestRead_pargs::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestRead_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamRequestRead_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1410,11 +1410,11 @@ uint32_t CommonMessagePostService_postParamRequestRead_result::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestRead_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamRequestRead_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamRequestRead_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamRequestRead_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1426,7 +1426,7 @@ uint32_t CommonMessagePostService_postParamRequestRead_result::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestRead_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamRequestRead_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1466,7 +1466,7 @@ uint32_t CommonMessagePostService_postParamRequestRead_presult::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestList_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamRequestList_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1506,9 +1506,9 @@ uint32_t CommonMessagePostService_postParamRequestList_args::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestList_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamRequestList_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamRequestList_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamRequestList_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1519,9 +1519,9 @@ uint32_t CommonMessagePostService_postParamRequestList_args::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestList_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamRequestList_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamRequestList_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamRequestList_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1532,7 +1532,7 @@ uint32_t CommonMessagePostService_postParamRequestList_pargs::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestList_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamRequestList_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1572,11 +1572,11 @@ uint32_t CommonMessagePostService_postParamRequestList_result::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestList_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamRequestList_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamRequestList_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamRequestList_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1588,7 +1588,7 @@ uint32_t CommonMessagePostService_postParamRequestList_result::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamRequestList_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamRequestList_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1628,7 +1628,7 @@ uint32_t CommonMessagePostService_postParamRequestList_presult::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamValue_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamValue_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1668,9 +1668,9 @@ uint32_t CommonMessagePostService_postParamValue_args::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamValue_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamValue_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamValue_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamValue_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1681,9 +1681,9 @@ uint32_t CommonMessagePostService_postParamValue_args::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamValue_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamValue_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamValue_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamValue_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1694,7 +1694,7 @@ uint32_t CommonMessagePostService_postParamValue_pargs::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamValue_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamValue_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1734,11 +1734,11 @@ uint32_t CommonMessagePostService_postParamValue_result::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamValue_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamValue_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamValue_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamValue_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1750,7 +1750,7 @@ uint32_t CommonMessagePostService_postParamValue_result::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamValue_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamValue_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1790,7 +1790,7 @@ uint32_t CommonMessagePostService_postParamValue_presult::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamSet_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamSet_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1830,9 +1830,9 @@ uint32_t CommonMessagePostService_postParamSet_args::read(::apache::thrift::prot
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamSet_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamSet_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamSet_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamSet_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1843,9 +1843,9 @@ uint32_t CommonMessagePostService_postParamSet_args::write(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamSet_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamSet_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamSet_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamSet_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1856,7 +1856,7 @@ uint32_t CommonMessagePostService_postParamSet_pargs::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamSet_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamSet_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1896,11 +1896,11 @@ uint32_t CommonMessagePostService_postParamSet_result::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamSet_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postParamSet_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postParamSet_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postParamSet_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1912,7 +1912,7 @@ uint32_t CommonMessagePostService_postParamSet_result::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postParamSet_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postParamSet_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1952,7 +1952,7 @@ uint32_t CommonMessagePostService_postParamSet_presult::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsRawInt_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGpsRawInt_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1992,9 +1992,9 @@ uint32_t CommonMessagePostService_postGpsRawInt_args::read(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsRawInt_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGpsRawInt_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGpsRawInt_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGpsRawInt_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2005,9 +2005,9 @@ uint32_t CommonMessagePostService_postGpsRawInt_args::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsRawInt_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGpsRawInt_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGpsRawInt_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGpsRawInt_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2018,7 +2018,7 @@ uint32_t CommonMessagePostService_postGpsRawInt_pargs::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsRawInt_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGpsRawInt_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2058,11 +2058,11 @@ uint32_t CommonMessagePostService_postGpsRawInt_result::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsRawInt_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGpsRawInt_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGpsRawInt_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGpsRawInt_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2074,7 +2074,7 @@ uint32_t CommonMessagePostService_postGpsRawInt_result::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsRawInt_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGpsRawInt_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2114,7 +2114,7 @@ uint32_t CommonMessagePostService_postGpsRawInt_presult::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGpsStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2154,9 +2154,9 @@ uint32_t CommonMessagePostService_postGpsStatus_args::read(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGpsStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGpsStatus_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGpsStatus_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2167,9 +2167,9 @@ uint32_t CommonMessagePostService_postGpsStatus_args::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGpsStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGpsStatus_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGpsStatus_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2180,7 +2180,7 @@ uint32_t CommonMessagePostService_postGpsStatus_pargs::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGpsStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2220,11 +2220,11 @@ uint32_t CommonMessagePostService_postGpsStatus_result::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGpsStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGpsStatus_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGpsStatus_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2236,7 +2236,7 @@ uint32_t CommonMessagePostService_postGpsStatus_result::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGpsStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2276,7 +2276,7 @@ uint32_t CommonMessagePostService_postGpsStatus_presult::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledImu_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postScaledImu_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2316,9 +2316,9 @@ uint32_t CommonMessagePostService_postScaledImu_args::read(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledImu_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postScaledImu_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postScaledImu_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postScaledImu_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2329,9 +2329,9 @@ uint32_t CommonMessagePostService_postScaledImu_args::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledImu_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postScaledImu_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postScaledImu_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postScaledImu_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2342,7 +2342,7 @@ uint32_t CommonMessagePostService_postScaledImu_pargs::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledImu_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postScaledImu_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2382,11 +2382,11 @@ uint32_t CommonMessagePostService_postScaledImu_result::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledImu_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postScaledImu_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postScaledImu_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postScaledImu_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2398,7 +2398,7 @@ uint32_t CommonMessagePostService_postScaledImu_result::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledImu_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postScaledImu_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2438,7 +2438,7 @@ uint32_t CommonMessagePostService_postScaledImu_presult::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawImu_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRawImu_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2478,9 +2478,9 @@ uint32_t CommonMessagePostService_postRawImu_args::read(::apache::thrift::protoc
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawImu_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRawImu_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRawImu_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRawImu_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2491,9 +2491,9 @@ uint32_t CommonMessagePostService_postRawImu_args::write(::apache::thrift::proto
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawImu_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRawImu_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRawImu_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRawImu_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2504,7 +2504,7 @@ uint32_t CommonMessagePostService_postRawImu_pargs::write(::apache::thrift::prot
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawImu_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRawImu_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2544,11 +2544,11 @@ uint32_t CommonMessagePostService_postRawImu_result::read(::apache::thrift::prot
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawImu_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRawImu_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRawImu_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRawImu_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2560,7 +2560,7 @@ uint32_t CommonMessagePostService_postRawImu_result::write(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawImu_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRawImu_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2600,7 +2600,7 @@ uint32_t CommonMessagePostService_postRawImu_presult::read(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawPressure_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRawPressure_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2640,9 +2640,9 @@ uint32_t CommonMessagePostService_postRawPressure_args::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawPressure_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRawPressure_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRawPressure_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRawPressure_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2653,9 +2653,9 @@ uint32_t CommonMessagePostService_postRawPressure_args::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawPressure_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRawPressure_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRawPressure_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRawPressure_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2666,7 +2666,7 @@ uint32_t CommonMessagePostService_postRawPressure_pargs::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawPressure_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRawPressure_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2706,11 +2706,11 @@ uint32_t CommonMessagePostService_postRawPressure_result::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawPressure_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRawPressure_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRawPressure_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRawPressure_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2722,7 +2722,7 @@ uint32_t CommonMessagePostService_postRawPressure_result::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRawPressure_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRawPressure_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2762,7 +2762,7 @@ uint32_t CommonMessagePostService_postRawPressure_presult::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledPressure_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postScaledPressure_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2802,9 +2802,9 @@ uint32_t CommonMessagePostService_postScaledPressure_args::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledPressure_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postScaledPressure_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postScaledPressure_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postScaledPressure_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2815,9 +2815,9 @@ uint32_t CommonMessagePostService_postScaledPressure_args::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledPressure_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postScaledPressure_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postScaledPressure_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postScaledPressure_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2828,7 +2828,7 @@ uint32_t CommonMessagePostService_postScaledPressure_pargs::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledPressure_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postScaledPressure_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2868,11 +2868,11 @@ uint32_t CommonMessagePostService_postScaledPressure_result::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledPressure_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postScaledPressure_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postScaledPressure_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postScaledPressure_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2884,7 +2884,7 @@ uint32_t CommonMessagePostService_postScaledPressure_result::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postScaledPressure_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postScaledPressure_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2924,7 +2924,7 @@ uint32_t CommonMessagePostService_postScaledPressure_presult::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitude_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postAttitude_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2964,9 +2964,9 @@ uint32_t CommonMessagePostService_postAttitude_args::read(::apache::thrift::prot
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitude_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postAttitude_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postAttitude_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postAttitude_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2977,9 +2977,9 @@ uint32_t CommonMessagePostService_postAttitude_args::write(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitude_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postAttitude_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postAttitude_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postAttitude_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2990,7 +2990,7 @@ uint32_t CommonMessagePostService_postAttitude_pargs::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitude_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postAttitude_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3030,11 +3030,11 @@ uint32_t CommonMessagePostService_postAttitude_result::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitude_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postAttitude_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postAttitude_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postAttitude_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3046,7 +3046,7 @@ uint32_t CommonMessagePostService_postAttitude_result::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitude_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postAttitude_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3086,7 +3086,7 @@ uint32_t CommonMessagePostService_postAttitude_presult::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitudeQuaternion_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postAttitudeQuaternion_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3126,9 +3126,9 @@ uint32_t CommonMessagePostService_postAttitudeQuaternion_args::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitudeQuaternion_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postAttitudeQuaternion_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postAttitudeQuaternion_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postAttitudeQuaternion_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -3139,9 +3139,9 @@ uint32_t CommonMessagePostService_postAttitudeQuaternion_args::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitudeQuaternion_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postAttitudeQuaternion_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postAttitudeQuaternion_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postAttitudeQuaternion_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -3152,7 +3152,7 @@ uint32_t CommonMessagePostService_postAttitudeQuaternion_pargs::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitudeQuaternion_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postAttitudeQuaternion_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3192,11 +3192,11 @@ uint32_t CommonMessagePostService_postAttitudeQuaternion_result::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitudeQuaternion_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postAttitudeQuaternion_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postAttitudeQuaternion_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postAttitudeQuaternion_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3208,7 +3208,7 @@ uint32_t CommonMessagePostService_postAttitudeQuaternion_result::write(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postAttitudeQuaternion_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postAttitudeQuaternion_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3248,7 +3248,7 @@ uint32_t CommonMessagePostService_postAttitudeQuaternion_presult::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNed_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postLocalPositionNed_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3288,9 +3288,9 @@ uint32_t CommonMessagePostService_postLocalPositionNed_args::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNed_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postLocalPositionNed_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postLocalPositionNed_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postLocalPositionNed_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -3301,9 +3301,9 @@ uint32_t CommonMessagePostService_postLocalPositionNed_args::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNed_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postLocalPositionNed_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postLocalPositionNed_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postLocalPositionNed_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -3314,7 +3314,7 @@ uint32_t CommonMessagePostService_postLocalPositionNed_pargs::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNed_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postLocalPositionNed_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3354,11 +3354,11 @@ uint32_t CommonMessagePostService_postLocalPositionNed_result::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNed_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postLocalPositionNed_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postLocalPositionNed_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postLocalPositionNed_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3370,7 +3370,7 @@ uint32_t CommonMessagePostService_postLocalPositionNed_result::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNed_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postLocalPositionNed_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3410,7 +3410,7 @@ uint32_t CommonMessagePostService_postLocalPositionNed_presult::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionInt_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGlobalPositionInt_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3450,9 +3450,9 @@ uint32_t CommonMessagePostService_postGlobalPositionInt_args::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionInt_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGlobalPositionInt_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGlobalPositionInt_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGlobalPositionInt_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -3463,9 +3463,9 @@ uint32_t CommonMessagePostService_postGlobalPositionInt_args::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionInt_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGlobalPositionInt_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGlobalPositionInt_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGlobalPositionInt_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -3476,7 +3476,7 @@ uint32_t CommonMessagePostService_postGlobalPositionInt_pargs::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionInt_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGlobalPositionInt_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3516,11 +3516,11 @@ uint32_t CommonMessagePostService_postGlobalPositionInt_result::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionInt_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGlobalPositionInt_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGlobalPositionInt_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGlobalPositionInt_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3532,7 +3532,7 @@ uint32_t CommonMessagePostService_postGlobalPositionInt_result::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionInt_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGlobalPositionInt_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3572,7 +3572,7 @@ uint32_t CommonMessagePostService_postGlobalPositionInt_presult::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsScaled_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRcChannelsScaled_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3612,9 +3612,9 @@ uint32_t CommonMessagePostService_postRcChannelsScaled_args::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsScaled_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRcChannelsScaled_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRcChannelsScaled_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRcChannelsScaled_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -3625,9 +3625,9 @@ uint32_t CommonMessagePostService_postRcChannelsScaled_args::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsScaled_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRcChannelsScaled_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRcChannelsScaled_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRcChannelsScaled_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -3638,7 +3638,7 @@ uint32_t CommonMessagePostService_postRcChannelsScaled_pargs::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsScaled_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRcChannelsScaled_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3678,11 +3678,11 @@ uint32_t CommonMessagePostService_postRcChannelsScaled_result::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsScaled_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRcChannelsScaled_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRcChannelsScaled_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRcChannelsScaled_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3694,7 +3694,7 @@ uint32_t CommonMessagePostService_postRcChannelsScaled_result::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsScaled_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRcChannelsScaled_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3734,7 +3734,7 @@ uint32_t CommonMessagePostService_postRcChannelsScaled_presult::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsRaw_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRcChannelsRaw_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3774,9 +3774,9 @@ uint32_t CommonMessagePostService_postRcChannelsRaw_args::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsRaw_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRcChannelsRaw_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRcChannelsRaw_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRcChannelsRaw_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -3787,9 +3787,9 @@ uint32_t CommonMessagePostService_postRcChannelsRaw_args::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsRaw_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRcChannelsRaw_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRcChannelsRaw_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRcChannelsRaw_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -3800,7 +3800,7 @@ uint32_t CommonMessagePostService_postRcChannelsRaw_pargs::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsRaw_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRcChannelsRaw_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3840,11 +3840,11 @@ uint32_t CommonMessagePostService_postRcChannelsRaw_result::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsRaw_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRcChannelsRaw_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRcChannelsRaw_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRcChannelsRaw_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3856,7 +3856,7 @@ uint32_t CommonMessagePostService_postRcChannelsRaw_result::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsRaw_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRcChannelsRaw_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3896,7 +3896,7 @@ uint32_t CommonMessagePostService_postRcChannelsRaw_presult::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postServoOutputRaw_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postServoOutputRaw_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3936,9 +3936,9 @@ uint32_t CommonMessagePostService_postServoOutputRaw_args::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postServoOutputRaw_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postServoOutputRaw_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postServoOutputRaw_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postServoOutputRaw_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -3949,9 +3949,9 @@ uint32_t CommonMessagePostService_postServoOutputRaw_args::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postServoOutputRaw_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postServoOutputRaw_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postServoOutputRaw_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postServoOutputRaw_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -3962,7 +3962,7 @@ uint32_t CommonMessagePostService_postServoOutputRaw_pargs::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postServoOutputRaw_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postServoOutputRaw_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4002,11 +4002,11 @@ uint32_t CommonMessagePostService_postServoOutputRaw_result::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postServoOutputRaw_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postServoOutputRaw_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postServoOutputRaw_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postServoOutputRaw_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -4018,7 +4018,7 @@ uint32_t CommonMessagePostService_postServoOutputRaw_result::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postServoOutputRaw_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postServoOutputRaw_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4058,7 +4058,7 @@ uint32_t CommonMessagePostService_postServoOutputRaw_presult::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestPartialList_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionRequestPartialList_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4098,9 +4098,9 @@ uint32_t CommonMessagePostService_postMissionRequestPartialList_args::read(::apa
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestPartialList_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionRequestPartialList_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionRequestPartialList_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionRequestPartialList_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -4111,9 +4111,9 @@ uint32_t CommonMessagePostService_postMissionRequestPartialList_args::write(::ap
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestPartialList_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionRequestPartialList_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionRequestPartialList_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionRequestPartialList_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -4124,7 +4124,7 @@ uint32_t CommonMessagePostService_postMissionRequestPartialList_pargs::write(::a
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestPartialList_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionRequestPartialList_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4164,11 +4164,11 @@ uint32_t CommonMessagePostService_postMissionRequestPartialList_result::read(::a
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestPartialList_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionRequestPartialList_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionRequestPartialList_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionRequestPartialList_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -4180,7 +4180,7 @@ uint32_t CommonMessagePostService_postMissionRequestPartialList_result::write(::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestPartialList_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionRequestPartialList_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4220,7 +4220,7 @@ uint32_t CommonMessagePostService_postMissionRequestPartialList_presult::read(::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionWritePartialList_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionWritePartialList_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4260,9 +4260,9 @@ uint32_t CommonMessagePostService_postMissionWritePartialList_args::read(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionWritePartialList_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionWritePartialList_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionWritePartialList_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionWritePartialList_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -4273,9 +4273,9 @@ uint32_t CommonMessagePostService_postMissionWritePartialList_args::write(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionWritePartialList_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionWritePartialList_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionWritePartialList_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionWritePartialList_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -4286,7 +4286,7 @@ uint32_t CommonMessagePostService_postMissionWritePartialList_pargs::write(::apa
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionWritePartialList_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionWritePartialList_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4326,11 +4326,11 @@ uint32_t CommonMessagePostService_postMissionWritePartialList_result::read(::apa
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionWritePartialList_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionWritePartialList_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionWritePartialList_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionWritePartialList_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -4342,7 +4342,7 @@ uint32_t CommonMessagePostService_postMissionWritePartialList_result::write(::ap
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionWritePartialList_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionWritePartialList_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4382,7 +4382,7 @@ uint32_t CommonMessagePostService_postMissionWritePartialList_presult::read(::ap
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItem_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionItem_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4422,9 +4422,9 @@ uint32_t CommonMessagePostService_postMissionItem_args::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItem_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionItem_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionItem_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionItem_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -4435,9 +4435,9 @@ uint32_t CommonMessagePostService_postMissionItem_args::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItem_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionItem_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionItem_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionItem_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -4448,7 +4448,7 @@ uint32_t CommonMessagePostService_postMissionItem_pargs::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItem_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionItem_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4488,11 +4488,11 @@ uint32_t CommonMessagePostService_postMissionItem_result::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItem_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionItem_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionItem_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionItem_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -4504,7 +4504,7 @@ uint32_t CommonMessagePostService_postMissionItem_result::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItem_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionItem_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4544,7 +4544,7 @@ uint32_t CommonMessagePostService_postMissionItem_presult::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequest_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionRequest_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4584,9 +4584,9 @@ uint32_t CommonMessagePostService_postMissionRequest_args::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequest_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionRequest_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionRequest_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionRequest_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -4597,9 +4597,9 @@ uint32_t CommonMessagePostService_postMissionRequest_args::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequest_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionRequest_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionRequest_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionRequest_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -4610,7 +4610,7 @@ uint32_t CommonMessagePostService_postMissionRequest_pargs::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequest_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionRequest_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4650,11 +4650,11 @@ uint32_t CommonMessagePostService_postMissionRequest_result::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequest_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionRequest_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionRequest_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionRequest_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -4666,7 +4666,7 @@ uint32_t CommonMessagePostService_postMissionRequest_result::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequest_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionRequest_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4706,7 +4706,7 @@ uint32_t CommonMessagePostService_postMissionRequest_presult::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionSetCurrent_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionSetCurrent_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4746,9 +4746,9 @@ uint32_t CommonMessagePostService_postMissionSetCurrent_args::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionSetCurrent_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionSetCurrent_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionSetCurrent_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionSetCurrent_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -4759,9 +4759,9 @@ uint32_t CommonMessagePostService_postMissionSetCurrent_args::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionSetCurrent_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionSetCurrent_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionSetCurrent_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionSetCurrent_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -4772,7 +4772,7 @@ uint32_t CommonMessagePostService_postMissionSetCurrent_pargs::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionSetCurrent_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionSetCurrent_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4812,11 +4812,11 @@ uint32_t CommonMessagePostService_postMissionSetCurrent_result::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionSetCurrent_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionSetCurrent_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionSetCurrent_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionSetCurrent_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -4828,7 +4828,7 @@ uint32_t CommonMessagePostService_postMissionSetCurrent_result::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionSetCurrent_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionSetCurrent_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4868,7 +4868,7 @@ uint32_t CommonMessagePostService_postMissionSetCurrent_presult::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCurrent_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionCurrent_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4908,9 +4908,9 @@ uint32_t CommonMessagePostService_postMissionCurrent_args::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCurrent_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionCurrent_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionCurrent_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionCurrent_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -4921,9 +4921,9 @@ uint32_t CommonMessagePostService_postMissionCurrent_args::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCurrent_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionCurrent_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionCurrent_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionCurrent_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -4934,7 +4934,7 @@ uint32_t CommonMessagePostService_postMissionCurrent_pargs::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCurrent_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionCurrent_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -4974,11 +4974,11 @@ uint32_t CommonMessagePostService_postMissionCurrent_result::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCurrent_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionCurrent_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionCurrent_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionCurrent_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -4990,7 +4990,7 @@ uint32_t CommonMessagePostService_postMissionCurrent_result::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCurrent_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionCurrent_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5030,7 +5030,7 @@ uint32_t CommonMessagePostService_postMissionCurrent_presult::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestList_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionRequestList_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5070,9 +5070,9 @@ uint32_t CommonMessagePostService_postMissionRequestList_args::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestList_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionRequestList_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionRequestList_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionRequestList_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -5083,9 +5083,9 @@ uint32_t CommonMessagePostService_postMissionRequestList_args::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestList_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionRequestList_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionRequestList_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionRequestList_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -5096,7 +5096,7 @@ uint32_t CommonMessagePostService_postMissionRequestList_pargs::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestList_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionRequestList_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5136,11 +5136,11 @@ uint32_t CommonMessagePostService_postMissionRequestList_result::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestList_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionRequestList_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionRequestList_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionRequestList_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -5152,7 +5152,7 @@ uint32_t CommonMessagePostService_postMissionRequestList_result::write(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionRequestList_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionRequestList_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5192,7 +5192,7 @@ uint32_t CommonMessagePostService_postMissionRequestList_presult::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCount_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionCount_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5232,9 +5232,9 @@ uint32_t CommonMessagePostService_postMissionCount_args::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCount_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionCount_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionCount_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionCount_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -5245,9 +5245,9 @@ uint32_t CommonMessagePostService_postMissionCount_args::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCount_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionCount_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionCount_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionCount_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -5258,7 +5258,7 @@ uint32_t CommonMessagePostService_postMissionCount_pargs::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCount_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionCount_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5298,11 +5298,11 @@ uint32_t CommonMessagePostService_postMissionCount_result::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCount_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionCount_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionCount_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionCount_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -5314,7 +5314,7 @@ uint32_t CommonMessagePostService_postMissionCount_result::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionCount_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionCount_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5354,7 +5354,7 @@ uint32_t CommonMessagePostService_postMissionCount_presult::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionClearAll_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionClearAll_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5394,9 +5394,9 @@ uint32_t CommonMessagePostService_postMissionClearAll_args::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionClearAll_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionClearAll_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionClearAll_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionClearAll_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -5407,9 +5407,9 @@ uint32_t CommonMessagePostService_postMissionClearAll_args::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionClearAll_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionClearAll_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionClearAll_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionClearAll_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -5420,7 +5420,7 @@ uint32_t CommonMessagePostService_postMissionClearAll_pargs::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionClearAll_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionClearAll_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5460,11 +5460,11 @@ uint32_t CommonMessagePostService_postMissionClearAll_result::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionClearAll_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionClearAll_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionClearAll_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionClearAll_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -5476,7 +5476,7 @@ uint32_t CommonMessagePostService_postMissionClearAll_result::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionClearAll_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionClearAll_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5516,7 +5516,7 @@ uint32_t CommonMessagePostService_postMissionClearAll_presult::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItemReached_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionItemReached_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5556,9 +5556,9 @@ uint32_t CommonMessagePostService_postMissionItemReached_args::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItemReached_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionItemReached_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionItemReached_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionItemReached_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -5569,9 +5569,9 @@ uint32_t CommonMessagePostService_postMissionItemReached_args::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItemReached_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionItemReached_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionItemReached_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionItemReached_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -5582,7 +5582,7 @@ uint32_t CommonMessagePostService_postMissionItemReached_pargs::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItemReached_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionItemReached_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5622,11 +5622,11 @@ uint32_t CommonMessagePostService_postMissionItemReached_result::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItemReached_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionItemReached_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionItemReached_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionItemReached_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -5638,7 +5638,7 @@ uint32_t CommonMessagePostService_postMissionItemReached_result::write(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionItemReached_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionItemReached_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5678,7 +5678,7 @@ uint32_t CommonMessagePostService_postMissionItemReached_presult::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionAck_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionAck_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5718,9 +5718,9 @@ uint32_t CommonMessagePostService_postMissionAck_args::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionAck_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionAck_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionAck_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionAck_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -5731,9 +5731,9 @@ uint32_t CommonMessagePostService_postMissionAck_args::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionAck_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionAck_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionAck_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionAck_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -5744,7 +5744,7 @@ uint32_t CommonMessagePostService_postMissionAck_pargs::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionAck_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionAck_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5784,11 +5784,11 @@ uint32_t CommonMessagePostService_postMissionAck_result::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionAck_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMissionAck_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMissionAck_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMissionAck_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -5800,7 +5800,7 @@ uint32_t CommonMessagePostService_postMissionAck_result::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMissionAck_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMissionAck_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5840,7 +5840,7 @@ uint32_t CommonMessagePostService_postMissionAck_presult::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetGpsGlobalOrigin_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5880,9 +5880,9 @@ uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_args::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetGpsGlobalOrigin_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetGpsGlobalOrigin_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetGpsGlobalOrigin_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -5893,9 +5893,9 @@ uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_args::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetGpsGlobalOrigin_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetGpsGlobalOrigin_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetGpsGlobalOrigin_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -5906,7 +5906,7 @@ uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_pargs::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetGpsGlobalOrigin_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -5946,11 +5946,11 @@ uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_result::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetGpsGlobalOrigin_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetGpsGlobalOrigin_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetGpsGlobalOrigin_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -5962,7 +5962,7 @@ uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_result::write(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetGpsGlobalOrigin_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6002,7 +6002,7 @@ uint32_t CommonMessagePostService_postSetGpsGlobalOrigin_presult::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsGlobalOrigin_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGpsGlobalOrigin_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6042,9 +6042,9 @@ uint32_t CommonMessagePostService_postGpsGlobalOrigin_args::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsGlobalOrigin_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGpsGlobalOrigin_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGpsGlobalOrigin_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGpsGlobalOrigin_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -6055,9 +6055,9 @@ uint32_t CommonMessagePostService_postGpsGlobalOrigin_args::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsGlobalOrigin_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGpsGlobalOrigin_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGpsGlobalOrigin_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGpsGlobalOrigin_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -6068,7 +6068,7 @@ uint32_t CommonMessagePostService_postGpsGlobalOrigin_pargs::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsGlobalOrigin_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGpsGlobalOrigin_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6108,11 +6108,11 @@ uint32_t CommonMessagePostService_postGpsGlobalOrigin_result::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsGlobalOrigin_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGpsGlobalOrigin_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGpsGlobalOrigin_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGpsGlobalOrigin_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -6124,7 +6124,7 @@ uint32_t CommonMessagePostService_postGpsGlobalOrigin_result::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGpsGlobalOrigin_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGpsGlobalOrigin_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6164,7 +6164,7 @@ uint32_t CommonMessagePostService_postGpsGlobalOrigin_presult::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetLocalPositionSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6204,9 +6204,9 @@ uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_args::read(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetLocalPositionSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetLocalPositionSetpoint_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetLocalPositionSetpoint_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -6217,9 +6217,9 @@ uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_args::write(::apa
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetLocalPositionSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetLocalPositionSetpoint_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetLocalPositionSetpoint_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -6230,7 +6230,7 @@ uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_pargs::write(::ap
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetLocalPositionSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6270,11 +6270,11 @@ uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_result::read(::ap
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetLocalPositionSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetLocalPositionSetpoint_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetLocalPositionSetpoint_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -6286,7 +6286,7 @@ uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_result::write(::a
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetLocalPositionSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6326,7 +6326,7 @@ uint32_t CommonMessagePostService_postSetLocalPositionSetpoint_presult::read(::a
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postLocalPositionSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6366,9 +6366,9 @@ uint32_t CommonMessagePostService_postLocalPositionSetpoint_args::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postLocalPositionSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postLocalPositionSetpoint_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postLocalPositionSetpoint_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -6379,9 +6379,9 @@ uint32_t CommonMessagePostService_postLocalPositionSetpoint_args::write(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postLocalPositionSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postLocalPositionSetpoint_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postLocalPositionSetpoint_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -6392,7 +6392,7 @@ uint32_t CommonMessagePostService_postLocalPositionSetpoint_pargs::write(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postLocalPositionSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6432,11 +6432,11 @@ uint32_t CommonMessagePostService_postLocalPositionSetpoint_result::read(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postLocalPositionSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postLocalPositionSetpoint_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postLocalPositionSetpoint_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -6448,7 +6448,7 @@ uint32_t CommonMessagePostService_postLocalPositionSetpoint_result::write(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postLocalPositionSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6488,7 +6488,7 @@ uint32_t CommonMessagePostService_postLocalPositionSetpoint_presult::read(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGlobalPositionSetpointInt_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6528,9 +6528,9 @@ uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_args::read(::apa
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGlobalPositionSetpointInt_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGlobalPositionSetpointInt_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGlobalPositionSetpointInt_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -6541,9 +6541,9 @@ uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_args::write(::ap
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGlobalPositionSetpointInt_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGlobalPositionSetpointInt_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGlobalPositionSetpointInt_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -6554,7 +6554,7 @@ uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_pargs::write(::a
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGlobalPositionSetpointInt_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6594,11 +6594,11 @@ uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_result::read(::a
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGlobalPositionSetpointInt_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGlobalPositionSetpointInt_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGlobalPositionSetpointInt_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -6610,7 +6610,7 @@ uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_result::write(::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGlobalPositionSetpointInt_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6650,7 +6650,7 @@ uint32_t CommonMessagePostService_postGlobalPositionSetpointInt_presult::read(::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetGlobalPositionSetpointInt_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6690,9 +6690,9 @@ uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_args::read(::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetGlobalPositionSetpointInt_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetGlobalPositionSetpointInt_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetGlobalPositionSetpointInt_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -6703,9 +6703,9 @@ uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_args::write(:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetGlobalPositionSetpointInt_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetGlobalPositionSetpointInt_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetGlobalPositionSetpointInt_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -6716,7 +6716,7 @@ uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_pargs::write(
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetGlobalPositionSetpointInt_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6756,11 +6756,11 @@ uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_result::read(
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetGlobalPositionSetpointInt_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetGlobalPositionSetpointInt_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetGlobalPositionSetpointInt_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -6772,7 +6772,7 @@ uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_result::write
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetGlobalPositionSetpointInt_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6812,7 +6812,7 @@ uint32_t CommonMessagePostService_postSetGlobalPositionSetpointInt_presult::read
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetySetAllowedArea_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSafetySetAllowedArea_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6852,9 +6852,9 @@ uint32_t CommonMessagePostService_postSafetySetAllowedArea_args::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetySetAllowedArea_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSafetySetAllowedArea_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSafetySetAllowedArea_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSafetySetAllowedArea_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -6865,9 +6865,9 @@ uint32_t CommonMessagePostService_postSafetySetAllowedArea_args::write(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetySetAllowedArea_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSafetySetAllowedArea_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSafetySetAllowedArea_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSafetySetAllowedArea_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -6878,7 +6878,7 @@ uint32_t CommonMessagePostService_postSafetySetAllowedArea_pargs::write(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetySetAllowedArea_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSafetySetAllowedArea_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6918,11 +6918,11 @@ uint32_t CommonMessagePostService_postSafetySetAllowedArea_result::read(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetySetAllowedArea_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSafetySetAllowedArea_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSafetySetAllowedArea_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSafetySetAllowedArea_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -6934,7 +6934,7 @@ uint32_t CommonMessagePostService_postSafetySetAllowedArea_result::write(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetySetAllowedArea_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSafetySetAllowedArea_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -6974,7 +6974,7 @@ uint32_t CommonMessagePostService_postSafetySetAllowedArea_presult::read(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetyAllowedArea_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSafetyAllowedArea_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7014,9 +7014,9 @@ uint32_t CommonMessagePostService_postSafetyAllowedArea_args::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetyAllowedArea_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSafetyAllowedArea_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSafetyAllowedArea_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSafetyAllowedArea_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -7027,9 +7027,9 @@ uint32_t CommonMessagePostService_postSafetyAllowedArea_args::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetyAllowedArea_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSafetyAllowedArea_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSafetyAllowedArea_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSafetyAllowedArea_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -7040,7 +7040,7 @@ uint32_t CommonMessagePostService_postSafetyAllowedArea_pargs::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetyAllowedArea_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSafetyAllowedArea_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7080,11 +7080,11 @@ uint32_t CommonMessagePostService_postSafetyAllowedArea_result::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetyAllowedArea_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSafetyAllowedArea_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSafetyAllowedArea_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSafetyAllowedArea_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -7096,7 +7096,7 @@ uint32_t CommonMessagePostService_postSafetyAllowedArea_result::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSafetyAllowedArea_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSafetyAllowedArea_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7136,7 +7136,7 @@ uint32_t CommonMessagePostService_postSafetyAllowedArea_presult::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawThrust_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetRollPitchYawThrust_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7176,9 +7176,9 @@ uint32_t CommonMessagePostService_postSetRollPitchYawThrust_args::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawThrust_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetRollPitchYawThrust_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetRollPitchYawThrust_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetRollPitchYawThrust_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -7189,9 +7189,9 @@ uint32_t CommonMessagePostService_postSetRollPitchYawThrust_args::write(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawThrust_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetRollPitchYawThrust_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetRollPitchYawThrust_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetRollPitchYawThrust_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -7202,7 +7202,7 @@ uint32_t CommonMessagePostService_postSetRollPitchYawThrust_pargs::write(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawThrust_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetRollPitchYawThrust_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7242,11 +7242,11 @@ uint32_t CommonMessagePostService_postSetRollPitchYawThrust_result::read(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawThrust_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetRollPitchYawThrust_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetRollPitchYawThrust_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetRollPitchYawThrust_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -7258,7 +7258,7 @@ uint32_t CommonMessagePostService_postSetRollPitchYawThrust_result::write(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawThrust_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetRollPitchYawThrust_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7298,7 +7298,7 @@ uint32_t CommonMessagePostService_postSetRollPitchYawThrust_presult::read(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetRollPitchYawSpeedThrust_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7338,9 +7338,9 @@ uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_args::read(::ap
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetRollPitchYawSpeedThrust_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetRollPitchYawSpeedThrust_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetRollPitchYawSpeedThrust_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -7351,9 +7351,9 @@ uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_args::write(::a
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetRollPitchYawSpeedThrust_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetRollPitchYawSpeedThrust_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetRollPitchYawSpeedThrust_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -7364,7 +7364,7 @@ uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_pargs::write(::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetRollPitchYawSpeedThrust_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7404,11 +7404,11 @@ uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_result::read(::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetRollPitchYawSpeedThrust_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetRollPitchYawSpeedThrust_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetRollPitchYawSpeedThrust_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -7420,7 +7420,7 @@ uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_result::write(:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetRollPitchYawSpeedThrust_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7460,7 +7460,7 @@ uint32_t CommonMessagePostService_postSetRollPitchYawSpeedThrust_presult::read(:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRollPitchYawThrustSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7500,9 +7500,9 @@ uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_args::read(::ap
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRollPitchYawThrustSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRollPitchYawThrustSetpoint_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRollPitchYawThrustSetpoint_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -7513,9 +7513,9 @@ uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_args::write(::a
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRollPitchYawThrustSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRollPitchYawThrustSetpoint_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRollPitchYawThrustSetpoint_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -7526,7 +7526,7 @@ uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_pargs::write(::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRollPitchYawThrustSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7566,11 +7566,11 @@ uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_result::read(::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRollPitchYawThrustSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRollPitchYawThrustSetpoint_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRollPitchYawThrustSetpoint_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -7582,7 +7582,7 @@ uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_result::write(:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRollPitchYawThrustSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7622,7 +7622,7 @@ uint32_t CommonMessagePostService_postRollPitchYawThrustSetpoint_presult::read(:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7662,9 +7662,9 @@ uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_args::read
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -7675,9 +7675,9 @@ uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_args::writ
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -7688,7 +7688,7 @@ uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_pargs::wri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7728,11 +7728,11 @@ uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_result::re
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -7744,7 +7744,7 @@ uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_result::wr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7784,7 +7784,7 @@ uint32_t CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_presult::r
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetQuadMotorsSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7824,9 +7824,9 @@ uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_args::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetQuadMotorsSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetQuadMotorsSetpoint_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetQuadMotorsSetpoint_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -7837,9 +7837,9 @@ uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_args::write(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetQuadMotorsSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetQuadMotorsSetpoint_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetQuadMotorsSetpoint_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -7850,7 +7850,7 @@ uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_pargs::write(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetQuadMotorsSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7890,11 +7890,11 @@ uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_result::read(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetQuadMotorsSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetQuadMotorsSetpoint_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetQuadMotorsSetpoint_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -7906,7 +7906,7 @@ uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_result::write(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetQuadMotorsSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7946,7 +7946,7 @@ uint32_t CommonMessagePostService_postSetQuadMotorsSetpoint_presult::read(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -7986,9 +7986,9 @@ uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_args::read(
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -7999,9 +7999,9 @@ uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_args::write
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -8012,7 +8012,7 @@ uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_pargs::writ
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8052,11 +8052,11 @@ uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_result::rea
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -8068,7 +8068,7 @@ uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_result::wri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8108,7 +8108,7 @@ uint32_t CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_presult::re
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNavControllerOutput_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postNavControllerOutput_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8148,9 +8148,9 @@ uint32_t CommonMessagePostService_postNavControllerOutput_args::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNavControllerOutput_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postNavControllerOutput_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postNavControllerOutput_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postNavControllerOutput_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -8161,9 +8161,9 @@ uint32_t CommonMessagePostService_postNavControllerOutput_args::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNavControllerOutput_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postNavControllerOutput_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postNavControllerOutput_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postNavControllerOutput_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -8174,7 +8174,7 @@ uint32_t CommonMessagePostService_postNavControllerOutput_pargs::write(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNavControllerOutput_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postNavControllerOutput_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8214,11 +8214,11 @@ uint32_t CommonMessagePostService_postNavControllerOutput_result::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNavControllerOutput_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postNavControllerOutput_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postNavControllerOutput_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postNavControllerOutput_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -8230,7 +8230,7 @@ uint32_t CommonMessagePostService_postNavControllerOutput_result::write(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNavControllerOutput_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postNavControllerOutput_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8270,7 +8270,7 @@ uint32_t CommonMessagePostService_postNavControllerOutput_presult::read(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8310,9 +8310,9 @@ uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_args::re
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -8323,9 +8323,9 @@ uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_args::wr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -8336,7 +8336,7 @@ uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_pargs::w
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8376,11 +8376,11 @@ uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_result::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -8392,7 +8392,7 @@ uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_result::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8432,7 +8432,7 @@ uint32_t CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_presult:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStateCorrection_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postStateCorrection_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8472,9 +8472,9 @@ uint32_t CommonMessagePostService_postStateCorrection_args::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStateCorrection_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postStateCorrection_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postStateCorrection_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postStateCorrection_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -8485,9 +8485,9 @@ uint32_t CommonMessagePostService_postStateCorrection_args::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStateCorrection_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postStateCorrection_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postStateCorrection_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postStateCorrection_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -8498,7 +8498,7 @@ uint32_t CommonMessagePostService_postStateCorrection_pargs::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStateCorrection_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postStateCorrection_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8538,11 +8538,11 @@ uint32_t CommonMessagePostService_postStateCorrection_result::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStateCorrection_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postStateCorrection_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postStateCorrection_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postStateCorrection_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -8554,7 +8554,7 @@ uint32_t CommonMessagePostService_postStateCorrection_result::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStateCorrection_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postStateCorrection_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8594,7 +8594,7 @@ uint32_t CommonMessagePostService_postStateCorrection_presult::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRequestDataStream_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRequestDataStream_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8634,9 +8634,9 @@ uint32_t CommonMessagePostService_postRequestDataStream_args::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRequestDataStream_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRequestDataStream_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRequestDataStream_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRequestDataStream_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -8647,9 +8647,9 @@ uint32_t CommonMessagePostService_postRequestDataStream_args::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRequestDataStream_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRequestDataStream_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRequestDataStream_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRequestDataStream_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -8660,7 +8660,7 @@ uint32_t CommonMessagePostService_postRequestDataStream_pargs::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRequestDataStream_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRequestDataStream_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8700,11 +8700,11 @@ uint32_t CommonMessagePostService_postRequestDataStream_result::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRequestDataStream_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRequestDataStream_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRequestDataStream_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRequestDataStream_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -8716,7 +8716,7 @@ uint32_t CommonMessagePostService_postRequestDataStream_result::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRequestDataStream_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRequestDataStream_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8756,7 +8756,7 @@ uint32_t CommonMessagePostService_postRequestDataStream_presult::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDataStream_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postDataStream_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8796,9 +8796,9 @@ uint32_t CommonMessagePostService_postDataStream_args::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDataStream_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postDataStream_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postDataStream_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postDataStream_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -8809,9 +8809,9 @@ uint32_t CommonMessagePostService_postDataStream_args::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDataStream_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postDataStream_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postDataStream_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postDataStream_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -8822,7 +8822,7 @@ uint32_t CommonMessagePostService_postDataStream_pargs::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDataStream_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postDataStream_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8862,11 +8862,11 @@ uint32_t CommonMessagePostService_postDataStream_result::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDataStream_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postDataStream_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postDataStream_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postDataStream_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -8878,7 +8878,7 @@ uint32_t CommonMessagePostService_postDataStream_result::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDataStream_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postDataStream_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8918,7 +8918,7 @@ uint32_t CommonMessagePostService_postDataStream_presult::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualControl_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postManualControl_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -8958,9 +8958,9 @@ uint32_t CommonMessagePostService_postManualControl_args::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualControl_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postManualControl_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postManualControl_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postManualControl_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -8971,9 +8971,9 @@ uint32_t CommonMessagePostService_postManualControl_args::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualControl_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postManualControl_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postManualControl_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postManualControl_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -8984,7 +8984,7 @@ uint32_t CommonMessagePostService_postManualControl_pargs::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualControl_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postManualControl_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9024,11 +9024,11 @@ uint32_t CommonMessagePostService_postManualControl_result::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualControl_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postManualControl_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postManualControl_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postManualControl_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -9040,7 +9040,7 @@ uint32_t CommonMessagePostService_postManualControl_result::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualControl_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postManualControl_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9080,7 +9080,7 @@ uint32_t CommonMessagePostService_postManualControl_presult::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsOverride_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRcChannelsOverride_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9120,9 +9120,9 @@ uint32_t CommonMessagePostService_postRcChannelsOverride_args::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsOverride_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRcChannelsOverride_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRcChannelsOverride_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRcChannelsOverride_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -9133,9 +9133,9 @@ uint32_t CommonMessagePostService_postRcChannelsOverride_args::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsOverride_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRcChannelsOverride_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRcChannelsOverride_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRcChannelsOverride_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -9146,7 +9146,7 @@ uint32_t CommonMessagePostService_postRcChannelsOverride_pargs::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsOverride_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRcChannelsOverride_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9186,11 +9186,11 @@ uint32_t CommonMessagePostService_postRcChannelsOverride_result::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsOverride_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRcChannelsOverride_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRcChannelsOverride_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRcChannelsOverride_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -9202,7 +9202,7 @@ uint32_t CommonMessagePostService_postRcChannelsOverride_result::write(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRcChannelsOverride_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRcChannelsOverride_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9242,7 +9242,7 @@ uint32_t CommonMessagePostService_postRcChannelsOverride_presult::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVfrHud_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postVfrHud_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9282,9 +9282,9 @@ uint32_t CommonMessagePostService_postVfrHud_args::read(::apache::thrift::protoc
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVfrHud_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postVfrHud_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postVfrHud_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postVfrHud_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -9295,9 +9295,9 @@ uint32_t CommonMessagePostService_postVfrHud_args::write(::apache::thrift::proto
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVfrHud_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postVfrHud_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postVfrHud_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postVfrHud_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -9308,7 +9308,7 @@ uint32_t CommonMessagePostService_postVfrHud_pargs::write(::apache::thrift::prot
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVfrHud_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postVfrHud_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9348,11 +9348,11 @@ uint32_t CommonMessagePostService_postVfrHud_result::read(::apache::thrift::prot
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVfrHud_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postVfrHud_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postVfrHud_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postVfrHud_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -9364,7 +9364,7 @@ uint32_t CommonMessagePostService_postVfrHud_result::write(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVfrHud_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postVfrHud_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9404,7 +9404,7 @@ uint32_t CommonMessagePostService_postVfrHud_presult::read(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandLong_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postCommandLong_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9444,9 +9444,9 @@ uint32_t CommonMessagePostService_postCommandLong_args::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandLong_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postCommandLong_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postCommandLong_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postCommandLong_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -9457,9 +9457,9 @@ uint32_t CommonMessagePostService_postCommandLong_args::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandLong_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postCommandLong_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postCommandLong_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postCommandLong_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -9470,7 +9470,7 @@ uint32_t CommonMessagePostService_postCommandLong_pargs::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandLong_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postCommandLong_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9510,11 +9510,11 @@ uint32_t CommonMessagePostService_postCommandLong_result::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandLong_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postCommandLong_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postCommandLong_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postCommandLong_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -9526,7 +9526,7 @@ uint32_t CommonMessagePostService_postCommandLong_result::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandLong_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postCommandLong_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9566,7 +9566,7 @@ uint32_t CommonMessagePostService_postCommandLong_presult::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandAck_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postCommandAck_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9606,9 +9606,9 @@ uint32_t CommonMessagePostService_postCommandAck_args::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandAck_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postCommandAck_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postCommandAck_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postCommandAck_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -9619,9 +9619,9 @@ uint32_t CommonMessagePostService_postCommandAck_args::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandAck_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postCommandAck_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postCommandAck_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postCommandAck_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -9632,7 +9632,7 @@ uint32_t CommonMessagePostService_postCommandAck_pargs::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandAck_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postCommandAck_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9672,11 +9672,11 @@ uint32_t CommonMessagePostService_postCommandAck_result::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandAck_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postCommandAck_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postCommandAck_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postCommandAck_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -9688,7 +9688,7 @@ uint32_t CommonMessagePostService_postCommandAck_result::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postCommandAck_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postCommandAck_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9728,7 +9728,7 @@ uint32_t CommonMessagePostService_postCommandAck_presult::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRollPitchYawRatesThrustSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9768,9 +9768,9 @@ uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_args::read
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRollPitchYawRatesThrustSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRollPitchYawRatesThrustSetpoint_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -9781,9 +9781,9 @@ uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_args::writ
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRollPitchYawRatesThrustSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRollPitchYawRatesThrustSetpoint_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -9794,7 +9794,7 @@ uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_pargs::wri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRollPitchYawRatesThrustSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9834,11 +9834,11 @@ uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_result::re
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postRollPitchYawRatesThrustSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postRollPitchYawRatesThrustSetpoint_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -9850,7 +9850,7 @@ uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_result::wr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postRollPitchYawRatesThrustSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9890,7 +9890,7 @@ uint32_t CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_presult::r
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postManualSetpoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9930,9 +9930,9 @@ uint32_t CommonMessagePostService_postManualSetpoint_args::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postManualSetpoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postManualSetpoint_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postManualSetpoint_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -9943,9 +9943,9 @@ uint32_t CommonMessagePostService_postManualSetpoint_args::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postManualSetpoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postManualSetpoint_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postManualSetpoint_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -9956,7 +9956,7 @@ uint32_t CommonMessagePostService_postManualSetpoint_pargs::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postManualSetpoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -9996,11 +9996,11 @@ uint32_t CommonMessagePostService_postManualSetpoint_result::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postManualSetpoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postManualSetpoint_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postManualSetpoint_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -10012,7 +10012,7 @@ uint32_t CommonMessagePostService_postManualSetpoint_result::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postManualSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postManualSetpoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10052,7 +10052,7 @@ uint32_t CommonMessagePostService_postManualSetpoint_presult::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postLocalPositionNedSystemGlobalOffset_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10092,9 +10092,9 @@ uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_args::r
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postLocalPositionNedSystemGlobalOffset_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postLocalPositionNedSystemGlobalOffset_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -10105,9 +10105,9 @@ uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_args::w
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postLocalPositionNedSystemGlobalOffset_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postLocalPositionNedSystemGlobalOffset_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -10118,7 +10118,7 @@ uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_pargs::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postLocalPositionNedSystemGlobalOffset_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10158,11 +10158,11 @@ uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_result:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postLocalPositionNedSystemGlobalOffset_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postLocalPositionNedSystemGlobalOffset_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -10174,7 +10174,7 @@ uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_result:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postLocalPositionNedSystemGlobalOffset_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10214,7 +10214,7 @@ uint32_t CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_presult
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilState_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHilState_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10254,9 +10254,9 @@ uint32_t CommonMessagePostService_postHilState_args::read(::apache::thrift::prot
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilState_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHilState_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHilState_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHilState_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -10267,9 +10267,9 @@ uint32_t CommonMessagePostService_postHilState_args::write(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilState_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHilState_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHilState_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHilState_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -10280,7 +10280,7 @@ uint32_t CommonMessagePostService_postHilState_pargs::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilState_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHilState_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10320,11 +10320,11 @@ uint32_t CommonMessagePostService_postHilState_result::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilState_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHilState_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHilState_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHilState_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -10336,7 +10336,7 @@ uint32_t CommonMessagePostService_postHilState_result::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilState_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHilState_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10376,7 +10376,7 @@ uint32_t CommonMessagePostService_postHilState_presult::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilControls_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHilControls_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10416,9 +10416,9 @@ uint32_t CommonMessagePostService_postHilControls_args::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilControls_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHilControls_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHilControls_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHilControls_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -10429,9 +10429,9 @@ uint32_t CommonMessagePostService_postHilControls_args::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilControls_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHilControls_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHilControls_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHilControls_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -10442,7 +10442,7 @@ uint32_t CommonMessagePostService_postHilControls_pargs::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilControls_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHilControls_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10482,11 +10482,11 @@ uint32_t CommonMessagePostService_postHilControls_result::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilControls_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHilControls_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHilControls_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHilControls_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -10498,7 +10498,7 @@ uint32_t CommonMessagePostService_postHilControls_result::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilControls_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHilControls_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10538,7 +10538,7 @@ uint32_t CommonMessagePostService_postHilControls_presult::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilRcInputsRaw_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHilRcInputsRaw_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10578,9 +10578,9 @@ uint32_t CommonMessagePostService_postHilRcInputsRaw_args::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilRcInputsRaw_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHilRcInputsRaw_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHilRcInputsRaw_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHilRcInputsRaw_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -10591,9 +10591,9 @@ uint32_t CommonMessagePostService_postHilRcInputsRaw_args::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilRcInputsRaw_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHilRcInputsRaw_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHilRcInputsRaw_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHilRcInputsRaw_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -10604,7 +10604,7 @@ uint32_t CommonMessagePostService_postHilRcInputsRaw_pargs::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilRcInputsRaw_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHilRcInputsRaw_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10644,11 +10644,11 @@ uint32_t CommonMessagePostService_postHilRcInputsRaw_result::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilRcInputsRaw_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHilRcInputsRaw_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHilRcInputsRaw_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHilRcInputsRaw_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -10660,7 +10660,7 @@ uint32_t CommonMessagePostService_postHilRcInputsRaw_result::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHilRcInputsRaw_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHilRcInputsRaw_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10700,7 +10700,7 @@ uint32_t CommonMessagePostService_postHilRcInputsRaw_presult::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOpticalFlow_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postOpticalFlow_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10740,9 +10740,9 @@ uint32_t CommonMessagePostService_postOpticalFlow_args::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOpticalFlow_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postOpticalFlow_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postOpticalFlow_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postOpticalFlow_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -10753,9 +10753,9 @@ uint32_t CommonMessagePostService_postOpticalFlow_args::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOpticalFlow_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postOpticalFlow_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postOpticalFlow_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postOpticalFlow_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -10766,7 +10766,7 @@ uint32_t CommonMessagePostService_postOpticalFlow_pargs::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOpticalFlow_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postOpticalFlow_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10806,11 +10806,11 @@ uint32_t CommonMessagePostService_postOpticalFlow_result::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOpticalFlow_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postOpticalFlow_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postOpticalFlow_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postOpticalFlow_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -10822,7 +10822,7 @@ uint32_t CommonMessagePostService_postOpticalFlow_result::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOpticalFlow_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postOpticalFlow_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10862,7 +10862,7 @@ uint32_t CommonMessagePostService_postOpticalFlow_presult::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGlobalVisionPositionEstimate_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10902,9 +10902,9 @@ uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_args::read(::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGlobalVisionPositionEstimate_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGlobalVisionPositionEstimate_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGlobalVisionPositionEstimate_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -10915,9 +10915,9 @@ uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_args::write(:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGlobalVisionPositionEstimate_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGlobalVisionPositionEstimate_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGlobalVisionPositionEstimate_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -10928,7 +10928,7 @@ uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_pargs::write(
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGlobalVisionPositionEstimate_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -10968,11 +10968,11 @@ uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_result::read(
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postGlobalVisionPositionEstimate_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postGlobalVisionPositionEstimate_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postGlobalVisionPositionEstimate_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -10984,7 +10984,7 @@ uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_result::write
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postGlobalVisionPositionEstimate_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11024,7 +11024,7 @@ uint32_t CommonMessagePostService_postGlobalVisionPositionEstimate_presult::read
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionPositionEstimate_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postVisionPositionEstimate_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11064,9 +11064,9 @@ uint32_t CommonMessagePostService_postVisionPositionEstimate_args::read(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionPositionEstimate_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postVisionPositionEstimate_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postVisionPositionEstimate_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postVisionPositionEstimate_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -11077,9 +11077,9 @@ uint32_t CommonMessagePostService_postVisionPositionEstimate_args::write(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionPositionEstimate_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postVisionPositionEstimate_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postVisionPositionEstimate_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postVisionPositionEstimate_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -11090,7 +11090,7 @@ uint32_t CommonMessagePostService_postVisionPositionEstimate_pargs::write(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionPositionEstimate_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postVisionPositionEstimate_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11130,11 +11130,11 @@ uint32_t CommonMessagePostService_postVisionPositionEstimate_result::read(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionPositionEstimate_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postVisionPositionEstimate_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postVisionPositionEstimate_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postVisionPositionEstimate_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -11146,7 +11146,7 @@ uint32_t CommonMessagePostService_postVisionPositionEstimate_result::write(::apa
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionPositionEstimate_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postVisionPositionEstimate_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11186,7 +11186,7 @@ uint32_t CommonMessagePostService_postVisionPositionEstimate_presult::read(::apa
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionSpeedEstimate_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postVisionSpeedEstimate_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11226,9 +11226,9 @@ uint32_t CommonMessagePostService_postVisionSpeedEstimate_args::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionSpeedEstimate_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postVisionSpeedEstimate_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postVisionSpeedEstimate_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postVisionSpeedEstimate_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -11239,9 +11239,9 @@ uint32_t CommonMessagePostService_postVisionSpeedEstimate_args::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionSpeedEstimate_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postVisionSpeedEstimate_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postVisionSpeedEstimate_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postVisionSpeedEstimate_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -11252,7 +11252,7 @@ uint32_t CommonMessagePostService_postVisionSpeedEstimate_pargs::write(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionSpeedEstimate_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postVisionSpeedEstimate_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11292,11 +11292,11 @@ uint32_t CommonMessagePostService_postVisionSpeedEstimate_result::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionSpeedEstimate_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postVisionSpeedEstimate_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postVisionSpeedEstimate_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postVisionSpeedEstimate_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -11308,7 +11308,7 @@ uint32_t CommonMessagePostService_postVisionSpeedEstimate_result::write(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postVisionSpeedEstimate_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postVisionSpeedEstimate_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11348,7 +11348,7 @@ uint32_t CommonMessagePostService_postVisionSpeedEstimate_presult::read(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postViconPositionEstimate_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postViconPositionEstimate_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11388,9 +11388,9 @@ uint32_t CommonMessagePostService_postViconPositionEstimate_args::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postViconPositionEstimate_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postViconPositionEstimate_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postViconPositionEstimate_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postViconPositionEstimate_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -11401,9 +11401,9 @@ uint32_t CommonMessagePostService_postViconPositionEstimate_args::write(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postViconPositionEstimate_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postViconPositionEstimate_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postViconPositionEstimate_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postViconPositionEstimate_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -11414,7 +11414,7 @@ uint32_t CommonMessagePostService_postViconPositionEstimate_pargs::write(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postViconPositionEstimate_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postViconPositionEstimate_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11454,11 +11454,11 @@ uint32_t CommonMessagePostService_postViconPositionEstimate_result::read(::apach
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postViconPositionEstimate_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postViconPositionEstimate_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postViconPositionEstimate_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postViconPositionEstimate_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -11470,7 +11470,7 @@ uint32_t CommonMessagePostService_postViconPositionEstimate_result::write(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postViconPositionEstimate_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postViconPositionEstimate_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11510,7 +11510,7 @@ uint32_t CommonMessagePostService_postViconPositionEstimate_presult::read(::apac
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHighresImu_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHighresImu_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11550,9 +11550,9 @@ uint32_t CommonMessagePostService_postHighresImu_args::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHighresImu_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHighresImu_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHighresImu_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHighresImu_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -11563,9 +11563,9 @@ uint32_t CommonMessagePostService_postHighresImu_args::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHighresImu_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHighresImu_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHighresImu_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHighresImu_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -11576,7 +11576,7 @@ uint32_t CommonMessagePostService_postHighresImu_pargs::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHighresImu_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHighresImu_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11616,11 +11616,11 @@ uint32_t CommonMessagePostService_postHighresImu_result::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHighresImu_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postHighresImu_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postHighresImu_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postHighresImu_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -11632,7 +11632,7 @@ uint32_t CommonMessagePostService_postHighresImu_result::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postHighresImu_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postHighresImu_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11672,7 +11672,7 @@ uint32_t CommonMessagePostService_postHighresImu_presult::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOmnidirectionalFlow_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postOmnidirectionalFlow_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11712,9 +11712,9 @@ uint32_t CommonMessagePostService_postOmnidirectionalFlow_args::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOmnidirectionalFlow_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postOmnidirectionalFlow_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postOmnidirectionalFlow_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postOmnidirectionalFlow_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -11725,9 +11725,9 @@ uint32_t CommonMessagePostService_postOmnidirectionalFlow_args::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOmnidirectionalFlow_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postOmnidirectionalFlow_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postOmnidirectionalFlow_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postOmnidirectionalFlow_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -11738,7 +11738,7 @@ uint32_t CommonMessagePostService_postOmnidirectionalFlow_pargs::write(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOmnidirectionalFlow_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postOmnidirectionalFlow_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11778,11 +11778,11 @@ uint32_t CommonMessagePostService_postOmnidirectionalFlow_result::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOmnidirectionalFlow_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postOmnidirectionalFlow_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postOmnidirectionalFlow_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postOmnidirectionalFlow_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -11794,7 +11794,7 @@ uint32_t CommonMessagePostService_postOmnidirectionalFlow_result::write(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postOmnidirectionalFlow_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postOmnidirectionalFlow_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11834,7 +11834,7 @@ uint32_t CommonMessagePostService_postOmnidirectionalFlow_presult::read(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferStart_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postFileTransferStart_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11874,9 +11874,9 @@ uint32_t CommonMessagePostService_postFileTransferStart_args::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferStart_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postFileTransferStart_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postFileTransferStart_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postFileTransferStart_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -11887,9 +11887,9 @@ uint32_t CommonMessagePostService_postFileTransferStart_args::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferStart_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postFileTransferStart_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postFileTransferStart_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postFileTransferStart_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -11900,7 +11900,7 @@ uint32_t CommonMessagePostService_postFileTransferStart_pargs::write(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferStart_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postFileTransferStart_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11940,11 +11940,11 @@ uint32_t CommonMessagePostService_postFileTransferStart_result::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferStart_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postFileTransferStart_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postFileTransferStart_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postFileTransferStart_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -11956,7 +11956,7 @@ uint32_t CommonMessagePostService_postFileTransferStart_result::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferStart_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postFileTransferStart_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -11996,7 +11996,7 @@ uint32_t CommonMessagePostService_postFileTransferStart_presult::read(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferDirList_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postFileTransferDirList_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12036,9 +12036,9 @@ uint32_t CommonMessagePostService_postFileTransferDirList_args::read(::apache::t
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferDirList_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postFileTransferDirList_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postFileTransferDirList_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postFileTransferDirList_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -12049,9 +12049,9 @@ uint32_t CommonMessagePostService_postFileTransferDirList_args::write(::apache::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferDirList_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postFileTransferDirList_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postFileTransferDirList_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postFileTransferDirList_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -12062,7 +12062,7 @@ uint32_t CommonMessagePostService_postFileTransferDirList_pargs::write(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferDirList_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postFileTransferDirList_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12102,11 +12102,11 @@ uint32_t CommonMessagePostService_postFileTransferDirList_result::read(::apache:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferDirList_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postFileTransferDirList_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postFileTransferDirList_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postFileTransferDirList_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -12118,7 +12118,7 @@ uint32_t CommonMessagePostService_postFileTransferDirList_result::write(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferDirList_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postFileTransferDirList_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12158,7 +12158,7 @@ uint32_t CommonMessagePostService_postFileTransferDirList_presult::read(::apache
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferRes_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postFileTransferRes_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12198,9 +12198,9 @@ uint32_t CommonMessagePostService_postFileTransferRes_args::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferRes_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postFileTransferRes_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postFileTransferRes_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postFileTransferRes_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -12211,9 +12211,9 @@ uint32_t CommonMessagePostService_postFileTransferRes_args::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferRes_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postFileTransferRes_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postFileTransferRes_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postFileTransferRes_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -12224,7 +12224,7 @@ uint32_t CommonMessagePostService_postFileTransferRes_pargs::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferRes_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postFileTransferRes_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12264,11 +12264,11 @@ uint32_t CommonMessagePostService_postFileTransferRes_result::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferRes_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postFileTransferRes_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postFileTransferRes_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postFileTransferRes_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -12280,7 +12280,7 @@ uint32_t CommonMessagePostService_postFileTransferRes_result::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postFileTransferRes_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postFileTransferRes_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12320,7 +12320,7 @@ uint32_t CommonMessagePostService_postFileTransferRes_presult::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postBatteryStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postBatteryStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12360,9 +12360,9 @@ uint32_t CommonMessagePostService_postBatteryStatus_args::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postBatteryStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postBatteryStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postBatteryStatus_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postBatteryStatus_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -12373,9 +12373,9 @@ uint32_t CommonMessagePostService_postBatteryStatus_args::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postBatteryStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postBatteryStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postBatteryStatus_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postBatteryStatus_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -12386,7 +12386,7 @@ uint32_t CommonMessagePostService_postBatteryStatus_pargs::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postBatteryStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postBatteryStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12426,11 +12426,11 @@ uint32_t CommonMessagePostService_postBatteryStatus_result::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postBatteryStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postBatteryStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postBatteryStatus_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postBatteryStatus_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -12442,7 +12442,7 @@ uint32_t CommonMessagePostService_postBatteryStatus_result::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postBatteryStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postBatteryStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12482,7 +12482,7 @@ uint32_t CommonMessagePostService_postBatteryStatus_presult::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint8dof_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetpoint8dof_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12522,9 +12522,9 @@ uint32_t CommonMessagePostService_postSetpoint8dof_args::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint8dof_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetpoint8dof_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetpoint8dof_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetpoint8dof_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -12535,9 +12535,9 @@ uint32_t CommonMessagePostService_postSetpoint8dof_args::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint8dof_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetpoint8dof_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetpoint8dof_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetpoint8dof_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -12548,7 +12548,7 @@ uint32_t CommonMessagePostService_postSetpoint8dof_pargs::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint8dof_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetpoint8dof_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12588,11 +12588,11 @@ uint32_t CommonMessagePostService_postSetpoint8dof_result::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint8dof_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetpoint8dof_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetpoint8dof_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetpoint8dof_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -12604,7 +12604,7 @@ uint32_t CommonMessagePostService_postSetpoint8dof_result::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint8dof_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetpoint8dof_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12644,7 +12644,7 @@ uint32_t CommonMessagePostService_postSetpoint8dof_presult::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint6dof_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetpoint6dof_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12684,9 +12684,9 @@ uint32_t CommonMessagePostService_postSetpoint6dof_args::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint6dof_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetpoint6dof_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetpoint6dof_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetpoint6dof_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -12697,9 +12697,9 @@ uint32_t CommonMessagePostService_postSetpoint6dof_args::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint6dof_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetpoint6dof_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetpoint6dof_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetpoint6dof_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -12710,7 +12710,7 @@ uint32_t CommonMessagePostService_postSetpoint6dof_pargs::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint6dof_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetpoint6dof_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12750,11 +12750,11 @@ uint32_t CommonMessagePostService_postSetpoint6dof_result::read(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint6dof_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postSetpoint6dof_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postSetpoint6dof_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postSetpoint6dof_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -12766,7 +12766,7 @@ uint32_t CommonMessagePostService_postSetpoint6dof_result::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postSetpoint6dof_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postSetpoint6dof_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12806,7 +12806,7 @@ uint32_t CommonMessagePostService_postSetpoint6dof_presult::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMemoryVect_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMemoryVect_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12846,9 +12846,9 @@ uint32_t CommonMessagePostService_postMemoryVect_args::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMemoryVect_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMemoryVect_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMemoryVect_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMemoryVect_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -12859,9 +12859,9 @@ uint32_t CommonMessagePostService_postMemoryVect_args::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMemoryVect_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMemoryVect_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMemoryVect_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMemoryVect_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -12872,7 +12872,7 @@ uint32_t CommonMessagePostService_postMemoryVect_pargs::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMemoryVect_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMemoryVect_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12912,11 +12912,11 @@ uint32_t CommonMessagePostService_postMemoryVect_result::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMemoryVect_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postMemoryVect_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postMemoryVect_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postMemoryVect_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -12928,7 +12928,7 @@ uint32_t CommonMessagePostService_postMemoryVect_result::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postMemoryVect_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postMemoryVect_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -12968,7 +12968,7 @@ uint32_t CommonMessagePostService_postMemoryVect_presult::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebugVect_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postDebugVect_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13008,9 +13008,9 @@ uint32_t CommonMessagePostService_postDebugVect_args::read(::apache::thrift::pro
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebugVect_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postDebugVect_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postDebugVect_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postDebugVect_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -13021,9 +13021,9 @@ uint32_t CommonMessagePostService_postDebugVect_args::write(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebugVect_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postDebugVect_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postDebugVect_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postDebugVect_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -13034,7 +13034,7 @@ uint32_t CommonMessagePostService_postDebugVect_pargs::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebugVect_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postDebugVect_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13074,11 +13074,11 @@ uint32_t CommonMessagePostService_postDebugVect_result::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebugVect_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postDebugVect_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postDebugVect_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postDebugVect_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -13090,7 +13090,7 @@ uint32_t CommonMessagePostService_postDebugVect_result::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebugVect_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postDebugVect_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13130,7 +13130,7 @@ uint32_t CommonMessagePostService_postDebugVect_presult::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueFloat_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postNamedValueFloat_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13170,9 +13170,9 @@ uint32_t CommonMessagePostService_postNamedValueFloat_args::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueFloat_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postNamedValueFloat_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postNamedValueFloat_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postNamedValueFloat_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -13183,9 +13183,9 @@ uint32_t CommonMessagePostService_postNamedValueFloat_args::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueFloat_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postNamedValueFloat_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postNamedValueFloat_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postNamedValueFloat_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -13196,7 +13196,7 @@ uint32_t CommonMessagePostService_postNamedValueFloat_pargs::write(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueFloat_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postNamedValueFloat_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13236,11 +13236,11 @@ uint32_t CommonMessagePostService_postNamedValueFloat_result::read(::apache::thr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueFloat_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postNamedValueFloat_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postNamedValueFloat_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postNamedValueFloat_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -13252,7 +13252,7 @@ uint32_t CommonMessagePostService_postNamedValueFloat_result::write(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueFloat_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postNamedValueFloat_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13292,7 +13292,7 @@ uint32_t CommonMessagePostService_postNamedValueFloat_presult::read(::apache::th
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueInt_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postNamedValueInt_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13332,9 +13332,9 @@ uint32_t CommonMessagePostService_postNamedValueInt_args::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueInt_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postNamedValueInt_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postNamedValueInt_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postNamedValueInt_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -13345,9 +13345,9 @@ uint32_t CommonMessagePostService_postNamedValueInt_args::write(::apache::thrift
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueInt_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postNamedValueInt_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postNamedValueInt_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postNamedValueInt_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -13358,7 +13358,7 @@ uint32_t CommonMessagePostService_postNamedValueInt_pargs::write(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueInt_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postNamedValueInt_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13398,11 +13398,11 @@ uint32_t CommonMessagePostService_postNamedValueInt_result::read(::apache::thrif
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueInt_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postNamedValueInt_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postNamedValueInt_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postNamedValueInt_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -13414,7 +13414,7 @@ uint32_t CommonMessagePostService_postNamedValueInt_result::write(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postNamedValueInt_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postNamedValueInt_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13454,7 +13454,7 @@ uint32_t CommonMessagePostService_postNamedValueInt_presult::read(::apache::thri
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStatustext_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postStatustext_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13494,9 +13494,9 @@ uint32_t CommonMessagePostService_postStatustext_args::read(::apache::thrift::pr
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStatustext_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postStatustext_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postStatustext_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postStatustext_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -13507,9 +13507,9 @@ uint32_t CommonMessagePostService_postStatustext_args::write(::apache::thrift::p
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStatustext_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postStatustext_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postStatustext_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postStatustext_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -13520,7 +13520,7 @@ uint32_t CommonMessagePostService_postStatustext_pargs::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStatustext_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postStatustext_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13560,11 +13560,11 @@ uint32_t CommonMessagePostService_postStatustext_result::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStatustext_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postStatustext_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postStatustext_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postStatustext_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -13576,7 +13576,7 @@ uint32_t CommonMessagePostService_postStatustext_result::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postStatustext_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postStatustext_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13616,7 +13616,7 @@ uint32_t CommonMessagePostService_postStatustext_presult::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebug_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postDebug_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13656,9 +13656,9 @@ uint32_t CommonMessagePostService_postDebug_args::read(::apache::thrift::protoco
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebug_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postDebug_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postDebug_args");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postDebug_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -13669,9 +13669,9 @@ uint32_t CommonMessagePostService_postDebug_args::write(::apache::thrift::protoc
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebug_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postDebug_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postDebug_pargs");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postDebug_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -13682,7 +13682,7 @@ uint32_t CommonMessagePostService_postDebug_pargs::write(::apache::thrift::proto
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebug_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postDebug_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13722,11 +13722,11 @@ uint32_t CommonMessagePostService_postDebug_result::read(::apache::thrift::proto
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebug_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CommonMessagePost_postDebug_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("CommonMessagePostService_postDebug_result");
+  xfer += oprot->writeStructBegin("CommonMessagePost_postDebug_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -13738,7 +13738,7 @@ uint32_t CommonMessagePostService_postDebug_result::write(::apache::thrift::prot
   return xfer;
 }
 
-uint32_t CommonMessagePostService_postDebug_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CommonMessagePost_postDebug_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -13778,18 +13778,18 @@ uint32_t CommonMessagePostService_postDebug_presult::read(::apache::thrift::prot
   return xfer;
 }
 
-void CommonMessagePostServiceClient::postHeartbeat(const Heartbeat& msg)
+void CommonMessagePostClient::postHeartbeat(const Heartbeat& msg)
 {
   send_postHeartbeat(msg);
   recv_postHeartbeat();
 }
 
-void CommonMessagePostServiceClient::send_postHeartbeat(const Heartbeat& msg)
+void CommonMessagePostClient::send_postHeartbeat(const Heartbeat& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postHeartbeat", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postHeartbeat_pargs args;
+  CommonMessagePost_postHeartbeat_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -13798,7 +13798,7 @@ void CommonMessagePostServiceClient::send_postHeartbeat(const Heartbeat& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postHeartbeat()
+void CommonMessagePostClient::recv_postHeartbeat()
 {
 
   int32_t rseqid = 0;
@@ -13823,7 +13823,7 @@ void CommonMessagePostServiceClient::recv_postHeartbeat()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postHeartbeat_presult result;
+  CommonMessagePost_postHeartbeat_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -13834,18 +13834,18 @@ void CommonMessagePostServiceClient::recv_postHeartbeat()
   return;
 }
 
-void CommonMessagePostServiceClient::postSysStatus(const SysStatus& msg)
+void CommonMessagePostClient::postSysStatus(const SysStatus& msg)
 {
   send_postSysStatus(msg);
   recv_postSysStatus();
 }
 
-void CommonMessagePostServiceClient::send_postSysStatus(const SysStatus& msg)
+void CommonMessagePostClient::send_postSysStatus(const SysStatus& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSysStatus", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSysStatus_pargs args;
+  CommonMessagePost_postSysStatus_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -13854,7 +13854,7 @@ void CommonMessagePostServiceClient::send_postSysStatus(const SysStatus& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSysStatus()
+void CommonMessagePostClient::recv_postSysStatus()
 {
 
   int32_t rseqid = 0;
@@ -13879,7 +13879,7 @@ void CommonMessagePostServiceClient::recv_postSysStatus()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSysStatus_presult result;
+  CommonMessagePost_postSysStatus_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -13890,18 +13890,18 @@ void CommonMessagePostServiceClient::recv_postSysStatus()
   return;
 }
 
-void CommonMessagePostServiceClient::postSystemTime(const SystemTime& msg)
+void CommonMessagePostClient::postSystemTime(const SystemTime& msg)
 {
   send_postSystemTime(msg);
   recv_postSystemTime();
 }
 
-void CommonMessagePostServiceClient::send_postSystemTime(const SystemTime& msg)
+void CommonMessagePostClient::send_postSystemTime(const SystemTime& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSystemTime", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSystemTime_pargs args;
+  CommonMessagePost_postSystemTime_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -13910,7 +13910,7 @@ void CommonMessagePostServiceClient::send_postSystemTime(const SystemTime& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSystemTime()
+void CommonMessagePostClient::recv_postSystemTime()
 {
 
   int32_t rseqid = 0;
@@ -13935,7 +13935,7 @@ void CommonMessagePostServiceClient::recv_postSystemTime()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSystemTime_presult result;
+  CommonMessagePost_postSystemTime_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -13946,18 +13946,18 @@ void CommonMessagePostServiceClient::recv_postSystemTime()
   return;
 }
 
-void CommonMessagePostServiceClient::postPing(const Ping& msg)
+void CommonMessagePostClient::postPing(const Ping& msg)
 {
   send_postPing(msg);
   recv_postPing();
 }
 
-void CommonMessagePostServiceClient::send_postPing(const Ping& msg)
+void CommonMessagePostClient::send_postPing(const Ping& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postPing", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postPing_pargs args;
+  CommonMessagePost_postPing_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -13966,7 +13966,7 @@ void CommonMessagePostServiceClient::send_postPing(const Ping& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postPing()
+void CommonMessagePostClient::recv_postPing()
 {
 
   int32_t rseqid = 0;
@@ -13991,7 +13991,7 @@ void CommonMessagePostServiceClient::recv_postPing()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postPing_presult result;
+  CommonMessagePost_postPing_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14002,18 +14002,18 @@ void CommonMessagePostServiceClient::recv_postPing()
   return;
 }
 
-void CommonMessagePostServiceClient::postChangeOperatorControl(const ChangeOperatorControl& msg)
+void CommonMessagePostClient::postChangeOperatorControl(const ChangeOperatorControl& msg)
 {
   send_postChangeOperatorControl(msg);
   recv_postChangeOperatorControl();
 }
 
-void CommonMessagePostServiceClient::send_postChangeOperatorControl(const ChangeOperatorControl& msg)
+void CommonMessagePostClient::send_postChangeOperatorControl(const ChangeOperatorControl& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postChangeOperatorControl", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postChangeOperatorControl_pargs args;
+  CommonMessagePost_postChangeOperatorControl_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14022,7 +14022,7 @@ void CommonMessagePostServiceClient::send_postChangeOperatorControl(const Change
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postChangeOperatorControl()
+void CommonMessagePostClient::recv_postChangeOperatorControl()
 {
 
   int32_t rseqid = 0;
@@ -14047,7 +14047,7 @@ void CommonMessagePostServiceClient::recv_postChangeOperatorControl()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postChangeOperatorControl_presult result;
+  CommonMessagePost_postChangeOperatorControl_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14058,18 +14058,18 @@ void CommonMessagePostServiceClient::recv_postChangeOperatorControl()
   return;
 }
 
-void CommonMessagePostServiceClient::postChangeOperatorControlAck(const ChangeOperatorControlAck& msg)
+void CommonMessagePostClient::postChangeOperatorControlAck(const ChangeOperatorControlAck& msg)
 {
   send_postChangeOperatorControlAck(msg);
   recv_postChangeOperatorControlAck();
 }
 
-void CommonMessagePostServiceClient::send_postChangeOperatorControlAck(const ChangeOperatorControlAck& msg)
+void CommonMessagePostClient::send_postChangeOperatorControlAck(const ChangeOperatorControlAck& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postChangeOperatorControlAck", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postChangeOperatorControlAck_pargs args;
+  CommonMessagePost_postChangeOperatorControlAck_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14078,7 +14078,7 @@ void CommonMessagePostServiceClient::send_postChangeOperatorControlAck(const Cha
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postChangeOperatorControlAck()
+void CommonMessagePostClient::recv_postChangeOperatorControlAck()
 {
 
   int32_t rseqid = 0;
@@ -14103,7 +14103,7 @@ void CommonMessagePostServiceClient::recv_postChangeOperatorControlAck()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postChangeOperatorControlAck_presult result;
+  CommonMessagePost_postChangeOperatorControlAck_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14114,18 +14114,18 @@ void CommonMessagePostServiceClient::recv_postChangeOperatorControlAck()
   return;
 }
 
-void CommonMessagePostServiceClient::postAuthKey(const AuthKey& msg)
+void CommonMessagePostClient::postAuthKey(const AuthKey& msg)
 {
   send_postAuthKey(msg);
   recv_postAuthKey();
 }
 
-void CommonMessagePostServiceClient::send_postAuthKey(const AuthKey& msg)
+void CommonMessagePostClient::send_postAuthKey(const AuthKey& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postAuthKey", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postAuthKey_pargs args;
+  CommonMessagePost_postAuthKey_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14134,7 +14134,7 @@ void CommonMessagePostServiceClient::send_postAuthKey(const AuthKey& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postAuthKey()
+void CommonMessagePostClient::recv_postAuthKey()
 {
 
   int32_t rseqid = 0;
@@ -14159,7 +14159,7 @@ void CommonMessagePostServiceClient::recv_postAuthKey()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postAuthKey_presult result;
+  CommonMessagePost_postAuthKey_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14170,18 +14170,18 @@ void CommonMessagePostServiceClient::recv_postAuthKey()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetMode(const SetMode& msg)
+void CommonMessagePostClient::postSetMode(const SetMode& msg)
 {
   send_postSetMode(msg);
   recv_postSetMode();
 }
 
-void CommonMessagePostServiceClient::send_postSetMode(const SetMode& msg)
+void CommonMessagePostClient::send_postSetMode(const SetMode& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetMode", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetMode_pargs args;
+  CommonMessagePost_postSetMode_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14190,7 +14190,7 @@ void CommonMessagePostServiceClient::send_postSetMode(const SetMode& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetMode()
+void CommonMessagePostClient::recv_postSetMode()
 {
 
   int32_t rseqid = 0;
@@ -14215,7 +14215,7 @@ void CommonMessagePostServiceClient::recv_postSetMode()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetMode_presult result;
+  CommonMessagePost_postSetMode_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14226,18 +14226,18 @@ void CommonMessagePostServiceClient::recv_postSetMode()
   return;
 }
 
-void CommonMessagePostServiceClient::postParamRequestRead(const ParamRequestRead& msg)
+void CommonMessagePostClient::postParamRequestRead(const ParamRequestRead& msg)
 {
   send_postParamRequestRead(msg);
   recv_postParamRequestRead();
 }
 
-void CommonMessagePostServiceClient::send_postParamRequestRead(const ParamRequestRead& msg)
+void CommonMessagePostClient::send_postParamRequestRead(const ParamRequestRead& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postParamRequestRead", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postParamRequestRead_pargs args;
+  CommonMessagePost_postParamRequestRead_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14246,7 +14246,7 @@ void CommonMessagePostServiceClient::send_postParamRequestRead(const ParamReques
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postParamRequestRead()
+void CommonMessagePostClient::recv_postParamRequestRead()
 {
 
   int32_t rseqid = 0;
@@ -14271,7 +14271,7 @@ void CommonMessagePostServiceClient::recv_postParamRequestRead()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postParamRequestRead_presult result;
+  CommonMessagePost_postParamRequestRead_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14282,18 +14282,18 @@ void CommonMessagePostServiceClient::recv_postParamRequestRead()
   return;
 }
 
-void CommonMessagePostServiceClient::postParamRequestList(const ParamRequestList& msg)
+void CommonMessagePostClient::postParamRequestList(const ParamRequestList& msg)
 {
   send_postParamRequestList(msg);
   recv_postParamRequestList();
 }
 
-void CommonMessagePostServiceClient::send_postParamRequestList(const ParamRequestList& msg)
+void CommonMessagePostClient::send_postParamRequestList(const ParamRequestList& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postParamRequestList", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postParamRequestList_pargs args;
+  CommonMessagePost_postParamRequestList_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14302,7 +14302,7 @@ void CommonMessagePostServiceClient::send_postParamRequestList(const ParamReques
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postParamRequestList()
+void CommonMessagePostClient::recv_postParamRequestList()
 {
 
   int32_t rseqid = 0;
@@ -14327,7 +14327,7 @@ void CommonMessagePostServiceClient::recv_postParamRequestList()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postParamRequestList_presult result;
+  CommonMessagePost_postParamRequestList_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14338,18 +14338,18 @@ void CommonMessagePostServiceClient::recv_postParamRequestList()
   return;
 }
 
-void CommonMessagePostServiceClient::postParamValue(const ParamValue& msg)
+void CommonMessagePostClient::postParamValue(const ParamValue& msg)
 {
   send_postParamValue(msg);
   recv_postParamValue();
 }
 
-void CommonMessagePostServiceClient::send_postParamValue(const ParamValue& msg)
+void CommonMessagePostClient::send_postParamValue(const ParamValue& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postParamValue", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postParamValue_pargs args;
+  CommonMessagePost_postParamValue_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14358,7 +14358,7 @@ void CommonMessagePostServiceClient::send_postParamValue(const ParamValue& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postParamValue()
+void CommonMessagePostClient::recv_postParamValue()
 {
 
   int32_t rseqid = 0;
@@ -14383,7 +14383,7 @@ void CommonMessagePostServiceClient::recv_postParamValue()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postParamValue_presult result;
+  CommonMessagePost_postParamValue_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14394,18 +14394,18 @@ void CommonMessagePostServiceClient::recv_postParamValue()
   return;
 }
 
-void CommonMessagePostServiceClient::postParamSet(const ParamSet& msg)
+void CommonMessagePostClient::postParamSet(const ParamSet& msg)
 {
   send_postParamSet(msg);
   recv_postParamSet();
 }
 
-void CommonMessagePostServiceClient::send_postParamSet(const ParamSet& msg)
+void CommonMessagePostClient::send_postParamSet(const ParamSet& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postParamSet", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postParamSet_pargs args;
+  CommonMessagePost_postParamSet_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14414,7 +14414,7 @@ void CommonMessagePostServiceClient::send_postParamSet(const ParamSet& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postParamSet()
+void CommonMessagePostClient::recv_postParamSet()
 {
 
   int32_t rseqid = 0;
@@ -14439,7 +14439,7 @@ void CommonMessagePostServiceClient::recv_postParamSet()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postParamSet_presult result;
+  CommonMessagePost_postParamSet_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14450,18 +14450,18 @@ void CommonMessagePostServiceClient::recv_postParamSet()
   return;
 }
 
-void CommonMessagePostServiceClient::postGpsRawInt(const GpsRawInt& msg)
+void CommonMessagePostClient::postGpsRawInt(const GpsRawInt& msg)
 {
   send_postGpsRawInt(msg);
   recv_postGpsRawInt();
 }
 
-void CommonMessagePostServiceClient::send_postGpsRawInt(const GpsRawInt& msg)
+void CommonMessagePostClient::send_postGpsRawInt(const GpsRawInt& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postGpsRawInt", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postGpsRawInt_pargs args;
+  CommonMessagePost_postGpsRawInt_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14470,7 +14470,7 @@ void CommonMessagePostServiceClient::send_postGpsRawInt(const GpsRawInt& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postGpsRawInt()
+void CommonMessagePostClient::recv_postGpsRawInt()
 {
 
   int32_t rseqid = 0;
@@ -14495,7 +14495,7 @@ void CommonMessagePostServiceClient::recv_postGpsRawInt()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postGpsRawInt_presult result;
+  CommonMessagePost_postGpsRawInt_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14506,18 +14506,18 @@ void CommonMessagePostServiceClient::recv_postGpsRawInt()
   return;
 }
 
-void CommonMessagePostServiceClient::postGpsStatus(const GpsStatus& msg)
+void CommonMessagePostClient::postGpsStatus(const GpsStatus& msg)
 {
   send_postGpsStatus(msg);
   recv_postGpsStatus();
 }
 
-void CommonMessagePostServiceClient::send_postGpsStatus(const GpsStatus& msg)
+void CommonMessagePostClient::send_postGpsStatus(const GpsStatus& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postGpsStatus", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postGpsStatus_pargs args;
+  CommonMessagePost_postGpsStatus_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14526,7 +14526,7 @@ void CommonMessagePostServiceClient::send_postGpsStatus(const GpsStatus& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postGpsStatus()
+void CommonMessagePostClient::recv_postGpsStatus()
 {
 
   int32_t rseqid = 0;
@@ -14551,7 +14551,7 @@ void CommonMessagePostServiceClient::recv_postGpsStatus()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postGpsStatus_presult result;
+  CommonMessagePost_postGpsStatus_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14562,18 +14562,18 @@ void CommonMessagePostServiceClient::recv_postGpsStatus()
   return;
 }
 
-void CommonMessagePostServiceClient::postScaledImu(const ScaledImu& msg)
+void CommonMessagePostClient::postScaledImu(const ScaledImu& msg)
 {
   send_postScaledImu(msg);
   recv_postScaledImu();
 }
 
-void CommonMessagePostServiceClient::send_postScaledImu(const ScaledImu& msg)
+void CommonMessagePostClient::send_postScaledImu(const ScaledImu& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postScaledImu", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postScaledImu_pargs args;
+  CommonMessagePost_postScaledImu_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14582,7 +14582,7 @@ void CommonMessagePostServiceClient::send_postScaledImu(const ScaledImu& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postScaledImu()
+void CommonMessagePostClient::recv_postScaledImu()
 {
 
   int32_t rseqid = 0;
@@ -14607,7 +14607,7 @@ void CommonMessagePostServiceClient::recv_postScaledImu()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postScaledImu_presult result;
+  CommonMessagePost_postScaledImu_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14618,18 +14618,18 @@ void CommonMessagePostServiceClient::recv_postScaledImu()
   return;
 }
 
-void CommonMessagePostServiceClient::postRawImu(const RawImu& msg)
+void CommonMessagePostClient::postRawImu(const RawImu& msg)
 {
   send_postRawImu(msg);
   recv_postRawImu();
 }
 
-void CommonMessagePostServiceClient::send_postRawImu(const RawImu& msg)
+void CommonMessagePostClient::send_postRawImu(const RawImu& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRawImu", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postRawImu_pargs args;
+  CommonMessagePost_postRawImu_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14638,7 +14638,7 @@ void CommonMessagePostServiceClient::send_postRawImu(const RawImu& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postRawImu()
+void CommonMessagePostClient::recv_postRawImu()
 {
 
   int32_t rseqid = 0;
@@ -14663,7 +14663,7 @@ void CommonMessagePostServiceClient::recv_postRawImu()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postRawImu_presult result;
+  CommonMessagePost_postRawImu_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14674,18 +14674,18 @@ void CommonMessagePostServiceClient::recv_postRawImu()
   return;
 }
 
-void CommonMessagePostServiceClient::postRawPressure(const RawPressure& msg)
+void CommonMessagePostClient::postRawPressure(const RawPressure& msg)
 {
   send_postRawPressure(msg);
   recv_postRawPressure();
 }
 
-void CommonMessagePostServiceClient::send_postRawPressure(const RawPressure& msg)
+void CommonMessagePostClient::send_postRawPressure(const RawPressure& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRawPressure", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postRawPressure_pargs args;
+  CommonMessagePost_postRawPressure_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14694,7 +14694,7 @@ void CommonMessagePostServiceClient::send_postRawPressure(const RawPressure& msg
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postRawPressure()
+void CommonMessagePostClient::recv_postRawPressure()
 {
 
   int32_t rseqid = 0;
@@ -14719,7 +14719,7 @@ void CommonMessagePostServiceClient::recv_postRawPressure()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postRawPressure_presult result;
+  CommonMessagePost_postRawPressure_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14730,18 +14730,18 @@ void CommonMessagePostServiceClient::recv_postRawPressure()
   return;
 }
 
-void CommonMessagePostServiceClient::postScaledPressure(const ScaledPressure& msg)
+void CommonMessagePostClient::postScaledPressure(const ScaledPressure& msg)
 {
   send_postScaledPressure(msg);
   recv_postScaledPressure();
 }
 
-void CommonMessagePostServiceClient::send_postScaledPressure(const ScaledPressure& msg)
+void CommonMessagePostClient::send_postScaledPressure(const ScaledPressure& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postScaledPressure", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postScaledPressure_pargs args;
+  CommonMessagePost_postScaledPressure_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14750,7 +14750,7 @@ void CommonMessagePostServiceClient::send_postScaledPressure(const ScaledPressur
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postScaledPressure()
+void CommonMessagePostClient::recv_postScaledPressure()
 {
 
   int32_t rseqid = 0;
@@ -14775,7 +14775,7 @@ void CommonMessagePostServiceClient::recv_postScaledPressure()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postScaledPressure_presult result;
+  CommonMessagePost_postScaledPressure_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14786,18 +14786,18 @@ void CommonMessagePostServiceClient::recv_postScaledPressure()
   return;
 }
 
-void CommonMessagePostServiceClient::postAttitude(const Attitude& msg)
+void CommonMessagePostClient::postAttitude(const Attitude& msg)
 {
   send_postAttitude(msg);
   recv_postAttitude();
 }
 
-void CommonMessagePostServiceClient::send_postAttitude(const Attitude& msg)
+void CommonMessagePostClient::send_postAttitude(const Attitude& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postAttitude", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postAttitude_pargs args;
+  CommonMessagePost_postAttitude_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14806,7 +14806,7 @@ void CommonMessagePostServiceClient::send_postAttitude(const Attitude& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postAttitude()
+void CommonMessagePostClient::recv_postAttitude()
 {
 
   int32_t rseqid = 0;
@@ -14831,7 +14831,7 @@ void CommonMessagePostServiceClient::recv_postAttitude()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postAttitude_presult result;
+  CommonMessagePost_postAttitude_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14842,18 +14842,18 @@ void CommonMessagePostServiceClient::recv_postAttitude()
   return;
 }
 
-void CommonMessagePostServiceClient::postAttitudeQuaternion(const AttitudeQuaternion& msg)
+void CommonMessagePostClient::postAttitudeQuaternion(const AttitudeQuaternion& msg)
 {
   send_postAttitudeQuaternion(msg);
   recv_postAttitudeQuaternion();
 }
 
-void CommonMessagePostServiceClient::send_postAttitudeQuaternion(const AttitudeQuaternion& msg)
+void CommonMessagePostClient::send_postAttitudeQuaternion(const AttitudeQuaternion& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postAttitudeQuaternion", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postAttitudeQuaternion_pargs args;
+  CommonMessagePost_postAttitudeQuaternion_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14862,7 +14862,7 @@ void CommonMessagePostServiceClient::send_postAttitudeQuaternion(const AttitudeQ
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postAttitudeQuaternion()
+void CommonMessagePostClient::recv_postAttitudeQuaternion()
 {
 
   int32_t rseqid = 0;
@@ -14887,7 +14887,7 @@ void CommonMessagePostServiceClient::recv_postAttitudeQuaternion()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postAttitudeQuaternion_presult result;
+  CommonMessagePost_postAttitudeQuaternion_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14898,18 +14898,18 @@ void CommonMessagePostServiceClient::recv_postAttitudeQuaternion()
   return;
 }
 
-void CommonMessagePostServiceClient::postLocalPositionNed(const LocalPositionNed& msg)
+void CommonMessagePostClient::postLocalPositionNed(const LocalPositionNed& msg)
 {
   send_postLocalPositionNed(msg);
   recv_postLocalPositionNed();
 }
 
-void CommonMessagePostServiceClient::send_postLocalPositionNed(const LocalPositionNed& msg)
+void CommonMessagePostClient::send_postLocalPositionNed(const LocalPositionNed& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postLocalPositionNed", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postLocalPositionNed_pargs args;
+  CommonMessagePost_postLocalPositionNed_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14918,7 +14918,7 @@ void CommonMessagePostServiceClient::send_postLocalPositionNed(const LocalPositi
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postLocalPositionNed()
+void CommonMessagePostClient::recv_postLocalPositionNed()
 {
 
   int32_t rseqid = 0;
@@ -14943,7 +14943,7 @@ void CommonMessagePostServiceClient::recv_postLocalPositionNed()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postLocalPositionNed_presult result;
+  CommonMessagePost_postLocalPositionNed_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -14954,18 +14954,18 @@ void CommonMessagePostServiceClient::recv_postLocalPositionNed()
   return;
 }
 
-void CommonMessagePostServiceClient::postGlobalPositionInt(const GlobalPositionInt& msg)
+void CommonMessagePostClient::postGlobalPositionInt(const GlobalPositionInt& msg)
 {
   send_postGlobalPositionInt(msg);
   recv_postGlobalPositionInt();
 }
 
-void CommonMessagePostServiceClient::send_postGlobalPositionInt(const GlobalPositionInt& msg)
+void CommonMessagePostClient::send_postGlobalPositionInt(const GlobalPositionInt& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postGlobalPositionInt", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postGlobalPositionInt_pargs args;
+  CommonMessagePost_postGlobalPositionInt_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -14974,7 +14974,7 @@ void CommonMessagePostServiceClient::send_postGlobalPositionInt(const GlobalPosi
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postGlobalPositionInt()
+void CommonMessagePostClient::recv_postGlobalPositionInt()
 {
 
   int32_t rseqid = 0;
@@ -14999,7 +14999,7 @@ void CommonMessagePostServiceClient::recv_postGlobalPositionInt()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postGlobalPositionInt_presult result;
+  CommonMessagePost_postGlobalPositionInt_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15010,18 +15010,18 @@ void CommonMessagePostServiceClient::recv_postGlobalPositionInt()
   return;
 }
 
-void CommonMessagePostServiceClient::postRcChannelsScaled(const RcChannelsScaled& msg)
+void CommonMessagePostClient::postRcChannelsScaled(const RcChannelsScaled& msg)
 {
   send_postRcChannelsScaled(msg);
   recv_postRcChannelsScaled();
 }
 
-void CommonMessagePostServiceClient::send_postRcChannelsScaled(const RcChannelsScaled& msg)
+void CommonMessagePostClient::send_postRcChannelsScaled(const RcChannelsScaled& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRcChannelsScaled", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postRcChannelsScaled_pargs args;
+  CommonMessagePost_postRcChannelsScaled_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15030,7 +15030,7 @@ void CommonMessagePostServiceClient::send_postRcChannelsScaled(const RcChannelsS
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postRcChannelsScaled()
+void CommonMessagePostClient::recv_postRcChannelsScaled()
 {
 
   int32_t rseqid = 0;
@@ -15055,7 +15055,7 @@ void CommonMessagePostServiceClient::recv_postRcChannelsScaled()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postRcChannelsScaled_presult result;
+  CommonMessagePost_postRcChannelsScaled_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15066,18 +15066,18 @@ void CommonMessagePostServiceClient::recv_postRcChannelsScaled()
   return;
 }
 
-void CommonMessagePostServiceClient::postRcChannelsRaw(const RcChannelsRaw& msg)
+void CommonMessagePostClient::postRcChannelsRaw(const RcChannelsRaw& msg)
 {
   send_postRcChannelsRaw(msg);
   recv_postRcChannelsRaw();
 }
 
-void CommonMessagePostServiceClient::send_postRcChannelsRaw(const RcChannelsRaw& msg)
+void CommonMessagePostClient::send_postRcChannelsRaw(const RcChannelsRaw& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRcChannelsRaw", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postRcChannelsRaw_pargs args;
+  CommonMessagePost_postRcChannelsRaw_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15086,7 +15086,7 @@ void CommonMessagePostServiceClient::send_postRcChannelsRaw(const RcChannelsRaw&
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postRcChannelsRaw()
+void CommonMessagePostClient::recv_postRcChannelsRaw()
 {
 
   int32_t rseqid = 0;
@@ -15111,7 +15111,7 @@ void CommonMessagePostServiceClient::recv_postRcChannelsRaw()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postRcChannelsRaw_presult result;
+  CommonMessagePost_postRcChannelsRaw_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15122,18 +15122,18 @@ void CommonMessagePostServiceClient::recv_postRcChannelsRaw()
   return;
 }
 
-void CommonMessagePostServiceClient::postServoOutputRaw(const ServoOutputRaw& msg)
+void CommonMessagePostClient::postServoOutputRaw(const ServoOutputRaw& msg)
 {
   send_postServoOutputRaw(msg);
   recv_postServoOutputRaw();
 }
 
-void CommonMessagePostServiceClient::send_postServoOutputRaw(const ServoOutputRaw& msg)
+void CommonMessagePostClient::send_postServoOutputRaw(const ServoOutputRaw& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postServoOutputRaw", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postServoOutputRaw_pargs args;
+  CommonMessagePost_postServoOutputRaw_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15142,7 +15142,7 @@ void CommonMessagePostServiceClient::send_postServoOutputRaw(const ServoOutputRa
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postServoOutputRaw()
+void CommonMessagePostClient::recv_postServoOutputRaw()
 {
 
   int32_t rseqid = 0;
@@ -15167,7 +15167,7 @@ void CommonMessagePostServiceClient::recv_postServoOutputRaw()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postServoOutputRaw_presult result;
+  CommonMessagePost_postServoOutputRaw_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15178,18 +15178,18 @@ void CommonMessagePostServiceClient::recv_postServoOutputRaw()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionRequestPartialList(const MissionRequestPartialList& msg)
+void CommonMessagePostClient::postMissionRequestPartialList(const MissionRequestPartialList& msg)
 {
   send_postMissionRequestPartialList(msg);
   recv_postMissionRequestPartialList();
 }
 
-void CommonMessagePostServiceClient::send_postMissionRequestPartialList(const MissionRequestPartialList& msg)
+void CommonMessagePostClient::send_postMissionRequestPartialList(const MissionRequestPartialList& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionRequestPartialList", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionRequestPartialList_pargs args;
+  CommonMessagePost_postMissionRequestPartialList_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15198,7 +15198,7 @@ void CommonMessagePostServiceClient::send_postMissionRequestPartialList(const Mi
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionRequestPartialList()
+void CommonMessagePostClient::recv_postMissionRequestPartialList()
 {
 
   int32_t rseqid = 0;
@@ -15223,7 +15223,7 @@ void CommonMessagePostServiceClient::recv_postMissionRequestPartialList()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionRequestPartialList_presult result;
+  CommonMessagePost_postMissionRequestPartialList_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15234,18 +15234,18 @@ void CommonMessagePostServiceClient::recv_postMissionRequestPartialList()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionWritePartialList(const MissionWritePartialList& msg)
+void CommonMessagePostClient::postMissionWritePartialList(const MissionWritePartialList& msg)
 {
   send_postMissionWritePartialList(msg);
   recv_postMissionWritePartialList();
 }
 
-void CommonMessagePostServiceClient::send_postMissionWritePartialList(const MissionWritePartialList& msg)
+void CommonMessagePostClient::send_postMissionWritePartialList(const MissionWritePartialList& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionWritePartialList", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionWritePartialList_pargs args;
+  CommonMessagePost_postMissionWritePartialList_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15254,7 +15254,7 @@ void CommonMessagePostServiceClient::send_postMissionWritePartialList(const Miss
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionWritePartialList()
+void CommonMessagePostClient::recv_postMissionWritePartialList()
 {
 
   int32_t rseqid = 0;
@@ -15279,7 +15279,7 @@ void CommonMessagePostServiceClient::recv_postMissionWritePartialList()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionWritePartialList_presult result;
+  CommonMessagePost_postMissionWritePartialList_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15290,18 +15290,18 @@ void CommonMessagePostServiceClient::recv_postMissionWritePartialList()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionItem(const MissionItem& msg)
+void CommonMessagePostClient::postMissionItem(const MissionItem& msg)
 {
   send_postMissionItem(msg);
   recv_postMissionItem();
 }
 
-void CommonMessagePostServiceClient::send_postMissionItem(const MissionItem& msg)
+void CommonMessagePostClient::send_postMissionItem(const MissionItem& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionItem", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionItem_pargs args;
+  CommonMessagePost_postMissionItem_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15310,7 +15310,7 @@ void CommonMessagePostServiceClient::send_postMissionItem(const MissionItem& msg
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionItem()
+void CommonMessagePostClient::recv_postMissionItem()
 {
 
   int32_t rseqid = 0;
@@ -15335,7 +15335,7 @@ void CommonMessagePostServiceClient::recv_postMissionItem()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionItem_presult result;
+  CommonMessagePost_postMissionItem_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15346,18 +15346,18 @@ void CommonMessagePostServiceClient::recv_postMissionItem()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionRequest(const MissionRequest& msg)
+void CommonMessagePostClient::postMissionRequest(const MissionRequest& msg)
 {
   send_postMissionRequest(msg);
   recv_postMissionRequest();
 }
 
-void CommonMessagePostServiceClient::send_postMissionRequest(const MissionRequest& msg)
+void CommonMessagePostClient::send_postMissionRequest(const MissionRequest& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionRequest", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionRequest_pargs args;
+  CommonMessagePost_postMissionRequest_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15366,7 +15366,7 @@ void CommonMessagePostServiceClient::send_postMissionRequest(const MissionReques
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionRequest()
+void CommonMessagePostClient::recv_postMissionRequest()
 {
 
   int32_t rseqid = 0;
@@ -15391,7 +15391,7 @@ void CommonMessagePostServiceClient::recv_postMissionRequest()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionRequest_presult result;
+  CommonMessagePost_postMissionRequest_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15402,18 +15402,18 @@ void CommonMessagePostServiceClient::recv_postMissionRequest()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionSetCurrent(const MissionSetCurrent& msg)
+void CommonMessagePostClient::postMissionSetCurrent(const MissionSetCurrent& msg)
 {
   send_postMissionSetCurrent(msg);
   recv_postMissionSetCurrent();
 }
 
-void CommonMessagePostServiceClient::send_postMissionSetCurrent(const MissionSetCurrent& msg)
+void CommonMessagePostClient::send_postMissionSetCurrent(const MissionSetCurrent& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionSetCurrent", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionSetCurrent_pargs args;
+  CommonMessagePost_postMissionSetCurrent_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15422,7 +15422,7 @@ void CommonMessagePostServiceClient::send_postMissionSetCurrent(const MissionSet
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionSetCurrent()
+void CommonMessagePostClient::recv_postMissionSetCurrent()
 {
 
   int32_t rseqid = 0;
@@ -15447,7 +15447,7 @@ void CommonMessagePostServiceClient::recv_postMissionSetCurrent()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionSetCurrent_presult result;
+  CommonMessagePost_postMissionSetCurrent_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15458,18 +15458,18 @@ void CommonMessagePostServiceClient::recv_postMissionSetCurrent()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionCurrent(const MissionCurrent& msg)
+void CommonMessagePostClient::postMissionCurrent(const MissionCurrent& msg)
 {
   send_postMissionCurrent(msg);
   recv_postMissionCurrent();
 }
 
-void CommonMessagePostServiceClient::send_postMissionCurrent(const MissionCurrent& msg)
+void CommonMessagePostClient::send_postMissionCurrent(const MissionCurrent& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionCurrent", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionCurrent_pargs args;
+  CommonMessagePost_postMissionCurrent_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15478,7 +15478,7 @@ void CommonMessagePostServiceClient::send_postMissionCurrent(const MissionCurren
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionCurrent()
+void CommonMessagePostClient::recv_postMissionCurrent()
 {
 
   int32_t rseqid = 0;
@@ -15503,7 +15503,7 @@ void CommonMessagePostServiceClient::recv_postMissionCurrent()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionCurrent_presult result;
+  CommonMessagePost_postMissionCurrent_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15514,18 +15514,18 @@ void CommonMessagePostServiceClient::recv_postMissionCurrent()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionRequestList(const MissionRequestList& msg)
+void CommonMessagePostClient::postMissionRequestList(const MissionRequestList& msg)
 {
   send_postMissionRequestList(msg);
   recv_postMissionRequestList();
 }
 
-void CommonMessagePostServiceClient::send_postMissionRequestList(const MissionRequestList& msg)
+void CommonMessagePostClient::send_postMissionRequestList(const MissionRequestList& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionRequestList", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionRequestList_pargs args;
+  CommonMessagePost_postMissionRequestList_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15534,7 +15534,7 @@ void CommonMessagePostServiceClient::send_postMissionRequestList(const MissionRe
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionRequestList()
+void CommonMessagePostClient::recv_postMissionRequestList()
 {
 
   int32_t rseqid = 0;
@@ -15559,7 +15559,7 @@ void CommonMessagePostServiceClient::recv_postMissionRequestList()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionRequestList_presult result;
+  CommonMessagePost_postMissionRequestList_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15570,18 +15570,18 @@ void CommonMessagePostServiceClient::recv_postMissionRequestList()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionCount(const MissionCount& msg)
+void CommonMessagePostClient::postMissionCount(const MissionCount& msg)
 {
   send_postMissionCount(msg);
   recv_postMissionCount();
 }
 
-void CommonMessagePostServiceClient::send_postMissionCount(const MissionCount& msg)
+void CommonMessagePostClient::send_postMissionCount(const MissionCount& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionCount", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionCount_pargs args;
+  CommonMessagePost_postMissionCount_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15590,7 +15590,7 @@ void CommonMessagePostServiceClient::send_postMissionCount(const MissionCount& m
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionCount()
+void CommonMessagePostClient::recv_postMissionCount()
 {
 
   int32_t rseqid = 0;
@@ -15615,7 +15615,7 @@ void CommonMessagePostServiceClient::recv_postMissionCount()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionCount_presult result;
+  CommonMessagePost_postMissionCount_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15626,18 +15626,18 @@ void CommonMessagePostServiceClient::recv_postMissionCount()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionClearAll(const MissionClearAll& msg)
+void CommonMessagePostClient::postMissionClearAll(const MissionClearAll& msg)
 {
   send_postMissionClearAll(msg);
   recv_postMissionClearAll();
 }
 
-void CommonMessagePostServiceClient::send_postMissionClearAll(const MissionClearAll& msg)
+void CommonMessagePostClient::send_postMissionClearAll(const MissionClearAll& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionClearAll", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionClearAll_pargs args;
+  CommonMessagePost_postMissionClearAll_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15646,7 +15646,7 @@ void CommonMessagePostServiceClient::send_postMissionClearAll(const MissionClear
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionClearAll()
+void CommonMessagePostClient::recv_postMissionClearAll()
 {
 
   int32_t rseqid = 0;
@@ -15671,7 +15671,7 @@ void CommonMessagePostServiceClient::recv_postMissionClearAll()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionClearAll_presult result;
+  CommonMessagePost_postMissionClearAll_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15682,18 +15682,18 @@ void CommonMessagePostServiceClient::recv_postMissionClearAll()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionItemReached(const MissionItemReached& msg)
+void CommonMessagePostClient::postMissionItemReached(const MissionItemReached& msg)
 {
   send_postMissionItemReached(msg);
   recv_postMissionItemReached();
 }
 
-void CommonMessagePostServiceClient::send_postMissionItemReached(const MissionItemReached& msg)
+void CommonMessagePostClient::send_postMissionItemReached(const MissionItemReached& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionItemReached", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionItemReached_pargs args;
+  CommonMessagePost_postMissionItemReached_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15702,7 +15702,7 @@ void CommonMessagePostServiceClient::send_postMissionItemReached(const MissionIt
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionItemReached()
+void CommonMessagePostClient::recv_postMissionItemReached()
 {
 
   int32_t rseqid = 0;
@@ -15727,7 +15727,7 @@ void CommonMessagePostServiceClient::recv_postMissionItemReached()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionItemReached_presult result;
+  CommonMessagePost_postMissionItemReached_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15738,18 +15738,18 @@ void CommonMessagePostServiceClient::recv_postMissionItemReached()
   return;
 }
 
-void CommonMessagePostServiceClient::postMissionAck(const MissionAck& msg)
+void CommonMessagePostClient::postMissionAck(const MissionAck& msg)
 {
   send_postMissionAck(msg);
   recv_postMissionAck();
 }
 
-void CommonMessagePostServiceClient::send_postMissionAck(const MissionAck& msg)
+void CommonMessagePostClient::send_postMissionAck(const MissionAck& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMissionAck", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMissionAck_pargs args;
+  CommonMessagePost_postMissionAck_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15758,7 +15758,7 @@ void CommonMessagePostServiceClient::send_postMissionAck(const MissionAck& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMissionAck()
+void CommonMessagePostClient::recv_postMissionAck()
 {
 
   int32_t rseqid = 0;
@@ -15783,7 +15783,7 @@ void CommonMessagePostServiceClient::recv_postMissionAck()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMissionAck_presult result;
+  CommonMessagePost_postMissionAck_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15794,18 +15794,18 @@ void CommonMessagePostServiceClient::recv_postMissionAck()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetGpsGlobalOrigin(const SetGpsGlobalOrigin& msg)
+void CommonMessagePostClient::postSetGpsGlobalOrigin(const SetGpsGlobalOrigin& msg)
 {
   send_postSetGpsGlobalOrigin(msg);
   recv_postSetGpsGlobalOrigin();
 }
 
-void CommonMessagePostServiceClient::send_postSetGpsGlobalOrigin(const SetGpsGlobalOrigin& msg)
+void CommonMessagePostClient::send_postSetGpsGlobalOrigin(const SetGpsGlobalOrigin& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetGpsGlobalOrigin", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetGpsGlobalOrigin_pargs args;
+  CommonMessagePost_postSetGpsGlobalOrigin_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15814,7 +15814,7 @@ void CommonMessagePostServiceClient::send_postSetGpsGlobalOrigin(const SetGpsGlo
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetGpsGlobalOrigin()
+void CommonMessagePostClient::recv_postSetGpsGlobalOrigin()
 {
 
   int32_t rseqid = 0;
@@ -15839,7 +15839,7 @@ void CommonMessagePostServiceClient::recv_postSetGpsGlobalOrigin()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetGpsGlobalOrigin_presult result;
+  CommonMessagePost_postSetGpsGlobalOrigin_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15850,18 +15850,18 @@ void CommonMessagePostServiceClient::recv_postSetGpsGlobalOrigin()
   return;
 }
 
-void CommonMessagePostServiceClient::postGpsGlobalOrigin(const GpsGlobalOrigin& msg)
+void CommonMessagePostClient::postGpsGlobalOrigin(const GpsGlobalOrigin& msg)
 {
   send_postGpsGlobalOrigin(msg);
   recv_postGpsGlobalOrigin();
 }
 
-void CommonMessagePostServiceClient::send_postGpsGlobalOrigin(const GpsGlobalOrigin& msg)
+void CommonMessagePostClient::send_postGpsGlobalOrigin(const GpsGlobalOrigin& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postGpsGlobalOrigin", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postGpsGlobalOrigin_pargs args;
+  CommonMessagePost_postGpsGlobalOrigin_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15870,7 +15870,7 @@ void CommonMessagePostServiceClient::send_postGpsGlobalOrigin(const GpsGlobalOri
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postGpsGlobalOrigin()
+void CommonMessagePostClient::recv_postGpsGlobalOrigin()
 {
 
   int32_t rseqid = 0;
@@ -15895,7 +15895,7 @@ void CommonMessagePostServiceClient::recv_postGpsGlobalOrigin()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postGpsGlobalOrigin_presult result;
+  CommonMessagePost_postGpsGlobalOrigin_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15906,18 +15906,18 @@ void CommonMessagePostServiceClient::recv_postGpsGlobalOrigin()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetLocalPositionSetpoint(const SetLocalPositionSetpoint& msg)
+void CommonMessagePostClient::postSetLocalPositionSetpoint(const SetLocalPositionSetpoint& msg)
 {
   send_postSetLocalPositionSetpoint(msg);
   recv_postSetLocalPositionSetpoint();
 }
 
-void CommonMessagePostServiceClient::send_postSetLocalPositionSetpoint(const SetLocalPositionSetpoint& msg)
+void CommonMessagePostClient::send_postSetLocalPositionSetpoint(const SetLocalPositionSetpoint& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetLocalPositionSetpoint", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetLocalPositionSetpoint_pargs args;
+  CommonMessagePost_postSetLocalPositionSetpoint_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15926,7 +15926,7 @@ void CommonMessagePostServiceClient::send_postSetLocalPositionSetpoint(const Set
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetLocalPositionSetpoint()
+void CommonMessagePostClient::recv_postSetLocalPositionSetpoint()
 {
 
   int32_t rseqid = 0;
@@ -15951,7 +15951,7 @@ void CommonMessagePostServiceClient::recv_postSetLocalPositionSetpoint()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetLocalPositionSetpoint_presult result;
+  CommonMessagePost_postSetLocalPositionSetpoint_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -15962,18 +15962,18 @@ void CommonMessagePostServiceClient::recv_postSetLocalPositionSetpoint()
   return;
 }
 
-void CommonMessagePostServiceClient::postLocalPositionSetpoint(const LocalPositionSetpoint& msg)
+void CommonMessagePostClient::postLocalPositionSetpoint(const LocalPositionSetpoint& msg)
 {
   send_postLocalPositionSetpoint(msg);
   recv_postLocalPositionSetpoint();
 }
 
-void CommonMessagePostServiceClient::send_postLocalPositionSetpoint(const LocalPositionSetpoint& msg)
+void CommonMessagePostClient::send_postLocalPositionSetpoint(const LocalPositionSetpoint& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postLocalPositionSetpoint", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postLocalPositionSetpoint_pargs args;
+  CommonMessagePost_postLocalPositionSetpoint_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -15982,7 +15982,7 @@ void CommonMessagePostServiceClient::send_postLocalPositionSetpoint(const LocalP
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postLocalPositionSetpoint()
+void CommonMessagePostClient::recv_postLocalPositionSetpoint()
 {
 
   int32_t rseqid = 0;
@@ -16007,7 +16007,7 @@ void CommonMessagePostServiceClient::recv_postLocalPositionSetpoint()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postLocalPositionSetpoint_presult result;
+  CommonMessagePost_postLocalPositionSetpoint_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16018,18 +16018,18 @@ void CommonMessagePostServiceClient::recv_postLocalPositionSetpoint()
   return;
 }
 
-void CommonMessagePostServiceClient::postGlobalPositionSetpointInt(const GlobalPositionSetpointInt& msg)
+void CommonMessagePostClient::postGlobalPositionSetpointInt(const GlobalPositionSetpointInt& msg)
 {
   send_postGlobalPositionSetpointInt(msg);
   recv_postGlobalPositionSetpointInt();
 }
 
-void CommonMessagePostServiceClient::send_postGlobalPositionSetpointInt(const GlobalPositionSetpointInt& msg)
+void CommonMessagePostClient::send_postGlobalPositionSetpointInt(const GlobalPositionSetpointInt& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postGlobalPositionSetpointInt", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postGlobalPositionSetpointInt_pargs args;
+  CommonMessagePost_postGlobalPositionSetpointInt_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16038,7 +16038,7 @@ void CommonMessagePostServiceClient::send_postGlobalPositionSetpointInt(const Gl
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postGlobalPositionSetpointInt()
+void CommonMessagePostClient::recv_postGlobalPositionSetpointInt()
 {
 
   int32_t rseqid = 0;
@@ -16063,7 +16063,7 @@ void CommonMessagePostServiceClient::recv_postGlobalPositionSetpointInt()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postGlobalPositionSetpointInt_presult result;
+  CommonMessagePost_postGlobalPositionSetpointInt_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16074,18 +16074,18 @@ void CommonMessagePostServiceClient::recv_postGlobalPositionSetpointInt()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetGlobalPositionSetpointInt(const SetGlobalPositionSetpointInt& msg)
+void CommonMessagePostClient::postSetGlobalPositionSetpointInt(const SetGlobalPositionSetpointInt& msg)
 {
   send_postSetGlobalPositionSetpointInt(msg);
   recv_postSetGlobalPositionSetpointInt();
 }
 
-void CommonMessagePostServiceClient::send_postSetGlobalPositionSetpointInt(const SetGlobalPositionSetpointInt& msg)
+void CommonMessagePostClient::send_postSetGlobalPositionSetpointInt(const SetGlobalPositionSetpointInt& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetGlobalPositionSetpointInt", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetGlobalPositionSetpointInt_pargs args;
+  CommonMessagePost_postSetGlobalPositionSetpointInt_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16094,7 +16094,7 @@ void CommonMessagePostServiceClient::send_postSetGlobalPositionSetpointInt(const
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetGlobalPositionSetpointInt()
+void CommonMessagePostClient::recv_postSetGlobalPositionSetpointInt()
 {
 
   int32_t rseqid = 0;
@@ -16119,7 +16119,7 @@ void CommonMessagePostServiceClient::recv_postSetGlobalPositionSetpointInt()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetGlobalPositionSetpointInt_presult result;
+  CommonMessagePost_postSetGlobalPositionSetpointInt_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16130,18 +16130,18 @@ void CommonMessagePostServiceClient::recv_postSetGlobalPositionSetpointInt()
   return;
 }
 
-void CommonMessagePostServiceClient::postSafetySetAllowedArea(const SafetySetAllowedArea& msg)
+void CommonMessagePostClient::postSafetySetAllowedArea(const SafetySetAllowedArea& msg)
 {
   send_postSafetySetAllowedArea(msg);
   recv_postSafetySetAllowedArea();
 }
 
-void CommonMessagePostServiceClient::send_postSafetySetAllowedArea(const SafetySetAllowedArea& msg)
+void CommonMessagePostClient::send_postSafetySetAllowedArea(const SafetySetAllowedArea& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSafetySetAllowedArea", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSafetySetAllowedArea_pargs args;
+  CommonMessagePost_postSafetySetAllowedArea_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16150,7 +16150,7 @@ void CommonMessagePostServiceClient::send_postSafetySetAllowedArea(const SafetyS
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSafetySetAllowedArea()
+void CommonMessagePostClient::recv_postSafetySetAllowedArea()
 {
 
   int32_t rseqid = 0;
@@ -16175,7 +16175,7 @@ void CommonMessagePostServiceClient::recv_postSafetySetAllowedArea()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSafetySetAllowedArea_presult result;
+  CommonMessagePost_postSafetySetAllowedArea_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16186,18 +16186,18 @@ void CommonMessagePostServiceClient::recv_postSafetySetAllowedArea()
   return;
 }
 
-void CommonMessagePostServiceClient::postSafetyAllowedArea(const SafetyAllowedArea& msg)
+void CommonMessagePostClient::postSafetyAllowedArea(const SafetyAllowedArea& msg)
 {
   send_postSafetyAllowedArea(msg);
   recv_postSafetyAllowedArea();
 }
 
-void CommonMessagePostServiceClient::send_postSafetyAllowedArea(const SafetyAllowedArea& msg)
+void CommonMessagePostClient::send_postSafetyAllowedArea(const SafetyAllowedArea& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSafetyAllowedArea", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSafetyAllowedArea_pargs args;
+  CommonMessagePost_postSafetyAllowedArea_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16206,7 +16206,7 @@ void CommonMessagePostServiceClient::send_postSafetyAllowedArea(const SafetyAllo
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSafetyAllowedArea()
+void CommonMessagePostClient::recv_postSafetyAllowedArea()
 {
 
   int32_t rseqid = 0;
@@ -16231,7 +16231,7 @@ void CommonMessagePostServiceClient::recv_postSafetyAllowedArea()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSafetyAllowedArea_presult result;
+  CommonMessagePost_postSafetyAllowedArea_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16242,18 +16242,18 @@ void CommonMessagePostServiceClient::recv_postSafetyAllowedArea()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetRollPitchYawThrust(const SetRollPitchYawThrust& msg)
+void CommonMessagePostClient::postSetRollPitchYawThrust(const SetRollPitchYawThrust& msg)
 {
   send_postSetRollPitchYawThrust(msg);
   recv_postSetRollPitchYawThrust();
 }
 
-void CommonMessagePostServiceClient::send_postSetRollPitchYawThrust(const SetRollPitchYawThrust& msg)
+void CommonMessagePostClient::send_postSetRollPitchYawThrust(const SetRollPitchYawThrust& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetRollPitchYawThrust", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetRollPitchYawThrust_pargs args;
+  CommonMessagePost_postSetRollPitchYawThrust_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16262,7 +16262,7 @@ void CommonMessagePostServiceClient::send_postSetRollPitchYawThrust(const SetRol
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetRollPitchYawThrust()
+void CommonMessagePostClient::recv_postSetRollPitchYawThrust()
 {
 
   int32_t rseqid = 0;
@@ -16287,7 +16287,7 @@ void CommonMessagePostServiceClient::recv_postSetRollPitchYawThrust()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetRollPitchYawThrust_presult result;
+  CommonMessagePost_postSetRollPitchYawThrust_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16298,18 +16298,18 @@ void CommonMessagePostServiceClient::recv_postSetRollPitchYawThrust()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetRollPitchYawSpeedThrust(const SetRollPitchYawSpeedThrust& msg)
+void CommonMessagePostClient::postSetRollPitchYawSpeedThrust(const SetRollPitchYawSpeedThrust& msg)
 {
   send_postSetRollPitchYawSpeedThrust(msg);
   recv_postSetRollPitchYawSpeedThrust();
 }
 
-void CommonMessagePostServiceClient::send_postSetRollPitchYawSpeedThrust(const SetRollPitchYawSpeedThrust& msg)
+void CommonMessagePostClient::send_postSetRollPitchYawSpeedThrust(const SetRollPitchYawSpeedThrust& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetRollPitchYawSpeedThrust", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetRollPitchYawSpeedThrust_pargs args;
+  CommonMessagePost_postSetRollPitchYawSpeedThrust_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16318,7 +16318,7 @@ void CommonMessagePostServiceClient::send_postSetRollPitchYawSpeedThrust(const S
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetRollPitchYawSpeedThrust()
+void CommonMessagePostClient::recv_postSetRollPitchYawSpeedThrust()
 {
 
   int32_t rseqid = 0;
@@ -16343,7 +16343,7 @@ void CommonMessagePostServiceClient::recv_postSetRollPitchYawSpeedThrust()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetRollPitchYawSpeedThrust_presult result;
+  CommonMessagePost_postSetRollPitchYawSpeedThrust_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16354,18 +16354,18 @@ void CommonMessagePostServiceClient::recv_postSetRollPitchYawSpeedThrust()
   return;
 }
 
-void CommonMessagePostServiceClient::postRollPitchYawThrustSetpoint(const RollPitchYawThrustSetpoint& msg)
+void CommonMessagePostClient::postRollPitchYawThrustSetpoint(const RollPitchYawThrustSetpoint& msg)
 {
   send_postRollPitchYawThrustSetpoint(msg);
   recv_postRollPitchYawThrustSetpoint();
 }
 
-void CommonMessagePostServiceClient::send_postRollPitchYawThrustSetpoint(const RollPitchYawThrustSetpoint& msg)
+void CommonMessagePostClient::send_postRollPitchYawThrustSetpoint(const RollPitchYawThrustSetpoint& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRollPitchYawThrustSetpoint", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postRollPitchYawThrustSetpoint_pargs args;
+  CommonMessagePost_postRollPitchYawThrustSetpoint_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16374,7 +16374,7 @@ void CommonMessagePostServiceClient::send_postRollPitchYawThrustSetpoint(const R
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postRollPitchYawThrustSetpoint()
+void CommonMessagePostClient::recv_postRollPitchYawThrustSetpoint()
 {
 
   int32_t rseqid = 0;
@@ -16399,7 +16399,7 @@ void CommonMessagePostServiceClient::recv_postRollPitchYawThrustSetpoint()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postRollPitchYawThrustSetpoint_presult result;
+  CommonMessagePost_postRollPitchYawThrustSetpoint_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16410,18 +16410,18 @@ void CommonMessagePostServiceClient::recv_postRollPitchYawThrustSetpoint()
   return;
 }
 
-void CommonMessagePostServiceClient::postRollPitchYawSpeedThrustSetpoint(const RollPitchYawSpeedThrustSetpoint& msg)
+void CommonMessagePostClient::postRollPitchYawSpeedThrustSetpoint(const RollPitchYawSpeedThrustSetpoint& msg)
 {
   send_postRollPitchYawSpeedThrustSetpoint(msg);
   recv_postRollPitchYawSpeedThrustSetpoint();
 }
 
-void CommonMessagePostServiceClient::send_postRollPitchYawSpeedThrustSetpoint(const RollPitchYawSpeedThrustSetpoint& msg)
+void CommonMessagePostClient::send_postRollPitchYawSpeedThrustSetpoint(const RollPitchYawSpeedThrustSetpoint& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRollPitchYawSpeedThrustSetpoint", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_pargs args;
+  CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16430,7 +16430,7 @@ void CommonMessagePostServiceClient::send_postRollPitchYawSpeedThrustSetpoint(co
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postRollPitchYawSpeedThrustSetpoint()
+void CommonMessagePostClient::recv_postRollPitchYawSpeedThrustSetpoint()
 {
 
   int32_t rseqid = 0;
@@ -16455,7 +16455,7 @@ void CommonMessagePostServiceClient::recv_postRollPitchYawSpeedThrustSetpoint()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_presult result;
+  CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16466,18 +16466,18 @@ void CommonMessagePostServiceClient::recv_postRollPitchYawSpeedThrustSetpoint()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetQuadMotorsSetpoint(const SetQuadMotorsSetpoint& msg)
+void CommonMessagePostClient::postSetQuadMotorsSetpoint(const SetQuadMotorsSetpoint& msg)
 {
   send_postSetQuadMotorsSetpoint(msg);
   recv_postSetQuadMotorsSetpoint();
 }
 
-void CommonMessagePostServiceClient::send_postSetQuadMotorsSetpoint(const SetQuadMotorsSetpoint& msg)
+void CommonMessagePostClient::send_postSetQuadMotorsSetpoint(const SetQuadMotorsSetpoint& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetQuadMotorsSetpoint", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetQuadMotorsSetpoint_pargs args;
+  CommonMessagePost_postSetQuadMotorsSetpoint_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16486,7 +16486,7 @@ void CommonMessagePostServiceClient::send_postSetQuadMotorsSetpoint(const SetQua
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetQuadMotorsSetpoint()
+void CommonMessagePostClient::recv_postSetQuadMotorsSetpoint()
 {
 
   int32_t rseqid = 0;
@@ -16511,7 +16511,7 @@ void CommonMessagePostServiceClient::recv_postSetQuadMotorsSetpoint()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetQuadMotorsSetpoint_presult result;
+  CommonMessagePost_postSetQuadMotorsSetpoint_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16522,18 +16522,18 @@ void CommonMessagePostServiceClient::recv_postSetQuadMotorsSetpoint()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetQuadSwarmRollPitchYawThrust(const SetQuadSwarmRollPitchYawThrust& msg)
+void CommonMessagePostClient::postSetQuadSwarmRollPitchYawThrust(const SetQuadSwarmRollPitchYawThrust& msg)
 {
   send_postSetQuadSwarmRollPitchYawThrust(msg);
   recv_postSetQuadSwarmRollPitchYawThrust();
 }
 
-void CommonMessagePostServiceClient::send_postSetQuadSwarmRollPitchYawThrust(const SetQuadSwarmRollPitchYawThrust& msg)
+void CommonMessagePostClient::send_postSetQuadSwarmRollPitchYawThrust(const SetQuadSwarmRollPitchYawThrust& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetQuadSwarmRollPitchYawThrust", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_pargs args;
+  CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16542,7 +16542,7 @@ void CommonMessagePostServiceClient::send_postSetQuadSwarmRollPitchYawThrust(con
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetQuadSwarmRollPitchYawThrust()
+void CommonMessagePostClient::recv_postSetQuadSwarmRollPitchYawThrust()
 {
 
   int32_t rseqid = 0;
@@ -16567,7 +16567,7 @@ void CommonMessagePostServiceClient::recv_postSetQuadSwarmRollPitchYawThrust()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_presult result;
+  CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16578,18 +16578,18 @@ void CommonMessagePostServiceClient::recv_postSetQuadSwarmRollPitchYawThrust()
   return;
 }
 
-void CommonMessagePostServiceClient::postNavControllerOutput(const NavControllerOutput& msg)
+void CommonMessagePostClient::postNavControllerOutput(const NavControllerOutput& msg)
 {
   send_postNavControllerOutput(msg);
   recv_postNavControllerOutput();
 }
 
-void CommonMessagePostServiceClient::send_postNavControllerOutput(const NavControllerOutput& msg)
+void CommonMessagePostClient::send_postNavControllerOutput(const NavControllerOutput& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postNavControllerOutput", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postNavControllerOutput_pargs args;
+  CommonMessagePost_postNavControllerOutput_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16598,7 +16598,7 @@ void CommonMessagePostServiceClient::send_postNavControllerOutput(const NavContr
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postNavControllerOutput()
+void CommonMessagePostClient::recv_postNavControllerOutput()
 {
 
   int32_t rseqid = 0;
@@ -16623,7 +16623,7 @@ void CommonMessagePostServiceClient::recv_postNavControllerOutput()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postNavControllerOutput_presult result;
+  CommonMessagePost_postNavControllerOutput_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16634,18 +16634,18 @@ void CommonMessagePostServiceClient::recv_postNavControllerOutput()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetQuadSwarmLedRollPitchYawThrust(const SetQuadSwarmLedRollPitchYawThrust& msg)
+void CommonMessagePostClient::postSetQuadSwarmLedRollPitchYawThrust(const SetQuadSwarmLedRollPitchYawThrust& msg)
 {
   send_postSetQuadSwarmLedRollPitchYawThrust(msg);
   recv_postSetQuadSwarmLedRollPitchYawThrust();
 }
 
-void CommonMessagePostServiceClient::send_postSetQuadSwarmLedRollPitchYawThrust(const SetQuadSwarmLedRollPitchYawThrust& msg)
+void CommonMessagePostClient::send_postSetQuadSwarmLedRollPitchYawThrust(const SetQuadSwarmLedRollPitchYawThrust& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetQuadSwarmLedRollPitchYawThrust", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_pargs args;
+  CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16654,7 +16654,7 @@ void CommonMessagePostServiceClient::send_postSetQuadSwarmLedRollPitchYawThrust(
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetQuadSwarmLedRollPitchYawThrust()
+void CommonMessagePostClient::recv_postSetQuadSwarmLedRollPitchYawThrust()
 {
 
   int32_t rseqid = 0;
@@ -16679,7 +16679,7 @@ void CommonMessagePostServiceClient::recv_postSetQuadSwarmLedRollPitchYawThrust(
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_presult result;
+  CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16690,18 +16690,18 @@ void CommonMessagePostServiceClient::recv_postSetQuadSwarmLedRollPitchYawThrust(
   return;
 }
 
-void CommonMessagePostServiceClient::postStateCorrection(const StateCorrection& msg)
+void CommonMessagePostClient::postStateCorrection(const StateCorrection& msg)
 {
   send_postStateCorrection(msg);
   recv_postStateCorrection();
 }
 
-void CommonMessagePostServiceClient::send_postStateCorrection(const StateCorrection& msg)
+void CommonMessagePostClient::send_postStateCorrection(const StateCorrection& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postStateCorrection", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postStateCorrection_pargs args;
+  CommonMessagePost_postStateCorrection_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16710,7 +16710,7 @@ void CommonMessagePostServiceClient::send_postStateCorrection(const StateCorrect
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postStateCorrection()
+void CommonMessagePostClient::recv_postStateCorrection()
 {
 
   int32_t rseqid = 0;
@@ -16735,7 +16735,7 @@ void CommonMessagePostServiceClient::recv_postStateCorrection()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postStateCorrection_presult result;
+  CommonMessagePost_postStateCorrection_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16746,18 +16746,18 @@ void CommonMessagePostServiceClient::recv_postStateCorrection()
   return;
 }
 
-void CommonMessagePostServiceClient::postRequestDataStream(const RequestDataStream& msg)
+void CommonMessagePostClient::postRequestDataStream(const RequestDataStream& msg)
 {
   send_postRequestDataStream(msg);
   recv_postRequestDataStream();
 }
 
-void CommonMessagePostServiceClient::send_postRequestDataStream(const RequestDataStream& msg)
+void CommonMessagePostClient::send_postRequestDataStream(const RequestDataStream& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRequestDataStream", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postRequestDataStream_pargs args;
+  CommonMessagePost_postRequestDataStream_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16766,7 +16766,7 @@ void CommonMessagePostServiceClient::send_postRequestDataStream(const RequestDat
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postRequestDataStream()
+void CommonMessagePostClient::recv_postRequestDataStream()
 {
 
   int32_t rseqid = 0;
@@ -16791,7 +16791,7 @@ void CommonMessagePostServiceClient::recv_postRequestDataStream()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postRequestDataStream_presult result;
+  CommonMessagePost_postRequestDataStream_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16802,18 +16802,18 @@ void CommonMessagePostServiceClient::recv_postRequestDataStream()
   return;
 }
 
-void CommonMessagePostServiceClient::postDataStream(const DataStream& msg)
+void CommonMessagePostClient::postDataStream(const DataStream& msg)
 {
   send_postDataStream(msg);
   recv_postDataStream();
 }
 
-void CommonMessagePostServiceClient::send_postDataStream(const DataStream& msg)
+void CommonMessagePostClient::send_postDataStream(const DataStream& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postDataStream", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postDataStream_pargs args;
+  CommonMessagePost_postDataStream_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16822,7 +16822,7 @@ void CommonMessagePostServiceClient::send_postDataStream(const DataStream& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postDataStream()
+void CommonMessagePostClient::recv_postDataStream()
 {
 
   int32_t rseqid = 0;
@@ -16847,7 +16847,7 @@ void CommonMessagePostServiceClient::recv_postDataStream()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postDataStream_presult result;
+  CommonMessagePost_postDataStream_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16858,18 +16858,18 @@ void CommonMessagePostServiceClient::recv_postDataStream()
   return;
 }
 
-void CommonMessagePostServiceClient::postManualControl(const ManualControl& msg)
+void CommonMessagePostClient::postManualControl(const ManualControl& msg)
 {
   send_postManualControl(msg);
   recv_postManualControl();
 }
 
-void CommonMessagePostServiceClient::send_postManualControl(const ManualControl& msg)
+void CommonMessagePostClient::send_postManualControl(const ManualControl& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postManualControl", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postManualControl_pargs args;
+  CommonMessagePost_postManualControl_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16878,7 +16878,7 @@ void CommonMessagePostServiceClient::send_postManualControl(const ManualControl&
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postManualControl()
+void CommonMessagePostClient::recv_postManualControl()
 {
 
   int32_t rseqid = 0;
@@ -16903,7 +16903,7 @@ void CommonMessagePostServiceClient::recv_postManualControl()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postManualControl_presult result;
+  CommonMessagePost_postManualControl_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16914,18 +16914,18 @@ void CommonMessagePostServiceClient::recv_postManualControl()
   return;
 }
 
-void CommonMessagePostServiceClient::postRcChannelsOverride(const RcChannelsOverride& msg)
+void CommonMessagePostClient::postRcChannelsOverride(const RcChannelsOverride& msg)
 {
   send_postRcChannelsOverride(msg);
   recv_postRcChannelsOverride();
 }
 
-void CommonMessagePostServiceClient::send_postRcChannelsOverride(const RcChannelsOverride& msg)
+void CommonMessagePostClient::send_postRcChannelsOverride(const RcChannelsOverride& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRcChannelsOverride", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postRcChannelsOverride_pargs args;
+  CommonMessagePost_postRcChannelsOverride_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16934,7 +16934,7 @@ void CommonMessagePostServiceClient::send_postRcChannelsOverride(const RcChannel
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postRcChannelsOverride()
+void CommonMessagePostClient::recv_postRcChannelsOverride()
 {
 
   int32_t rseqid = 0;
@@ -16959,7 +16959,7 @@ void CommonMessagePostServiceClient::recv_postRcChannelsOverride()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postRcChannelsOverride_presult result;
+  CommonMessagePost_postRcChannelsOverride_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -16970,18 +16970,18 @@ void CommonMessagePostServiceClient::recv_postRcChannelsOverride()
   return;
 }
 
-void CommonMessagePostServiceClient::postVfrHud(const VfrHud& msg)
+void CommonMessagePostClient::postVfrHud(const VfrHud& msg)
 {
   send_postVfrHud(msg);
   recv_postVfrHud();
 }
 
-void CommonMessagePostServiceClient::send_postVfrHud(const VfrHud& msg)
+void CommonMessagePostClient::send_postVfrHud(const VfrHud& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postVfrHud", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postVfrHud_pargs args;
+  CommonMessagePost_postVfrHud_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -16990,7 +16990,7 @@ void CommonMessagePostServiceClient::send_postVfrHud(const VfrHud& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postVfrHud()
+void CommonMessagePostClient::recv_postVfrHud()
 {
 
   int32_t rseqid = 0;
@@ -17015,7 +17015,7 @@ void CommonMessagePostServiceClient::recv_postVfrHud()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postVfrHud_presult result;
+  CommonMessagePost_postVfrHud_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17026,18 +17026,18 @@ void CommonMessagePostServiceClient::recv_postVfrHud()
   return;
 }
 
-void CommonMessagePostServiceClient::postCommandLong(const CommandLong& msg)
+void CommonMessagePostClient::postCommandLong(const CommandLong& msg)
 {
   send_postCommandLong(msg);
   recv_postCommandLong();
 }
 
-void CommonMessagePostServiceClient::send_postCommandLong(const CommandLong& msg)
+void CommonMessagePostClient::send_postCommandLong(const CommandLong& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postCommandLong", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postCommandLong_pargs args;
+  CommonMessagePost_postCommandLong_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17046,7 +17046,7 @@ void CommonMessagePostServiceClient::send_postCommandLong(const CommandLong& msg
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postCommandLong()
+void CommonMessagePostClient::recv_postCommandLong()
 {
 
   int32_t rseqid = 0;
@@ -17071,7 +17071,7 @@ void CommonMessagePostServiceClient::recv_postCommandLong()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postCommandLong_presult result;
+  CommonMessagePost_postCommandLong_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17082,18 +17082,18 @@ void CommonMessagePostServiceClient::recv_postCommandLong()
   return;
 }
 
-void CommonMessagePostServiceClient::postCommandAck(const CommandAck& msg)
+void CommonMessagePostClient::postCommandAck(const CommandAck& msg)
 {
   send_postCommandAck(msg);
   recv_postCommandAck();
 }
 
-void CommonMessagePostServiceClient::send_postCommandAck(const CommandAck& msg)
+void CommonMessagePostClient::send_postCommandAck(const CommandAck& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postCommandAck", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postCommandAck_pargs args;
+  CommonMessagePost_postCommandAck_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17102,7 +17102,7 @@ void CommonMessagePostServiceClient::send_postCommandAck(const CommandAck& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postCommandAck()
+void CommonMessagePostClient::recv_postCommandAck()
 {
 
   int32_t rseqid = 0;
@@ -17127,7 +17127,7 @@ void CommonMessagePostServiceClient::recv_postCommandAck()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postCommandAck_presult result;
+  CommonMessagePost_postCommandAck_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17138,18 +17138,18 @@ void CommonMessagePostServiceClient::recv_postCommandAck()
   return;
 }
 
-void CommonMessagePostServiceClient::postRollPitchYawRatesThrustSetpoint(const RollPitchYawRatesThrustSetpoint& msg)
+void CommonMessagePostClient::postRollPitchYawRatesThrustSetpoint(const RollPitchYawRatesThrustSetpoint& msg)
 {
   send_postRollPitchYawRatesThrustSetpoint(msg);
   recv_postRollPitchYawRatesThrustSetpoint();
 }
 
-void CommonMessagePostServiceClient::send_postRollPitchYawRatesThrustSetpoint(const RollPitchYawRatesThrustSetpoint& msg)
+void CommonMessagePostClient::send_postRollPitchYawRatesThrustSetpoint(const RollPitchYawRatesThrustSetpoint& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRollPitchYawRatesThrustSetpoint", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_pargs args;
+  CommonMessagePost_postRollPitchYawRatesThrustSetpoint_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17158,7 +17158,7 @@ void CommonMessagePostServiceClient::send_postRollPitchYawRatesThrustSetpoint(co
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postRollPitchYawRatesThrustSetpoint()
+void CommonMessagePostClient::recv_postRollPitchYawRatesThrustSetpoint()
 {
 
   int32_t rseqid = 0;
@@ -17183,7 +17183,7 @@ void CommonMessagePostServiceClient::recv_postRollPitchYawRatesThrustSetpoint()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_presult result;
+  CommonMessagePost_postRollPitchYawRatesThrustSetpoint_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17194,18 +17194,18 @@ void CommonMessagePostServiceClient::recv_postRollPitchYawRatesThrustSetpoint()
   return;
 }
 
-void CommonMessagePostServiceClient::postManualSetpoint(const ManualSetpoint& msg)
+void CommonMessagePostClient::postManualSetpoint(const ManualSetpoint& msg)
 {
   send_postManualSetpoint(msg);
   recv_postManualSetpoint();
 }
 
-void CommonMessagePostServiceClient::send_postManualSetpoint(const ManualSetpoint& msg)
+void CommonMessagePostClient::send_postManualSetpoint(const ManualSetpoint& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postManualSetpoint", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postManualSetpoint_pargs args;
+  CommonMessagePost_postManualSetpoint_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17214,7 +17214,7 @@ void CommonMessagePostServiceClient::send_postManualSetpoint(const ManualSetpoin
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postManualSetpoint()
+void CommonMessagePostClient::recv_postManualSetpoint()
 {
 
   int32_t rseqid = 0;
@@ -17239,7 +17239,7 @@ void CommonMessagePostServiceClient::recv_postManualSetpoint()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postManualSetpoint_presult result;
+  CommonMessagePost_postManualSetpoint_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17250,18 +17250,18 @@ void CommonMessagePostServiceClient::recv_postManualSetpoint()
   return;
 }
 
-void CommonMessagePostServiceClient::postLocalPositionNedSystemGlobalOffset(const LocalPositionNedSystemGlobalOffset& msg)
+void CommonMessagePostClient::postLocalPositionNedSystemGlobalOffset(const LocalPositionNedSystemGlobalOffset& msg)
 {
   send_postLocalPositionNedSystemGlobalOffset(msg);
   recv_postLocalPositionNedSystemGlobalOffset();
 }
 
-void CommonMessagePostServiceClient::send_postLocalPositionNedSystemGlobalOffset(const LocalPositionNedSystemGlobalOffset& msg)
+void CommonMessagePostClient::send_postLocalPositionNedSystemGlobalOffset(const LocalPositionNedSystemGlobalOffset& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postLocalPositionNedSystemGlobalOffset", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_pargs args;
+  CommonMessagePost_postLocalPositionNedSystemGlobalOffset_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17270,7 +17270,7 @@ void CommonMessagePostServiceClient::send_postLocalPositionNedSystemGlobalOffset
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postLocalPositionNedSystemGlobalOffset()
+void CommonMessagePostClient::recv_postLocalPositionNedSystemGlobalOffset()
 {
 
   int32_t rseqid = 0;
@@ -17295,7 +17295,7 @@ void CommonMessagePostServiceClient::recv_postLocalPositionNedSystemGlobalOffset
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_presult result;
+  CommonMessagePost_postLocalPositionNedSystemGlobalOffset_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17306,18 +17306,18 @@ void CommonMessagePostServiceClient::recv_postLocalPositionNedSystemGlobalOffset
   return;
 }
 
-void CommonMessagePostServiceClient::postHilState(const HilState& msg)
+void CommonMessagePostClient::postHilState(const HilState& msg)
 {
   send_postHilState(msg);
   recv_postHilState();
 }
 
-void CommonMessagePostServiceClient::send_postHilState(const HilState& msg)
+void CommonMessagePostClient::send_postHilState(const HilState& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postHilState", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postHilState_pargs args;
+  CommonMessagePost_postHilState_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17326,7 +17326,7 @@ void CommonMessagePostServiceClient::send_postHilState(const HilState& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postHilState()
+void CommonMessagePostClient::recv_postHilState()
 {
 
   int32_t rseqid = 0;
@@ -17351,7 +17351,7 @@ void CommonMessagePostServiceClient::recv_postHilState()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postHilState_presult result;
+  CommonMessagePost_postHilState_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17362,18 +17362,18 @@ void CommonMessagePostServiceClient::recv_postHilState()
   return;
 }
 
-void CommonMessagePostServiceClient::postHilControls(const HilControls& msg)
+void CommonMessagePostClient::postHilControls(const HilControls& msg)
 {
   send_postHilControls(msg);
   recv_postHilControls();
 }
 
-void CommonMessagePostServiceClient::send_postHilControls(const HilControls& msg)
+void CommonMessagePostClient::send_postHilControls(const HilControls& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postHilControls", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postHilControls_pargs args;
+  CommonMessagePost_postHilControls_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17382,7 +17382,7 @@ void CommonMessagePostServiceClient::send_postHilControls(const HilControls& msg
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postHilControls()
+void CommonMessagePostClient::recv_postHilControls()
 {
 
   int32_t rseqid = 0;
@@ -17407,7 +17407,7 @@ void CommonMessagePostServiceClient::recv_postHilControls()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postHilControls_presult result;
+  CommonMessagePost_postHilControls_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17418,18 +17418,18 @@ void CommonMessagePostServiceClient::recv_postHilControls()
   return;
 }
 
-void CommonMessagePostServiceClient::postHilRcInputsRaw(const HilRcInputsRaw& msg)
+void CommonMessagePostClient::postHilRcInputsRaw(const HilRcInputsRaw& msg)
 {
   send_postHilRcInputsRaw(msg);
   recv_postHilRcInputsRaw();
 }
 
-void CommonMessagePostServiceClient::send_postHilRcInputsRaw(const HilRcInputsRaw& msg)
+void CommonMessagePostClient::send_postHilRcInputsRaw(const HilRcInputsRaw& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postHilRcInputsRaw", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postHilRcInputsRaw_pargs args;
+  CommonMessagePost_postHilRcInputsRaw_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17438,7 +17438,7 @@ void CommonMessagePostServiceClient::send_postHilRcInputsRaw(const HilRcInputsRa
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postHilRcInputsRaw()
+void CommonMessagePostClient::recv_postHilRcInputsRaw()
 {
 
   int32_t rseqid = 0;
@@ -17463,7 +17463,7 @@ void CommonMessagePostServiceClient::recv_postHilRcInputsRaw()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postHilRcInputsRaw_presult result;
+  CommonMessagePost_postHilRcInputsRaw_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17474,18 +17474,18 @@ void CommonMessagePostServiceClient::recv_postHilRcInputsRaw()
   return;
 }
 
-void CommonMessagePostServiceClient::postOpticalFlow(const OpticalFlow& msg)
+void CommonMessagePostClient::postOpticalFlow(const OpticalFlow& msg)
 {
   send_postOpticalFlow(msg);
   recv_postOpticalFlow();
 }
 
-void CommonMessagePostServiceClient::send_postOpticalFlow(const OpticalFlow& msg)
+void CommonMessagePostClient::send_postOpticalFlow(const OpticalFlow& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postOpticalFlow", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postOpticalFlow_pargs args;
+  CommonMessagePost_postOpticalFlow_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17494,7 +17494,7 @@ void CommonMessagePostServiceClient::send_postOpticalFlow(const OpticalFlow& msg
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postOpticalFlow()
+void CommonMessagePostClient::recv_postOpticalFlow()
 {
 
   int32_t rseqid = 0;
@@ -17519,7 +17519,7 @@ void CommonMessagePostServiceClient::recv_postOpticalFlow()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postOpticalFlow_presult result;
+  CommonMessagePost_postOpticalFlow_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17530,18 +17530,18 @@ void CommonMessagePostServiceClient::recv_postOpticalFlow()
   return;
 }
 
-void CommonMessagePostServiceClient::postGlobalVisionPositionEstimate(const GlobalVisionPositionEstimate& msg)
+void CommonMessagePostClient::postGlobalVisionPositionEstimate(const GlobalVisionPositionEstimate& msg)
 {
   send_postGlobalVisionPositionEstimate(msg);
   recv_postGlobalVisionPositionEstimate();
 }
 
-void CommonMessagePostServiceClient::send_postGlobalVisionPositionEstimate(const GlobalVisionPositionEstimate& msg)
+void CommonMessagePostClient::send_postGlobalVisionPositionEstimate(const GlobalVisionPositionEstimate& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postGlobalVisionPositionEstimate", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postGlobalVisionPositionEstimate_pargs args;
+  CommonMessagePost_postGlobalVisionPositionEstimate_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17550,7 +17550,7 @@ void CommonMessagePostServiceClient::send_postGlobalVisionPositionEstimate(const
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postGlobalVisionPositionEstimate()
+void CommonMessagePostClient::recv_postGlobalVisionPositionEstimate()
 {
 
   int32_t rseqid = 0;
@@ -17575,7 +17575,7 @@ void CommonMessagePostServiceClient::recv_postGlobalVisionPositionEstimate()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postGlobalVisionPositionEstimate_presult result;
+  CommonMessagePost_postGlobalVisionPositionEstimate_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17586,18 +17586,18 @@ void CommonMessagePostServiceClient::recv_postGlobalVisionPositionEstimate()
   return;
 }
 
-void CommonMessagePostServiceClient::postVisionPositionEstimate(const VisionPositionEstimate& msg)
+void CommonMessagePostClient::postVisionPositionEstimate(const VisionPositionEstimate& msg)
 {
   send_postVisionPositionEstimate(msg);
   recv_postVisionPositionEstimate();
 }
 
-void CommonMessagePostServiceClient::send_postVisionPositionEstimate(const VisionPositionEstimate& msg)
+void CommonMessagePostClient::send_postVisionPositionEstimate(const VisionPositionEstimate& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postVisionPositionEstimate", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postVisionPositionEstimate_pargs args;
+  CommonMessagePost_postVisionPositionEstimate_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17606,7 +17606,7 @@ void CommonMessagePostServiceClient::send_postVisionPositionEstimate(const Visio
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postVisionPositionEstimate()
+void CommonMessagePostClient::recv_postVisionPositionEstimate()
 {
 
   int32_t rseqid = 0;
@@ -17631,7 +17631,7 @@ void CommonMessagePostServiceClient::recv_postVisionPositionEstimate()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postVisionPositionEstimate_presult result;
+  CommonMessagePost_postVisionPositionEstimate_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17642,18 +17642,18 @@ void CommonMessagePostServiceClient::recv_postVisionPositionEstimate()
   return;
 }
 
-void CommonMessagePostServiceClient::postVisionSpeedEstimate(const VisionSpeedEstimate& msg)
+void CommonMessagePostClient::postVisionSpeedEstimate(const VisionSpeedEstimate& msg)
 {
   send_postVisionSpeedEstimate(msg);
   recv_postVisionSpeedEstimate();
 }
 
-void CommonMessagePostServiceClient::send_postVisionSpeedEstimate(const VisionSpeedEstimate& msg)
+void CommonMessagePostClient::send_postVisionSpeedEstimate(const VisionSpeedEstimate& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postVisionSpeedEstimate", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postVisionSpeedEstimate_pargs args;
+  CommonMessagePost_postVisionSpeedEstimate_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17662,7 +17662,7 @@ void CommonMessagePostServiceClient::send_postVisionSpeedEstimate(const VisionSp
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postVisionSpeedEstimate()
+void CommonMessagePostClient::recv_postVisionSpeedEstimate()
 {
 
   int32_t rseqid = 0;
@@ -17687,7 +17687,7 @@ void CommonMessagePostServiceClient::recv_postVisionSpeedEstimate()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postVisionSpeedEstimate_presult result;
+  CommonMessagePost_postVisionSpeedEstimate_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17698,18 +17698,18 @@ void CommonMessagePostServiceClient::recv_postVisionSpeedEstimate()
   return;
 }
 
-void CommonMessagePostServiceClient::postViconPositionEstimate(const ViconPositionEstimate& msg)
+void CommonMessagePostClient::postViconPositionEstimate(const ViconPositionEstimate& msg)
 {
   send_postViconPositionEstimate(msg);
   recv_postViconPositionEstimate();
 }
 
-void CommonMessagePostServiceClient::send_postViconPositionEstimate(const ViconPositionEstimate& msg)
+void CommonMessagePostClient::send_postViconPositionEstimate(const ViconPositionEstimate& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postViconPositionEstimate", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postViconPositionEstimate_pargs args;
+  CommonMessagePost_postViconPositionEstimate_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17718,7 +17718,7 @@ void CommonMessagePostServiceClient::send_postViconPositionEstimate(const ViconP
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postViconPositionEstimate()
+void CommonMessagePostClient::recv_postViconPositionEstimate()
 {
 
   int32_t rseqid = 0;
@@ -17743,7 +17743,7 @@ void CommonMessagePostServiceClient::recv_postViconPositionEstimate()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postViconPositionEstimate_presult result;
+  CommonMessagePost_postViconPositionEstimate_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17754,18 +17754,18 @@ void CommonMessagePostServiceClient::recv_postViconPositionEstimate()
   return;
 }
 
-void CommonMessagePostServiceClient::postHighresImu(const HighresImu& msg)
+void CommonMessagePostClient::postHighresImu(const HighresImu& msg)
 {
   send_postHighresImu(msg);
   recv_postHighresImu();
 }
 
-void CommonMessagePostServiceClient::send_postHighresImu(const HighresImu& msg)
+void CommonMessagePostClient::send_postHighresImu(const HighresImu& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postHighresImu", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postHighresImu_pargs args;
+  CommonMessagePost_postHighresImu_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17774,7 +17774,7 @@ void CommonMessagePostServiceClient::send_postHighresImu(const HighresImu& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postHighresImu()
+void CommonMessagePostClient::recv_postHighresImu()
 {
 
   int32_t rseqid = 0;
@@ -17799,7 +17799,7 @@ void CommonMessagePostServiceClient::recv_postHighresImu()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postHighresImu_presult result;
+  CommonMessagePost_postHighresImu_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17810,18 +17810,18 @@ void CommonMessagePostServiceClient::recv_postHighresImu()
   return;
 }
 
-void CommonMessagePostServiceClient::postOmnidirectionalFlow(const OmnidirectionalFlow& msg)
+void CommonMessagePostClient::postOmnidirectionalFlow(const OmnidirectionalFlow& msg)
 {
   send_postOmnidirectionalFlow(msg);
   recv_postOmnidirectionalFlow();
 }
 
-void CommonMessagePostServiceClient::send_postOmnidirectionalFlow(const OmnidirectionalFlow& msg)
+void CommonMessagePostClient::send_postOmnidirectionalFlow(const OmnidirectionalFlow& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postOmnidirectionalFlow", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postOmnidirectionalFlow_pargs args;
+  CommonMessagePost_postOmnidirectionalFlow_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17830,7 +17830,7 @@ void CommonMessagePostServiceClient::send_postOmnidirectionalFlow(const Omnidire
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postOmnidirectionalFlow()
+void CommonMessagePostClient::recv_postOmnidirectionalFlow()
 {
 
   int32_t rseqid = 0;
@@ -17855,7 +17855,7 @@ void CommonMessagePostServiceClient::recv_postOmnidirectionalFlow()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postOmnidirectionalFlow_presult result;
+  CommonMessagePost_postOmnidirectionalFlow_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17866,18 +17866,18 @@ void CommonMessagePostServiceClient::recv_postOmnidirectionalFlow()
   return;
 }
 
-void CommonMessagePostServiceClient::postFileTransferStart(const FileTransferStart& msg)
+void CommonMessagePostClient::postFileTransferStart(const FileTransferStart& msg)
 {
   send_postFileTransferStart(msg);
   recv_postFileTransferStart();
 }
 
-void CommonMessagePostServiceClient::send_postFileTransferStart(const FileTransferStart& msg)
+void CommonMessagePostClient::send_postFileTransferStart(const FileTransferStart& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postFileTransferStart", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postFileTransferStart_pargs args;
+  CommonMessagePost_postFileTransferStart_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17886,7 +17886,7 @@ void CommonMessagePostServiceClient::send_postFileTransferStart(const FileTransf
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postFileTransferStart()
+void CommonMessagePostClient::recv_postFileTransferStart()
 {
 
   int32_t rseqid = 0;
@@ -17911,7 +17911,7 @@ void CommonMessagePostServiceClient::recv_postFileTransferStart()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postFileTransferStart_presult result;
+  CommonMessagePost_postFileTransferStart_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17922,18 +17922,18 @@ void CommonMessagePostServiceClient::recv_postFileTransferStart()
   return;
 }
 
-void CommonMessagePostServiceClient::postFileTransferDirList(const FileTransferDirList& msg)
+void CommonMessagePostClient::postFileTransferDirList(const FileTransferDirList& msg)
 {
   send_postFileTransferDirList(msg);
   recv_postFileTransferDirList();
 }
 
-void CommonMessagePostServiceClient::send_postFileTransferDirList(const FileTransferDirList& msg)
+void CommonMessagePostClient::send_postFileTransferDirList(const FileTransferDirList& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postFileTransferDirList", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postFileTransferDirList_pargs args;
+  CommonMessagePost_postFileTransferDirList_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17942,7 +17942,7 @@ void CommonMessagePostServiceClient::send_postFileTransferDirList(const FileTran
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postFileTransferDirList()
+void CommonMessagePostClient::recv_postFileTransferDirList()
 {
 
   int32_t rseqid = 0;
@@ -17967,7 +17967,7 @@ void CommonMessagePostServiceClient::recv_postFileTransferDirList()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postFileTransferDirList_presult result;
+  CommonMessagePost_postFileTransferDirList_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -17978,18 +17978,18 @@ void CommonMessagePostServiceClient::recv_postFileTransferDirList()
   return;
 }
 
-void CommonMessagePostServiceClient::postFileTransferRes(const FileTransferRes& msg)
+void CommonMessagePostClient::postFileTransferRes(const FileTransferRes& msg)
 {
   send_postFileTransferRes(msg);
   recv_postFileTransferRes();
 }
 
-void CommonMessagePostServiceClient::send_postFileTransferRes(const FileTransferRes& msg)
+void CommonMessagePostClient::send_postFileTransferRes(const FileTransferRes& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postFileTransferRes", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postFileTransferRes_pargs args;
+  CommonMessagePost_postFileTransferRes_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -17998,7 +17998,7 @@ void CommonMessagePostServiceClient::send_postFileTransferRes(const FileTransfer
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postFileTransferRes()
+void CommonMessagePostClient::recv_postFileTransferRes()
 {
 
   int32_t rseqid = 0;
@@ -18023,7 +18023,7 @@ void CommonMessagePostServiceClient::recv_postFileTransferRes()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postFileTransferRes_presult result;
+  CommonMessagePost_postFileTransferRes_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -18034,18 +18034,18 @@ void CommonMessagePostServiceClient::recv_postFileTransferRes()
   return;
 }
 
-void CommonMessagePostServiceClient::postBatteryStatus(const BatteryStatus& msg)
+void CommonMessagePostClient::postBatteryStatus(const BatteryStatus& msg)
 {
   send_postBatteryStatus(msg);
   recv_postBatteryStatus();
 }
 
-void CommonMessagePostServiceClient::send_postBatteryStatus(const BatteryStatus& msg)
+void CommonMessagePostClient::send_postBatteryStatus(const BatteryStatus& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postBatteryStatus", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postBatteryStatus_pargs args;
+  CommonMessagePost_postBatteryStatus_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -18054,7 +18054,7 @@ void CommonMessagePostServiceClient::send_postBatteryStatus(const BatteryStatus&
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postBatteryStatus()
+void CommonMessagePostClient::recv_postBatteryStatus()
 {
 
   int32_t rseqid = 0;
@@ -18079,7 +18079,7 @@ void CommonMessagePostServiceClient::recv_postBatteryStatus()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postBatteryStatus_presult result;
+  CommonMessagePost_postBatteryStatus_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -18090,18 +18090,18 @@ void CommonMessagePostServiceClient::recv_postBatteryStatus()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetpoint8dof(const Setpoint8dof& msg)
+void CommonMessagePostClient::postSetpoint8dof(const Setpoint8dof& msg)
 {
   send_postSetpoint8dof(msg);
   recv_postSetpoint8dof();
 }
 
-void CommonMessagePostServiceClient::send_postSetpoint8dof(const Setpoint8dof& msg)
+void CommonMessagePostClient::send_postSetpoint8dof(const Setpoint8dof& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetpoint8dof", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetpoint8dof_pargs args;
+  CommonMessagePost_postSetpoint8dof_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -18110,7 +18110,7 @@ void CommonMessagePostServiceClient::send_postSetpoint8dof(const Setpoint8dof& m
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetpoint8dof()
+void CommonMessagePostClient::recv_postSetpoint8dof()
 {
 
   int32_t rseqid = 0;
@@ -18135,7 +18135,7 @@ void CommonMessagePostServiceClient::recv_postSetpoint8dof()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetpoint8dof_presult result;
+  CommonMessagePost_postSetpoint8dof_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -18146,18 +18146,18 @@ void CommonMessagePostServiceClient::recv_postSetpoint8dof()
   return;
 }
 
-void CommonMessagePostServiceClient::postSetpoint6dof(const Setpoint6dof& msg)
+void CommonMessagePostClient::postSetpoint6dof(const Setpoint6dof& msg)
 {
   send_postSetpoint6dof(msg);
   recv_postSetpoint6dof();
 }
 
-void CommonMessagePostServiceClient::send_postSetpoint6dof(const Setpoint6dof& msg)
+void CommonMessagePostClient::send_postSetpoint6dof(const Setpoint6dof& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetpoint6dof", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postSetpoint6dof_pargs args;
+  CommonMessagePost_postSetpoint6dof_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -18166,7 +18166,7 @@ void CommonMessagePostServiceClient::send_postSetpoint6dof(const Setpoint6dof& m
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postSetpoint6dof()
+void CommonMessagePostClient::recv_postSetpoint6dof()
 {
 
   int32_t rseqid = 0;
@@ -18191,7 +18191,7 @@ void CommonMessagePostServiceClient::recv_postSetpoint6dof()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postSetpoint6dof_presult result;
+  CommonMessagePost_postSetpoint6dof_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -18202,18 +18202,18 @@ void CommonMessagePostServiceClient::recv_postSetpoint6dof()
   return;
 }
 
-void CommonMessagePostServiceClient::postMemoryVect(const MemoryVect& msg)
+void CommonMessagePostClient::postMemoryVect(const MemoryVect& msg)
 {
   send_postMemoryVect(msg);
   recv_postMemoryVect();
 }
 
-void CommonMessagePostServiceClient::send_postMemoryVect(const MemoryVect& msg)
+void CommonMessagePostClient::send_postMemoryVect(const MemoryVect& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMemoryVect", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postMemoryVect_pargs args;
+  CommonMessagePost_postMemoryVect_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -18222,7 +18222,7 @@ void CommonMessagePostServiceClient::send_postMemoryVect(const MemoryVect& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postMemoryVect()
+void CommonMessagePostClient::recv_postMemoryVect()
 {
 
   int32_t rseqid = 0;
@@ -18247,7 +18247,7 @@ void CommonMessagePostServiceClient::recv_postMemoryVect()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postMemoryVect_presult result;
+  CommonMessagePost_postMemoryVect_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -18258,18 +18258,18 @@ void CommonMessagePostServiceClient::recv_postMemoryVect()
   return;
 }
 
-void CommonMessagePostServiceClient::postDebugVect(const DebugVect& msg)
+void CommonMessagePostClient::postDebugVect(const DebugVect& msg)
 {
   send_postDebugVect(msg);
   recv_postDebugVect();
 }
 
-void CommonMessagePostServiceClient::send_postDebugVect(const DebugVect& msg)
+void CommonMessagePostClient::send_postDebugVect(const DebugVect& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postDebugVect", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postDebugVect_pargs args;
+  CommonMessagePost_postDebugVect_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -18278,7 +18278,7 @@ void CommonMessagePostServiceClient::send_postDebugVect(const DebugVect& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postDebugVect()
+void CommonMessagePostClient::recv_postDebugVect()
 {
 
   int32_t rseqid = 0;
@@ -18303,7 +18303,7 @@ void CommonMessagePostServiceClient::recv_postDebugVect()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postDebugVect_presult result;
+  CommonMessagePost_postDebugVect_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -18314,18 +18314,18 @@ void CommonMessagePostServiceClient::recv_postDebugVect()
   return;
 }
 
-void CommonMessagePostServiceClient::postNamedValueFloat(const NamedValueFloat& msg)
+void CommonMessagePostClient::postNamedValueFloat(const NamedValueFloat& msg)
 {
   send_postNamedValueFloat(msg);
   recv_postNamedValueFloat();
 }
 
-void CommonMessagePostServiceClient::send_postNamedValueFloat(const NamedValueFloat& msg)
+void CommonMessagePostClient::send_postNamedValueFloat(const NamedValueFloat& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postNamedValueFloat", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postNamedValueFloat_pargs args;
+  CommonMessagePost_postNamedValueFloat_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -18334,7 +18334,7 @@ void CommonMessagePostServiceClient::send_postNamedValueFloat(const NamedValueFl
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postNamedValueFloat()
+void CommonMessagePostClient::recv_postNamedValueFloat()
 {
 
   int32_t rseqid = 0;
@@ -18359,7 +18359,7 @@ void CommonMessagePostServiceClient::recv_postNamedValueFloat()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postNamedValueFloat_presult result;
+  CommonMessagePost_postNamedValueFloat_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -18370,18 +18370,18 @@ void CommonMessagePostServiceClient::recv_postNamedValueFloat()
   return;
 }
 
-void CommonMessagePostServiceClient::postNamedValueInt(const NamedValueInt& msg)
+void CommonMessagePostClient::postNamedValueInt(const NamedValueInt& msg)
 {
   send_postNamedValueInt(msg);
   recv_postNamedValueInt();
 }
 
-void CommonMessagePostServiceClient::send_postNamedValueInt(const NamedValueInt& msg)
+void CommonMessagePostClient::send_postNamedValueInt(const NamedValueInt& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postNamedValueInt", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postNamedValueInt_pargs args;
+  CommonMessagePost_postNamedValueInt_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -18390,7 +18390,7 @@ void CommonMessagePostServiceClient::send_postNamedValueInt(const NamedValueInt&
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postNamedValueInt()
+void CommonMessagePostClient::recv_postNamedValueInt()
 {
 
   int32_t rseqid = 0;
@@ -18415,7 +18415,7 @@ void CommonMessagePostServiceClient::recv_postNamedValueInt()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postNamedValueInt_presult result;
+  CommonMessagePost_postNamedValueInt_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -18426,18 +18426,18 @@ void CommonMessagePostServiceClient::recv_postNamedValueInt()
   return;
 }
 
-void CommonMessagePostServiceClient::postStatustext(const Statustext& msg)
+void CommonMessagePostClient::postStatustext(const Statustext& msg)
 {
   send_postStatustext(msg);
   recv_postStatustext();
 }
 
-void CommonMessagePostServiceClient::send_postStatustext(const Statustext& msg)
+void CommonMessagePostClient::send_postStatustext(const Statustext& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postStatustext", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postStatustext_pargs args;
+  CommonMessagePost_postStatustext_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -18446,7 +18446,7 @@ void CommonMessagePostServiceClient::send_postStatustext(const Statustext& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postStatustext()
+void CommonMessagePostClient::recv_postStatustext()
 {
 
   int32_t rseqid = 0;
@@ -18471,7 +18471,7 @@ void CommonMessagePostServiceClient::recv_postStatustext()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postStatustext_presult result;
+  CommonMessagePost_postStatustext_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -18482,18 +18482,18 @@ void CommonMessagePostServiceClient::recv_postStatustext()
   return;
 }
 
-void CommonMessagePostServiceClient::postDebug(const Debug& msg)
+void CommonMessagePostClient::postDebug(const Debug& msg)
 {
   send_postDebug(msg);
   recv_postDebug();
 }
 
-void CommonMessagePostServiceClient::send_postDebug(const Debug& msg)
+void CommonMessagePostClient::send_postDebug(const Debug& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postDebug", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  CommonMessagePostService_postDebug_pargs args;
+  CommonMessagePost_postDebug_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -18502,7 +18502,7 @@ void CommonMessagePostServiceClient::send_postDebug(const Debug& msg)
   oprot_->getTransport()->flush();
 }
 
-void CommonMessagePostServiceClient::recv_postDebug()
+void CommonMessagePostClient::recv_postDebug()
 {
 
   int32_t rseqid = 0;
@@ -18527,7 +18527,7 @@ void CommonMessagePostServiceClient::recv_postDebug()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  CommonMessagePostService_postDebug_presult result;
+  CommonMessagePost_postDebug_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -18538,7 +18538,7 @@ void CommonMessagePostServiceClient::recv_postDebug()
   return;
 }
 
-bool CommonMessagePostServiceProcessor::dispatchCall(::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, const std::string& fname, int32_t seqid, void* callContext) {
+bool CommonMessagePostProcessor::dispatchCall(::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, const std::string& fname, int32_t seqid, void* callContext) {
   ProcessMap::iterator pfn;
   pfn = processMap_.find(fname);
   if (pfn == processMap_.end()) {
@@ -18557,28 +18557,28 @@ bool CommonMessagePostServiceProcessor::dispatchCall(::apache::thrift::protocol:
   return true;
 }
 
-void CommonMessagePostServiceProcessor::process_postHeartbeat(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postHeartbeat(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postHeartbeat", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postHeartbeat", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postHeartbeat");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postHeartbeat");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postHeartbeat");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postHeartbeat");
   }
 
-  CommonMessagePostService_postHeartbeat_args args;
+  CommonMessagePost_postHeartbeat_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postHeartbeat", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postHeartbeat", bytes);
   }
 
-  CommonMessagePostService_postHeartbeat_result result;
+  CommonMessagePost_postHeartbeat_result result;
   try {
     iface_->postHeartbeat(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -18586,7 +18586,7 @@ void CommonMessagePostServiceProcessor::process_postHeartbeat(int32_t seqid, ::a
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postHeartbeat");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postHeartbeat");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -18599,7 +18599,7 @@ void CommonMessagePostServiceProcessor::process_postHeartbeat(int32_t seqid, ::a
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postHeartbeat");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postHeartbeat");
   }
 
   oprot->writeMessageBegin("postHeartbeat", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -18609,32 +18609,32 @@ void CommonMessagePostServiceProcessor::process_postHeartbeat(int32_t seqid, ::a
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postHeartbeat", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postHeartbeat", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSysStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSysStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSysStatus", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSysStatus", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSysStatus");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSysStatus");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSysStatus");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSysStatus");
   }
 
-  CommonMessagePostService_postSysStatus_args args;
+  CommonMessagePost_postSysStatus_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSysStatus", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSysStatus", bytes);
   }
 
-  CommonMessagePostService_postSysStatus_result result;
+  CommonMessagePost_postSysStatus_result result;
   try {
     iface_->postSysStatus(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -18642,7 +18642,7 @@ void CommonMessagePostServiceProcessor::process_postSysStatus(int32_t seqid, ::a
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSysStatus");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSysStatus");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -18655,7 +18655,7 @@ void CommonMessagePostServiceProcessor::process_postSysStatus(int32_t seqid, ::a
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSysStatus");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSysStatus");
   }
 
   oprot->writeMessageBegin("postSysStatus", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -18665,32 +18665,32 @@ void CommonMessagePostServiceProcessor::process_postSysStatus(int32_t seqid, ::a
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSysStatus", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSysStatus", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSystemTime(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSystemTime(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSystemTime", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSystemTime", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSystemTime");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSystemTime");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSystemTime");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSystemTime");
   }
 
-  CommonMessagePostService_postSystemTime_args args;
+  CommonMessagePost_postSystemTime_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSystemTime", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSystemTime", bytes);
   }
 
-  CommonMessagePostService_postSystemTime_result result;
+  CommonMessagePost_postSystemTime_result result;
   try {
     iface_->postSystemTime(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -18698,7 +18698,7 @@ void CommonMessagePostServiceProcessor::process_postSystemTime(int32_t seqid, ::
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSystemTime");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSystemTime");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -18711,7 +18711,7 @@ void CommonMessagePostServiceProcessor::process_postSystemTime(int32_t seqid, ::
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSystemTime");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSystemTime");
   }
 
   oprot->writeMessageBegin("postSystemTime", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -18721,32 +18721,32 @@ void CommonMessagePostServiceProcessor::process_postSystemTime(int32_t seqid, ::
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSystemTime", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSystemTime", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postPing(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postPing(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postPing", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postPing", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postPing");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postPing");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postPing");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postPing");
   }
 
-  CommonMessagePostService_postPing_args args;
+  CommonMessagePost_postPing_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postPing", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postPing", bytes);
   }
 
-  CommonMessagePostService_postPing_result result;
+  CommonMessagePost_postPing_result result;
   try {
     iface_->postPing(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -18754,7 +18754,7 @@ void CommonMessagePostServiceProcessor::process_postPing(int32_t seqid, ::apache
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postPing");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postPing");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -18767,7 +18767,7 @@ void CommonMessagePostServiceProcessor::process_postPing(int32_t seqid, ::apache
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postPing");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postPing");
   }
 
   oprot->writeMessageBegin("postPing", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -18777,32 +18777,32 @@ void CommonMessagePostServiceProcessor::process_postPing(int32_t seqid, ::apache
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postPing", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postPing", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postChangeOperatorControl(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postChangeOperatorControl(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postChangeOperatorControl", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postChangeOperatorControl", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postChangeOperatorControl");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postChangeOperatorControl");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postChangeOperatorControl");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postChangeOperatorControl");
   }
 
-  CommonMessagePostService_postChangeOperatorControl_args args;
+  CommonMessagePost_postChangeOperatorControl_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postChangeOperatorControl", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postChangeOperatorControl", bytes);
   }
 
-  CommonMessagePostService_postChangeOperatorControl_result result;
+  CommonMessagePost_postChangeOperatorControl_result result;
   try {
     iface_->postChangeOperatorControl(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -18810,7 +18810,7 @@ void CommonMessagePostServiceProcessor::process_postChangeOperatorControl(int32_
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postChangeOperatorControl");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postChangeOperatorControl");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -18823,7 +18823,7 @@ void CommonMessagePostServiceProcessor::process_postChangeOperatorControl(int32_
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postChangeOperatorControl");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postChangeOperatorControl");
   }
 
   oprot->writeMessageBegin("postChangeOperatorControl", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -18833,32 +18833,32 @@ void CommonMessagePostServiceProcessor::process_postChangeOperatorControl(int32_
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postChangeOperatorControl", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postChangeOperatorControl", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postChangeOperatorControlAck(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postChangeOperatorControlAck(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postChangeOperatorControlAck", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postChangeOperatorControlAck", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postChangeOperatorControlAck");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postChangeOperatorControlAck");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postChangeOperatorControlAck");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postChangeOperatorControlAck");
   }
 
-  CommonMessagePostService_postChangeOperatorControlAck_args args;
+  CommonMessagePost_postChangeOperatorControlAck_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postChangeOperatorControlAck", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postChangeOperatorControlAck", bytes);
   }
 
-  CommonMessagePostService_postChangeOperatorControlAck_result result;
+  CommonMessagePost_postChangeOperatorControlAck_result result;
   try {
     iface_->postChangeOperatorControlAck(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -18866,7 +18866,7 @@ void CommonMessagePostServiceProcessor::process_postChangeOperatorControlAck(int
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postChangeOperatorControlAck");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postChangeOperatorControlAck");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -18879,7 +18879,7 @@ void CommonMessagePostServiceProcessor::process_postChangeOperatorControlAck(int
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postChangeOperatorControlAck");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postChangeOperatorControlAck");
   }
 
   oprot->writeMessageBegin("postChangeOperatorControlAck", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -18889,32 +18889,32 @@ void CommonMessagePostServiceProcessor::process_postChangeOperatorControlAck(int
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postChangeOperatorControlAck", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postChangeOperatorControlAck", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postAuthKey(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postAuthKey(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postAuthKey", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postAuthKey", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postAuthKey");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postAuthKey");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postAuthKey");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postAuthKey");
   }
 
-  CommonMessagePostService_postAuthKey_args args;
+  CommonMessagePost_postAuthKey_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postAuthKey", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postAuthKey", bytes);
   }
 
-  CommonMessagePostService_postAuthKey_result result;
+  CommonMessagePost_postAuthKey_result result;
   try {
     iface_->postAuthKey(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -18922,7 +18922,7 @@ void CommonMessagePostServiceProcessor::process_postAuthKey(int32_t seqid, ::apa
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postAuthKey");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postAuthKey");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -18935,7 +18935,7 @@ void CommonMessagePostServiceProcessor::process_postAuthKey(int32_t seqid, ::apa
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postAuthKey");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postAuthKey");
   }
 
   oprot->writeMessageBegin("postAuthKey", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -18945,32 +18945,32 @@ void CommonMessagePostServiceProcessor::process_postAuthKey(int32_t seqid, ::apa
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postAuthKey", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postAuthKey", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetMode(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetMode(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetMode", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetMode", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetMode");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetMode");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetMode");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetMode");
   }
 
-  CommonMessagePostService_postSetMode_args args;
+  CommonMessagePost_postSetMode_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetMode", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetMode", bytes);
   }
 
-  CommonMessagePostService_postSetMode_result result;
+  CommonMessagePost_postSetMode_result result;
   try {
     iface_->postSetMode(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -18978,7 +18978,7 @@ void CommonMessagePostServiceProcessor::process_postSetMode(int32_t seqid, ::apa
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetMode");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetMode");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -18991,7 +18991,7 @@ void CommonMessagePostServiceProcessor::process_postSetMode(int32_t seqid, ::apa
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetMode");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetMode");
   }
 
   oprot->writeMessageBegin("postSetMode", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19001,32 +19001,32 @@ void CommonMessagePostServiceProcessor::process_postSetMode(int32_t seqid, ::apa
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetMode", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetMode", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postParamRequestRead(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postParamRequestRead(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postParamRequestRead", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postParamRequestRead", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postParamRequestRead");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postParamRequestRead");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postParamRequestRead");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postParamRequestRead");
   }
 
-  CommonMessagePostService_postParamRequestRead_args args;
+  CommonMessagePost_postParamRequestRead_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postParamRequestRead", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postParamRequestRead", bytes);
   }
 
-  CommonMessagePostService_postParamRequestRead_result result;
+  CommonMessagePost_postParamRequestRead_result result;
   try {
     iface_->postParamRequestRead(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19034,7 +19034,7 @@ void CommonMessagePostServiceProcessor::process_postParamRequestRead(int32_t seq
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postParamRequestRead");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postParamRequestRead");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19047,7 +19047,7 @@ void CommonMessagePostServiceProcessor::process_postParamRequestRead(int32_t seq
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postParamRequestRead");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postParamRequestRead");
   }
 
   oprot->writeMessageBegin("postParamRequestRead", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19057,32 +19057,32 @@ void CommonMessagePostServiceProcessor::process_postParamRequestRead(int32_t seq
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postParamRequestRead", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postParamRequestRead", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postParamRequestList(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postParamRequestList(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postParamRequestList", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postParamRequestList", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postParamRequestList");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postParamRequestList");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postParamRequestList");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postParamRequestList");
   }
 
-  CommonMessagePostService_postParamRequestList_args args;
+  CommonMessagePost_postParamRequestList_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postParamRequestList", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postParamRequestList", bytes);
   }
 
-  CommonMessagePostService_postParamRequestList_result result;
+  CommonMessagePost_postParamRequestList_result result;
   try {
     iface_->postParamRequestList(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19090,7 +19090,7 @@ void CommonMessagePostServiceProcessor::process_postParamRequestList(int32_t seq
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postParamRequestList");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postParamRequestList");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19103,7 +19103,7 @@ void CommonMessagePostServiceProcessor::process_postParamRequestList(int32_t seq
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postParamRequestList");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postParamRequestList");
   }
 
   oprot->writeMessageBegin("postParamRequestList", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19113,32 +19113,32 @@ void CommonMessagePostServiceProcessor::process_postParamRequestList(int32_t seq
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postParamRequestList", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postParamRequestList", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postParamValue(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postParamValue(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postParamValue", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postParamValue", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postParamValue");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postParamValue");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postParamValue");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postParamValue");
   }
 
-  CommonMessagePostService_postParamValue_args args;
+  CommonMessagePost_postParamValue_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postParamValue", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postParamValue", bytes);
   }
 
-  CommonMessagePostService_postParamValue_result result;
+  CommonMessagePost_postParamValue_result result;
   try {
     iface_->postParamValue(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19146,7 +19146,7 @@ void CommonMessagePostServiceProcessor::process_postParamValue(int32_t seqid, ::
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postParamValue");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postParamValue");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19159,7 +19159,7 @@ void CommonMessagePostServiceProcessor::process_postParamValue(int32_t seqid, ::
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postParamValue");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postParamValue");
   }
 
   oprot->writeMessageBegin("postParamValue", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19169,32 +19169,32 @@ void CommonMessagePostServiceProcessor::process_postParamValue(int32_t seqid, ::
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postParamValue", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postParamValue", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postParamSet(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postParamSet(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postParamSet", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postParamSet", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postParamSet");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postParamSet");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postParamSet");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postParamSet");
   }
 
-  CommonMessagePostService_postParamSet_args args;
+  CommonMessagePost_postParamSet_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postParamSet", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postParamSet", bytes);
   }
 
-  CommonMessagePostService_postParamSet_result result;
+  CommonMessagePost_postParamSet_result result;
   try {
     iface_->postParamSet(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19202,7 +19202,7 @@ void CommonMessagePostServiceProcessor::process_postParamSet(int32_t seqid, ::ap
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postParamSet");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postParamSet");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19215,7 +19215,7 @@ void CommonMessagePostServiceProcessor::process_postParamSet(int32_t seqid, ::ap
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postParamSet");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postParamSet");
   }
 
   oprot->writeMessageBegin("postParamSet", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19225,32 +19225,32 @@ void CommonMessagePostServiceProcessor::process_postParamSet(int32_t seqid, ::ap
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postParamSet", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postParamSet", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postGpsRawInt(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postGpsRawInt(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postGpsRawInt", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postGpsRawInt", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postGpsRawInt");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postGpsRawInt");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postGpsRawInt");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postGpsRawInt");
   }
 
-  CommonMessagePostService_postGpsRawInt_args args;
+  CommonMessagePost_postGpsRawInt_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postGpsRawInt", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postGpsRawInt", bytes);
   }
 
-  CommonMessagePostService_postGpsRawInt_result result;
+  CommonMessagePost_postGpsRawInt_result result;
   try {
     iface_->postGpsRawInt(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19258,7 +19258,7 @@ void CommonMessagePostServiceProcessor::process_postGpsRawInt(int32_t seqid, ::a
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postGpsRawInt");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postGpsRawInt");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19271,7 +19271,7 @@ void CommonMessagePostServiceProcessor::process_postGpsRawInt(int32_t seqid, ::a
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postGpsRawInt");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postGpsRawInt");
   }
 
   oprot->writeMessageBegin("postGpsRawInt", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19281,32 +19281,32 @@ void CommonMessagePostServiceProcessor::process_postGpsRawInt(int32_t seqid, ::a
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postGpsRawInt", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postGpsRawInt", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postGpsStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postGpsStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postGpsStatus", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postGpsStatus", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postGpsStatus");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postGpsStatus");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postGpsStatus");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postGpsStatus");
   }
 
-  CommonMessagePostService_postGpsStatus_args args;
+  CommonMessagePost_postGpsStatus_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postGpsStatus", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postGpsStatus", bytes);
   }
 
-  CommonMessagePostService_postGpsStatus_result result;
+  CommonMessagePost_postGpsStatus_result result;
   try {
     iface_->postGpsStatus(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19314,7 +19314,7 @@ void CommonMessagePostServiceProcessor::process_postGpsStatus(int32_t seqid, ::a
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postGpsStatus");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postGpsStatus");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19327,7 +19327,7 @@ void CommonMessagePostServiceProcessor::process_postGpsStatus(int32_t seqid, ::a
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postGpsStatus");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postGpsStatus");
   }
 
   oprot->writeMessageBegin("postGpsStatus", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19337,32 +19337,32 @@ void CommonMessagePostServiceProcessor::process_postGpsStatus(int32_t seqid, ::a
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postGpsStatus", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postGpsStatus", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postScaledImu(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postScaledImu(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postScaledImu", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postScaledImu", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postScaledImu");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postScaledImu");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postScaledImu");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postScaledImu");
   }
 
-  CommonMessagePostService_postScaledImu_args args;
+  CommonMessagePost_postScaledImu_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postScaledImu", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postScaledImu", bytes);
   }
 
-  CommonMessagePostService_postScaledImu_result result;
+  CommonMessagePost_postScaledImu_result result;
   try {
     iface_->postScaledImu(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19370,7 +19370,7 @@ void CommonMessagePostServiceProcessor::process_postScaledImu(int32_t seqid, ::a
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postScaledImu");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postScaledImu");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19383,7 +19383,7 @@ void CommonMessagePostServiceProcessor::process_postScaledImu(int32_t seqid, ::a
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postScaledImu");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postScaledImu");
   }
 
   oprot->writeMessageBegin("postScaledImu", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19393,32 +19393,32 @@ void CommonMessagePostServiceProcessor::process_postScaledImu(int32_t seqid, ::a
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postScaledImu", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postScaledImu", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postRawImu(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postRawImu(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postRawImu", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postRawImu", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postRawImu");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postRawImu");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postRawImu");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postRawImu");
   }
 
-  CommonMessagePostService_postRawImu_args args;
+  CommonMessagePost_postRawImu_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postRawImu", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postRawImu", bytes);
   }
 
-  CommonMessagePostService_postRawImu_result result;
+  CommonMessagePost_postRawImu_result result;
   try {
     iface_->postRawImu(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19426,7 +19426,7 @@ void CommonMessagePostServiceProcessor::process_postRawImu(int32_t seqid, ::apac
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postRawImu");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postRawImu");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19439,7 +19439,7 @@ void CommonMessagePostServiceProcessor::process_postRawImu(int32_t seqid, ::apac
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postRawImu");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postRawImu");
   }
 
   oprot->writeMessageBegin("postRawImu", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19449,32 +19449,32 @@ void CommonMessagePostServiceProcessor::process_postRawImu(int32_t seqid, ::apac
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postRawImu", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postRawImu", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postRawPressure(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postRawPressure(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postRawPressure", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postRawPressure", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postRawPressure");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postRawPressure");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postRawPressure");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postRawPressure");
   }
 
-  CommonMessagePostService_postRawPressure_args args;
+  CommonMessagePost_postRawPressure_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postRawPressure", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postRawPressure", bytes);
   }
 
-  CommonMessagePostService_postRawPressure_result result;
+  CommonMessagePost_postRawPressure_result result;
   try {
     iface_->postRawPressure(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19482,7 +19482,7 @@ void CommonMessagePostServiceProcessor::process_postRawPressure(int32_t seqid, :
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postRawPressure");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postRawPressure");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19495,7 +19495,7 @@ void CommonMessagePostServiceProcessor::process_postRawPressure(int32_t seqid, :
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postRawPressure");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postRawPressure");
   }
 
   oprot->writeMessageBegin("postRawPressure", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19505,32 +19505,32 @@ void CommonMessagePostServiceProcessor::process_postRawPressure(int32_t seqid, :
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postRawPressure", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postRawPressure", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postScaledPressure(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postScaledPressure(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postScaledPressure", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postScaledPressure", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postScaledPressure");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postScaledPressure");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postScaledPressure");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postScaledPressure");
   }
 
-  CommonMessagePostService_postScaledPressure_args args;
+  CommonMessagePost_postScaledPressure_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postScaledPressure", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postScaledPressure", bytes);
   }
 
-  CommonMessagePostService_postScaledPressure_result result;
+  CommonMessagePost_postScaledPressure_result result;
   try {
     iface_->postScaledPressure(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19538,7 +19538,7 @@ void CommonMessagePostServiceProcessor::process_postScaledPressure(int32_t seqid
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postScaledPressure");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postScaledPressure");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19551,7 +19551,7 @@ void CommonMessagePostServiceProcessor::process_postScaledPressure(int32_t seqid
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postScaledPressure");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postScaledPressure");
   }
 
   oprot->writeMessageBegin("postScaledPressure", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19561,32 +19561,32 @@ void CommonMessagePostServiceProcessor::process_postScaledPressure(int32_t seqid
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postScaledPressure", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postScaledPressure", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postAttitude(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postAttitude(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postAttitude", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postAttitude", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postAttitude");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postAttitude");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postAttitude");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postAttitude");
   }
 
-  CommonMessagePostService_postAttitude_args args;
+  CommonMessagePost_postAttitude_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postAttitude", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postAttitude", bytes);
   }
 
-  CommonMessagePostService_postAttitude_result result;
+  CommonMessagePost_postAttitude_result result;
   try {
     iface_->postAttitude(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19594,7 +19594,7 @@ void CommonMessagePostServiceProcessor::process_postAttitude(int32_t seqid, ::ap
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postAttitude");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postAttitude");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19607,7 +19607,7 @@ void CommonMessagePostServiceProcessor::process_postAttitude(int32_t seqid, ::ap
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postAttitude");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postAttitude");
   }
 
   oprot->writeMessageBegin("postAttitude", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19617,32 +19617,32 @@ void CommonMessagePostServiceProcessor::process_postAttitude(int32_t seqid, ::ap
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postAttitude", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postAttitude", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postAttitudeQuaternion(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postAttitudeQuaternion(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postAttitudeQuaternion", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postAttitudeQuaternion", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postAttitudeQuaternion");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postAttitudeQuaternion");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postAttitudeQuaternion");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postAttitudeQuaternion");
   }
 
-  CommonMessagePostService_postAttitudeQuaternion_args args;
+  CommonMessagePost_postAttitudeQuaternion_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postAttitudeQuaternion", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postAttitudeQuaternion", bytes);
   }
 
-  CommonMessagePostService_postAttitudeQuaternion_result result;
+  CommonMessagePost_postAttitudeQuaternion_result result;
   try {
     iface_->postAttitudeQuaternion(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19650,7 +19650,7 @@ void CommonMessagePostServiceProcessor::process_postAttitudeQuaternion(int32_t s
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postAttitudeQuaternion");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postAttitudeQuaternion");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19663,7 +19663,7 @@ void CommonMessagePostServiceProcessor::process_postAttitudeQuaternion(int32_t s
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postAttitudeQuaternion");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postAttitudeQuaternion");
   }
 
   oprot->writeMessageBegin("postAttitudeQuaternion", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19673,32 +19673,32 @@ void CommonMessagePostServiceProcessor::process_postAttitudeQuaternion(int32_t s
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postAttitudeQuaternion", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postAttitudeQuaternion", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postLocalPositionNed(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postLocalPositionNed(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postLocalPositionNed", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postLocalPositionNed", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postLocalPositionNed");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postLocalPositionNed");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postLocalPositionNed");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postLocalPositionNed");
   }
 
-  CommonMessagePostService_postLocalPositionNed_args args;
+  CommonMessagePost_postLocalPositionNed_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postLocalPositionNed", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postLocalPositionNed", bytes);
   }
 
-  CommonMessagePostService_postLocalPositionNed_result result;
+  CommonMessagePost_postLocalPositionNed_result result;
   try {
     iface_->postLocalPositionNed(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19706,7 +19706,7 @@ void CommonMessagePostServiceProcessor::process_postLocalPositionNed(int32_t seq
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postLocalPositionNed");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postLocalPositionNed");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19719,7 +19719,7 @@ void CommonMessagePostServiceProcessor::process_postLocalPositionNed(int32_t seq
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postLocalPositionNed");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postLocalPositionNed");
   }
 
   oprot->writeMessageBegin("postLocalPositionNed", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19729,32 +19729,32 @@ void CommonMessagePostServiceProcessor::process_postLocalPositionNed(int32_t seq
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postLocalPositionNed", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postLocalPositionNed", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postGlobalPositionInt(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postGlobalPositionInt(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postGlobalPositionInt", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postGlobalPositionInt", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postGlobalPositionInt");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postGlobalPositionInt");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postGlobalPositionInt");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postGlobalPositionInt");
   }
 
-  CommonMessagePostService_postGlobalPositionInt_args args;
+  CommonMessagePost_postGlobalPositionInt_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postGlobalPositionInt", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postGlobalPositionInt", bytes);
   }
 
-  CommonMessagePostService_postGlobalPositionInt_result result;
+  CommonMessagePost_postGlobalPositionInt_result result;
   try {
     iface_->postGlobalPositionInt(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19762,7 +19762,7 @@ void CommonMessagePostServiceProcessor::process_postGlobalPositionInt(int32_t se
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postGlobalPositionInt");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postGlobalPositionInt");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19775,7 +19775,7 @@ void CommonMessagePostServiceProcessor::process_postGlobalPositionInt(int32_t se
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postGlobalPositionInt");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postGlobalPositionInt");
   }
 
   oprot->writeMessageBegin("postGlobalPositionInt", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19785,32 +19785,32 @@ void CommonMessagePostServiceProcessor::process_postGlobalPositionInt(int32_t se
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postGlobalPositionInt", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postGlobalPositionInt", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postRcChannelsScaled(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postRcChannelsScaled(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postRcChannelsScaled", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postRcChannelsScaled", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postRcChannelsScaled");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postRcChannelsScaled");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postRcChannelsScaled");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postRcChannelsScaled");
   }
 
-  CommonMessagePostService_postRcChannelsScaled_args args;
+  CommonMessagePost_postRcChannelsScaled_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postRcChannelsScaled", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postRcChannelsScaled", bytes);
   }
 
-  CommonMessagePostService_postRcChannelsScaled_result result;
+  CommonMessagePost_postRcChannelsScaled_result result;
   try {
     iface_->postRcChannelsScaled(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19818,7 +19818,7 @@ void CommonMessagePostServiceProcessor::process_postRcChannelsScaled(int32_t seq
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postRcChannelsScaled");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postRcChannelsScaled");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19831,7 +19831,7 @@ void CommonMessagePostServiceProcessor::process_postRcChannelsScaled(int32_t seq
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postRcChannelsScaled");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postRcChannelsScaled");
   }
 
   oprot->writeMessageBegin("postRcChannelsScaled", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19841,32 +19841,32 @@ void CommonMessagePostServiceProcessor::process_postRcChannelsScaled(int32_t seq
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postRcChannelsScaled", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postRcChannelsScaled", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postRcChannelsRaw(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postRcChannelsRaw(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postRcChannelsRaw", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postRcChannelsRaw", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postRcChannelsRaw");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postRcChannelsRaw");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postRcChannelsRaw");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postRcChannelsRaw");
   }
 
-  CommonMessagePostService_postRcChannelsRaw_args args;
+  CommonMessagePost_postRcChannelsRaw_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postRcChannelsRaw", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postRcChannelsRaw", bytes);
   }
 
-  CommonMessagePostService_postRcChannelsRaw_result result;
+  CommonMessagePost_postRcChannelsRaw_result result;
   try {
     iface_->postRcChannelsRaw(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19874,7 +19874,7 @@ void CommonMessagePostServiceProcessor::process_postRcChannelsRaw(int32_t seqid,
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postRcChannelsRaw");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postRcChannelsRaw");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19887,7 +19887,7 @@ void CommonMessagePostServiceProcessor::process_postRcChannelsRaw(int32_t seqid,
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postRcChannelsRaw");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postRcChannelsRaw");
   }
 
   oprot->writeMessageBegin("postRcChannelsRaw", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19897,32 +19897,32 @@ void CommonMessagePostServiceProcessor::process_postRcChannelsRaw(int32_t seqid,
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postRcChannelsRaw", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postRcChannelsRaw", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postServoOutputRaw(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postServoOutputRaw(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postServoOutputRaw", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postServoOutputRaw", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postServoOutputRaw");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postServoOutputRaw");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postServoOutputRaw");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postServoOutputRaw");
   }
 
-  CommonMessagePostService_postServoOutputRaw_args args;
+  CommonMessagePost_postServoOutputRaw_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postServoOutputRaw", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postServoOutputRaw", bytes);
   }
 
-  CommonMessagePostService_postServoOutputRaw_result result;
+  CommonMessagePost_postServoOutputRaw_result result;
   try {
     iface_->postServoOutputRaw(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19930,7 +19930,7 @@ void CommonMessagePostServiceProcessor::process_postServoOutputRaw(int32_t seqid
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postServoOutputRaw");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postServoOutputRaw");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19943,7 +19943,7 @@ void CommonMessagePostServiceProcessor::process_postServoOutputRaw(int32_t seqid
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postServoOutputRaw");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postServoOutputRaw");
   }
 
   oprot->writeMessageBegin("postServoOutputRaw", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -19953,32 +19953,32 @@ void CommonMessagePostServiceProcessor::process_postServoOutputRaw(int32_t seqid
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postServoOutputRaw", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postServoOutputRaw", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionRequestPartialList(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionRequestPartialList(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionRequestPartialList", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionRequestPartialList", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionRequestPartialList");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionRequestPartialList");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionRequestPartialList");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionRequestPartialList");
   }
 
-  CommonMessagePostService_postMissionRequestPartialList_args args;
+  CommonMessagePost_postMissionRequestPartialList_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionRequestPartialList", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionRequestPartialList", bytes);
   }
 
-  CommonMessagePostService_postMissionRequestPartialList_result result;
+  CommonMessagePost_postMissionRequestPartialList_result result;
   try {
     iface_->postMissionRequestPartialList(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -19986,7 +19986,7 @@ void CommonMessagePostServiceProcessor::process_postMissionRequestPartialList(in
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionRequestPartialList");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionRequestPartialList");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -19999,7 +19999,7 @@ void CommonMessagePostServiceProcessor::process_postMissionRequestPartialList(in
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionRequestPartialList");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionRequestPartialList");
   }
 
   oprot->writeMessageBegin("postMissionRequestPartialList", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20009,32 +20009,32 @@ void CommonMessagePostServiceProcessor::process_postMissionRequestPartialList(in
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionRequestPartialList", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionRequestPartialList", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionWritePartialList(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionWritePartialList(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionWritePartialList", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionWritePartialList", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionWritePartialList");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionWritePartialList");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionWritePartialList");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionWritePartialList");
   }
 
-  CommonMessagePostService_postMissionWritePartialList_args args;
+  CommonMessagePost_postMissionWritePartialList_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionWritePartialList", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionWritePartialList", bytes);
   }
 
-  CommonMessagePostService_postMissionWritePartialList_result result;
+  CommonMessagePost_postMissionWritePartialList_result result;
   try {
     iface_->postMissionWritePartialList(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20042,7 +20042,7 @@ void CommonMessagePostServiceProcessor::process_postMissionWritePartialList(int3
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionWritePartialList");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionWritePartialList");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20055,7 +20055,7 @@ void CommonMessagePostServiceProcessor::process_postMissionWritePartialList(int3
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionWritePartialList");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionWritePartialList");
   }
 
   oprot->writeMessageBegin("postMissionWritePartialList", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20065,32 +20065,32 @@ void CommonMessagePostServiceProcessor::process_postMissionWritePartialList(int3
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionWritePartialList", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionWritePartialList", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionItem(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionItem(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionItem", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionItem", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionItem");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionItem");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionItem");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionItem");
   }
 
-  CommonMessagePostService_postMissionItem_args args;
+  CommonMessagePost_postMissionItem_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionItem", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionItem", bytes);
   }
 
-  CommonMessagePostService_postMissionItem_result result;
+  CommonMessagePost_postMissionItem_result result;
   try {
     iface_->postMissionItem(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20098,7 +20098,7 @@ void CommonMessagePostServiceProcessor::process_postMissionItem(int32_t seqid, :
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionItem");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionItem");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20111,7 +20111,7 @@ void CommonMessagePostServiceProcessor::process_postMissionItem(int32_t seqid, :
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionItem");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionItem");
   }
 
   oprot->writeMessageBegin("postMissionItem", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20121,32 +20121,32 @@ void CommonMessagePostServiceProcessor::process_postMissionItem(int32_t seqid, :
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionItem", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionItem", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionRequest(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionRequest(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionRequest", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionRequest", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionRequest");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionRequest");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionRequest");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionRequest");
   }
 
-  CommonMessagePostService_postMissionRequest_args args;
+  CommonMessagePost_postMissionRequest_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionRequest", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionRequest", bytes);
   }
 
-  CommonMessagePostService_postMissionRequest_result result;
+  CommonMessagePost_postMissionRequest_result result;
   try {
     iface_->postMissionRequest(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20154,7 +20154,7 @@ void CommonMessagePostServiceProcessor::process_postMissionRequest(int32_t seqid
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionRequest");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionRequest");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20167,7 +20167,7 @@ void CommonMessagePostServiceProcessor::process_postMissionRequest(int32_t seqid
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionRequest");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionRequest");
   }
 
   oprot->writeMessageBegin("postMissionRequest", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20177,32 +20177,32 @@ void CommonMessagePostServiceProcessor::process_postMissionRequest(int32_t seqid
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionRequest", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionRequest", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionSetCurrent(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionSetCurrent(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionSetCurrent", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionSetCurrent", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionSetCurrent");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionSetCurrent");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionSetCurrent");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionSetCurrent");
   }
 
-  CommonMessagePostService_postMissionSetCurrent_args args;
+  CommonMessagePost_postMissionSetCurrent_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionSetCurrent", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionSetCurrent", bytes);
   }
 
-  CommonMessagePostService_postMissionSetCurrent_result result;
+  CommonMessagePost_postMissionSetCurrent_result result;
   try {
     iface_->postMissionSetCurrent(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20210,7 +20210,7 @@ void CommonMessagePostServiceProcessor::process_postMissionSetCurrent(int32_t se
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionSetCurrent");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionSetCurrent");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20223,7 +20223,7 @@ void CommonMessagePostServiceProcessor::process_postMissionSetCurrent(int32_t se
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionSetCurrent");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionSetCurrent");
   }
 
   oprot->writeMessageBegin("postMissionSetCurrent", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20233,32 +20233,32 @@ void CommonMessagePostServiceProcessor::process_postMissionSetCurrent(int32_t se
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionSetCurrent", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionSetCurrent", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionCurrent(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionCurrent(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionCurrent", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionCurrent", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionCurrent");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionCurrent");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionCurrent");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionCurrent");
   }
 
-  CommonMessagePostService_postMissionCurrent_args args;
+  CommonMessagePost_postMissionCurrent_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionCurrent", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionCurrent", bytes);
   }
 
-  CommonMessagePostService_postMissionCurrent_result result;
+  CommonMessagePost_postMissionCurrent_result result;
   try {
     iface_->postMissionCurrent(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20266,7 +20266,7 @@ void CommonMessagePostServiceProcessor::process_postMissionCurrent(int32_t seqid
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionCurrent");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionCurrent");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20279,7 +20279,7 @@ void CommonMessagePostServiceProcessor::process_postMissionCurrent(int32_t seqid
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionCurrent");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionCurrent");
   }
 
   oprot->writeMessageBegin("postMissionCurrent", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20289,32 +20289,32 @@ void CommonMessagePostServiceProcessor::process_postMissionCurrent(int32_t seqid
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionCurrent", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionCurrent", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionRequestList(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionRequestList(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionRequestList", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionRequestList", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionRequestList");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionRequestList");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionRequestList");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionRequestList");
   }
 
-  CommonMessagePostService_postMissionRequestList_args args;
+  CommonMessagePost_postMissionRequestList_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionRequestList", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionRequestList", bytes);
   }
 
-  CommonMessagePostService_postMissionRequestList_result result;
+  CommonMessagePost_postMissionRequestList_result result;
   try {
     iface_->postMissionRequestList(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20322,7 +20322,7 @@ void CommonMessagePostServiceProcessor::process_postMissionRequestList(int32_t s
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionRequestList");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionRequestList");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20335,7 +20335,7 @@ void CommonMessagePostServiceProcessor::process_postMissionRequestList(int32_t s
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionRequestList");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionRequestList");
   }
 
   oprot->writeMessageBegin("postMissionRequestList", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20345,32 +20345,32 @@ void CommonMessagePostServiceProcessor::process_postMissionRequestList(int32_t s
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionRequestList", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionRequestList", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionCount(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionCount(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionCount", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionCount", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionCount");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionCount");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionCount");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionCount");
   }
 
-  CommonMessagePostService_postMissionCount_args args;
+  CommonMessagePost_postMissionCount_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionCount", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionCount", bytes);
   }
 
-  CommonMessagePostService_postMissionCount_result result;
+  CommonMessagePost_postMissionCount_result result;
   try {
     iface_->postMissionCount(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20378,7 +20378,7 @@ void CommonMessagePostServiceProcessor::process_postMissionCount(int32_t seqid, 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionCount");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionCount");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20391,7 +20391,7 @@ void CommonMessagePostServiceProcessor::process_postMissionCount(int32_t seqid, 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionCount");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionCount");
   }
 
   oprot->writeMessageBegin("postMissionCount", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20401,32 +20401,32 @@ void CommonMessagePostServiceProcessor::process_postMissionCount(int32_t seqid, 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionCount", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionCount", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionClearAll(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionClearAll(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionClearAll", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionClearAll", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionClearAll");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionClearAll");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionClearAll");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionClearAll");
   }
 
-  CommonMessagePostService_postMissionClearAll_args args;
+  CommonMessagePost_postMissionClearAll_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionClearAll", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionClearAll", bytes);
   }
 
-  CommonMessagePostService_postMissionClearAll_result result;
+  CommonMessagePost_postMissionClearAll_result result;
   try {
     iface_->postMissionClearAll(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20434,7 +20434,7 @@ void CommonMessagePostServiceProcessor::process_postMissionClearAll(int32_t seqi
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionClearAll");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionClearAll");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20447,7 +20447,7 @@ void CommonMessagePostServiceProcessor::process_postMissionClearAll(int32_t seqi
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionClearAll");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionClearAll");
   }
 
   oprot->writeMessageBegin("postMissionClearAll", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20457,32 +20457,32 @@ void CommonMessagePostServiceProcessor::process_postMissionClearAll(int32_t seqi
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionClearAll", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionClearAll", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionItemReached(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionItemReached(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionItemReached", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionItemReached", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionItemReached");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionItemReached");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionItemReached");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionItemReached");
   }
 
-  CommonMessagePostService_postMissionItemReached_args args;
+  CommonMessagePost_postMissionItemReached_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionItemReached", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionItemReached", bytes);
   }
 
-  CommonMessagePostService_postMissionItemReached_result result;
+  CommonMessagePost_postMissionItemReached_result result;
   try {
     iface_->postMissionItemReached(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20490,7 +20490,7 @@ void CommonMessagePostServiceProcessor::process_postMissionItemReached(int32_t s
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionItemReached");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionItemReached");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20503,7 +20503,7 @@ void CommonMessagePostServiceProcessor::process_postMissionItemReached(int32_t s
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionItemReached");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionItemReached");
   }
 
   oprot->writeMessageBegin("postMissionItemReached", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20513,32 +20513,32 @@ void CommonMessagePostServiceProcessor::process_postMissionItemReached(int32_t s
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionItemReached", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionItemReached", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMissionAck(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMissionAck(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMissionAck", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMissionAck", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMissionAck");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMissionAck");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMissionAck");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMissionAck");
   }
 
-  CommonMessagePostService_postMissionAck_args args;
+  CommonMessagePost_postMissionAck_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMissionAck", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMissionAck", bytes);
   }
 
-  CommonMessagePostService_postMissionAck_result result;
+  CommonMessagePost_postMissionAck_result result;
   try {
     iface_->postMissionAck(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20546,7 +20546,7 @@ void CommonMessagePostServiceProcessor::process_postMissionAck(int32_t seqid, ::
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMissionAck");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMissionAck");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20559,7 +20559,7 @@ void CommonMessagePostServiceProcessor::process_postMissionAck(int32_t seqid, ::
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMissionAck");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMissionAck");
   }
 
   oprot->writeMessageBegin("postMissionAck", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20569,32 +20569,32 @@ void CommonMessagePostServiceProcessor::process_postMissionAck(int32_t seqid, ::
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMissionAck", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMissionAck", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetGpsGlobalOrigin(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetGpsGlobalOrigin(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetGpsGlobalOrigin", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetGpsGlobalOrigin", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetGpsGlobalOrigin");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetGpsGlobalOrigin");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetGpsGlobalOrigin");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetGpsGlobalOrigin");
   }
 
-  CommonMessagePostService_postSetGpsGlobalOrigin_args args;
+  CommonMessagePost_postSetGpsGlobalOrigin_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetGpsGlobalOrigin", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetGpsGlobalOrigin", bytes);
   }
 
-  CommonMessagePostService_postSetGpsGlobalOrigin_result result;
+  CommonMessagePost_postSetGpsGlobalOrigin_result result;
   try {
     iface_->postSetGpsGlobalOrigin(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20602,7 +20602,7 @@ void CommonMessagePostServiceProcessor::process_postSetGpsGlobalOrigin(int32_t s
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetGpsGlobalOrigin");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetGpsGlobalOrigin");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20615,7 +20615,7 @@ void CommonMessagePostServiceProcessor::process_postSetGpsGlobalOrigin(int32_t s
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetGpsGlobalOrigin");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetGpsGlobalOrigin");
   }
 
   oprot->writeMessageBegin("postSetGpsGlobalOrigin", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20625,32 +20625,32 @@ void CommonMessagePostServiceProcessor::process_postSetGpsGlobalOrigin(int32_t s
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetGpsGlobalOrigin", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetGpsGlobalOrigin", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postGpsGlobalOrigin(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postGpsGlobalOrigin(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postGpsGlobalOrigin", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postGpsGlobalOrigin", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postGpsGlobalOrigin");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postGpsGlobalOrigin");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postGpsGlobalOrigin");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postGpsGlobalOrigin");
   }
 
-  CommonMessagePostService_postGpsGlobalOrigin_args args;
+  CommonMessagePost_postGpsGlobalOrigin_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postGpsGlobalOrigin", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postGpsGlobalOrigin", bytes);
   }
 
-  CommonMessagePostService_postGpsGlobalOrigin_result result;
+  CommonMessagePost_postGpsGlobalOrigin_result result;
   try {
     iface_->postGpsGlobalOrigin(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20658,7 +20658,7 @@ void CommonMessagePostServiceProcessor::process_postGpsGlobalOrigin(int32_t seqi
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postGpsGlobalOrigin");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postGpsGlobalOrigin");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20671,7 +20671,7 @@ void CommonMessagePostServiceProcessor::process_postGpsGlobalOrigin(int32_t seqi
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postGpsGlobalOrigin");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postGpsGlobalOrigin");
   }
 
   oprot->writeMessageBegin("postGpsGlobalOrigin", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20681,32 +20681,32 @@ void CommonMessagePostServiceProcessor::process_postGpsGlobalOrigin(int32_t seqi
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postGpsGlobalOrigin", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postGpsGlobalOrigin", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetLocalPositionSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetLocalPositionSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetLocalPositionSetpoint", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetLocalPositionSetpoint", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetLocalPositionSetpoint");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetLocalPositionSetpoint");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetLocalPositionSetpoint");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetLocalPositionSetpoint");
   }
 
-  CommonMessagePostService_postSetLocalPositionSetpoint_args args;
+  CommonMessagePost_postSetLocalPositionSetpoint_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetLocalPositionSetpoint", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetLocalPositionSetpoint", bytes);
   }
 
-  CommonMessagePostService_postSetLocalPositionSetpoint_result result;
+  CommonMessagePost_postSetLocalPositionSetpoint_result result;
   try {
     iface_->postSetLocalPositionSetpoint(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20714,7 +20714,7 @@ void CommonMessagePostServiceProcessor::process_postSetLocalPositionSetpoint(int
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetLocalPositionSetpoint");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetLocalPositionSetpoint");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20727,7 +20727,7 @@ void CommonMessagePostServiceProcessor::process_postSetLocalPositionSetpoint(int
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetLocalPositionSetpoint");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetLocalPositionSetpoint");
   }
 
   oprot->writeMessageBegin("postSetLocalPositionSetpoint", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20737,32 +20737,32 @@ void CommonMessagePostServiceProcessor::process_postSetLocalPositionSetpoint(int
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetLocalPositionSetpoint", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetLocalPositionSetpoint", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postLocalPositionSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postLocalPositionSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postLocalPositionSetpoint", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postLocalPositionSetpoint", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postLocalPositionSetpoint");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postLocalPositionSetpoint");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postLocalPositionSetpoint");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postLocalPositionSetpoint");
   }
 
-  CommonMessagePostService_postLocalPositionSetpoint_args args;
+  CommonMessagePost_postLocalPositionSetpoint_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postLocalPositionSetpoint", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postLocalPositionSetpoint", bytes);
   }
 
-  CommonMessagePostService_postLocalPositionSetpoint_result result;
+  CommonMessagePost_postLocalPositionSetpoint_result result;
   try {
     iface_->postLocalPositionSetpoint(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20770,7 +20770,7 @@ void CommonMessagePostServiceProcessor::process_postLocalPositionSetpoint(int32_
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postLocalPositionSetpoint");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postLocalPositionSetpoint");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20783,7 +20783,7 @@ void CommonMessagePostServiceProcessor::process_postLocalPositionSetpoint(int32_
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postLocalPositionSetpoint");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postLocalPositionSetpoint");
   }
 
   oprot->writeMessageBegin("postLocalPositionSetpoint", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20793,32 +20793,32 @@ void CommonMessagePostServiceProcessor::process_postLocalPositionSetpoint(int32_
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postLocalPositionSetpoint", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postLocalPositionSetpoint", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postGlobalPositionSetpointInt(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postGlobalPositionSetpointInt(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postGlobalPositionSetpointInt", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postGlobalPositionSetpointInt", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postGlobalPositionSetpointInt");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postGlobalPositionSetpointInt");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postGlobalPositionSetpointInt");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postGlobalPositionSetpointInt");
   }
 
-  CommonMessagePostService_postGlobalPositionSetpointInt_args args;
+  CommonMessagePost_postGlobalPositionSetpointInt_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postGlobalPositionSetpointInt", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postGlobalPositionSetpointInt", bytes);
   }
 
-  CommonMessagePostService_postGlobalPositionSetpointInt_result result;
+  CommonMessagePost_postGlobalPositionSetpointInt_result result;
   try {
     iface_->postGlobalPositionSetpointInt(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20826,7 +20826,7 @@ void CommonMessagePostServiceProcessor::process_postGlobalPositionSetpointInt(in
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postGlobalPositionSetpointInt");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postGlobalPositionSetpointInt");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20839,7 +20839,7 @@ void CommonMessagePostServiceProcessor::process_postGlobalPositionSetpointInt(in
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postGlobalPositionSetpointInt");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postGlobalPositionSetpointInt");
   }
 
   oprot->writeMessageBegin("postGlobalPositionSetpointInt", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20849,32 +20849,32 @@ void CommonMessagePostServiceProcessor::process_postGlobalPositionSetpointInt(in
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postGlobalPositionSetpointInt", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postGlobalPositionSetpointInt", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetGlobalPositionSetpointInt(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetGlobalPositionSetpointInt(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetGlobalPositionSetpointInt", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetGlobalPositionSetpointInt", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetGlobalPositionSetpointInt");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetGlobalPositionSetpointInt");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetGlobalPositionSetpointInt");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetGlobalPositionSetpointInt");
   }
 
-  CommonMessagePostService_postSetGlobalPositionSetpointInt_args args;
+  CommonMessagePost_postSetGlobalPositionSetpointInt_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetGlobalPositionSetpointInt", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetGlobalPositionSetpointInt", bytes);
   }
 
-  CommonMessagePostService_postSetGlobalPositionSetpointInt_result result;
+  CommonMessagePost_postSetGlobalPositionSetpointInt_result result;
   try {
     iface_->postSetGlobalPositionSetpointInt(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20882,7 +20882,7 @@ void CommonMessagePostServiceProcessor::process_postSetGlobalPositionSetpointInt
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetGlobalPositionSetpointInt");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetGlobalPositionSetpointInt");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20895,7 +20895,7 @@ void CommonMessagePostServiceProcessor::process_postSetGlobalPositionSetpointInt
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetGlobalPositionSetpointInt");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetGlobalPositionSetpointInt");
   }
 
   oprot->writeMessageBegin("postSetGlobalPositionSetpointInt", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20905,32 +20905,32 @@ void CommonMessagePostServiceProcessor::process_postSetGlobalPositionSetpointInt
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetGlobalPositionSetpointInt", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetGlobalPositionSetpointInt", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSafetySetAllowedArea(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSafetySetAllowedArea(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSafetySetAllowedArea", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSafetySetAllowedArea", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSafetySetAllowedArea");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSafetySetAllowedArea");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSafetySetAllowedArea");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSafetySetAllowedArea");
   }
 
-  CommonMessagePostService_postSafetySetAllowedArea_args args;
+  CommonMessagePost_postSafetySetAllowedArea_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSafetySetAllowedArea", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSafetySetAllowedArea", bytes);
   }
 
-  CommonMessagePostService_postSafetySetAllowedArea_result result;
+  CommonMessagePost_postSafetySetAllowedArea_result result;
   try {
     iface_->postSafetySetAllowedArea(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20938,7 +20938,7 @@ void CommonMessagePostServiceProcessor::process_postSafetySetAllowedArea(int32_t
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSafetySetAllowedArea");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSafetySetAllowedArea");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -20951,7 +20951,7 @@ void CommonMessagePostServiceProcessor::process_postSafetySetAllowedArea(int32_t
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSafetySetAllowedArea");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSafetySetAllowedArea");
   }
 
   oprot->writeMessageBegin("postSafetySetAllowedArea", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -20961,32 +20961,32 @@ void CommonMessagePostServiceProcessor::process_postSafetySetAllowedArea(int32_t
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSafetySetAllowedArea", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSafetySetAllowedArea", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSafetyAllowedArea(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSafetyAllowedArea(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSafetyAllowedArea", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSafetyAllowedArea", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSafetyAllowedArea");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSafetyAllowedArea");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSafetyAllowedArea");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSafetyAllowedArea");
   }
 
-  CommonMessagePostService_postSafetyAllowedArea_args args;
+  CommonMessagePost_postSafetyAllowedArea_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSafetyAllowedArea", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSafetyAllowedArea", bytes);
   }
 
-  CommonMessagePostService_postSafetyAllowedArea_result result;
+  CommonMessagePost_postSafetyAllowedArea_result result;
   try {
     iface_->postSafetyAllowedArea(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -20994,7 +20994,7 @@ void CommonMessagePostServiceProcessor::process_postSafetyAllowedArea(int32_t se
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSafetyAllowedArea");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSafetyAllowedArea");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21007,7 +21007,7 @@ void CommonMessagePostServiceProcessor::process_postSafetyAllowedArea(int32_t se
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSafetyAllowedArea");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSafetyAllowedArea");
   }
 
   oprot->writeMessageBegin("postSafetyAllowedArea", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21017,32 +21017,32 @@ void CommonMessagePostServiceProcessor::process_postSafetyAllowedArea(int32_t se
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSafetyAllowedArea", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSafetyAllowedArea", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetRollPitchYawThrust(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetRollPitchYawThrust(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetRollPitchYawThrust", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetRollPitchYawThrust", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetRollPitchYawThrust");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetRollPitchYawThrust");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetRollPitchYawThrust");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetRollPitchYawThrust");
   }
 
-  CommonMessagePostService_postSetRollPitchYawThrust_args args;
+  CommonMessagePost_postSetRollPitchYawThrust_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetRollPitchYawThrust", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetRollPitchYawThrust", bytes);
   }
 
-  CommonMessagePostService_postSetRollPitchYawThrust_result result;
+  CommonMessagePost_postSetRollPitchYawThrust_result result;
   try {
     iface_->postSetRollPitchYawThrust(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21050,7 +21050,7 @@ void CommonMessagePostServiceProcessor::process_postSetRollPitchYawThrust(int32_
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetRollPitchYawThrust");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetRollPitchYawThrust");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21063,7 +21063,7 @@ void CommonMessagePostServiceProcessor::process_postSetRollPitchYawThrust(int32_
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetRollPitchYawThrust");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetRollPitchYawThrust");
   }
 
   oprot->writeMessageBegin("postSetRollPitchYawThrust", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21073,32 +21073,32 @@ void CommonMessagePostServiceProcessor::process_postSetRollPitchYawThrust(int32_
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetRollPitchYawThrust", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetRollPitchYawThrust", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetRollPitchYawSpeedThrust(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetRollPitchYawSpeedThrust(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetRollPitchYawSpeedThrust", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetRollPitchYawSpeedThrust", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetRollPitchYawSpeedThrust");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetRollPitchYawSpeedThrust");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetRollPitchYawSpeedThrust");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetRollPitchYawSpeedThrust");
   }
 
-  CommonMessagePostService_postSetRollPitchYawSpeedThrust_args args;
+  CommonMessagePost_postSetRollPitchYawSpeedThrust_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetRollPitchYawSpeedThrust", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetRollPitchYawSpeedThrust", bytes);
   }
 
-  CommonMessagePostService_postSetRollPitchYawSpeedThrust_result result;
+  CommonMessagePost_postSetRollPitchYawSpeedThrust_result result;
   try {
     iface_->postSetRollPitchYawSpeedThrust(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21106,7 +21106,7 @@ void CommonMessagePostServiceProcessor::process_postSetRollPitchYawSpeedThrust(i
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetRollPitchYawSpeedThrust");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetRollPitchYawSpeedThrust");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21119,7 +21119,7 @@ void CommonMessagePostServiceProcessor::process_postSetRollPitchYawSpeedThrust(i
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetRollPitchYawSpeedThrust");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetRollPitchYawSpeedThrust");
   }
 
   oprot->writeMessageBegin("postSetRollPitchYawSpeedThrust", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21129,32 +21129,32 @@ void CommonMessagePostServiceProcessor::process_postSetRollPitchYawSpeedThrust(i
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetRollPitchYawSpeedThrust", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetRollPitchYawSpeedThrust", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postRollPitchYawThrustSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postRollPitchYawThrustSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postRollPitchYawThrustSetpoint", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postRollPitchYawThrustSetpoint", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postRollPitchYawThrustSetpoint");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postRollPitchYawThrustSetpoint");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postRollPitchYawThrustSetpoint");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postRollPitchYawThrustSetpoint");
   }
 
-  CommonMessagePostService_postRollPitchYawThrustSetpoint_args args;
+  CommonMessagePost_postRollPitchYawThrustSetpoint_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postRollPitchYawThrustSetpoint", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postRollPitchYawThrustSetpoint", bytes);
   }
 
-  CommonMessagePostService_postRollPitchYawThrustSetpoint_result result;
+  CommonMessagePost_postRollPitchYawThrustSetpoint_result result;
   try {
     iface_->postRollPitchYawThrustSetpoint(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21162,7 +21162,7 @@ void CommonMessagePostServiceProcessor::process_postRollPitchYawThrustSetpoint(i
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postRollPitchYawThrustSetpoint");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postRollPitchYawThrustSetpoint");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21175,7 +21175,7 @@ void CommonMessagePostServiceProcessor::process_postRollPitchYawThrustSetpoint(i
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postRollPitchYawThrustSetpoint");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postRollPitchYawThrustSetpoint");
   }
 
   oprot->writeMessageBegin("postRollPitchYawThrustSetpoint", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21185,32 +21185,32 @@ void CommonMessagePostServiceProcessor::process_postRollPitchYawThrustSetpoint(i
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postRollPitchYawThrustSetpoint", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postRollPitchYawThrustSetpoint", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postRollPitchYawSpeedThrustSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postRollPitchYawSpeedThrustSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postRollPitchYawSpeedThrustSetpoint", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postRollPitchYawSpeedThrustSetpoint", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postRollPitchYawSpeedThrustSetpoint");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postRollPitchYawSpeedThrustSetpoint");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postRollPitchYawSpeedThrustSetpoint");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postRollPitchYawSpeedThrustSetpoint");
   }
 
-  CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_args args;
+  CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postRollPitchYawSpeedThrustSetpoint", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postRollPitchYawSpeedThrustSetpoint", bytes);
   }
 
-  CommonMessagePostService_postRollPitchYawSpeedThrustSetpoint_result result;
+  CommonMessagePost_postRollPitchYawSpeedThrustSetpoint_result result;
   try {
     iface_->postRollPitchYawSpeedThrustSetpoint(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21218,7 +21218,7 @@ void CommonMessagePostServiceProcessor::process_postRollPitchYawSpeedThrustSetpo
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postRollPitchYawSpeedThrustSetpoint");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postRollPitchYawSpeedThrustSetpoint");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21231,7 +21231,7 @@ void CommonMessagePostServiceProcessor::process_postRollPitchYawSpeedThrustSetpo
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postRollPitchYawSpeedThrustSetpoint");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postRollPitchYawSpeedThrustSetpoint");
   }
 
   oprot->writeMessageBegin("postRollPitchYawSpeedThrustSetpoint", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21241,32 +21241,32 @@ void CommonMessagePostServiceProcessor::process_postRollPitchYawSpeedThrustSetpo
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postRollPitchYawSpeedThrustSetpoint", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postRollPitchYawSpeedThrustSetpoint", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetQuadMotorsSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetQuadMotorsSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetQuadMotorsSetpoint", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetQuadMotorsSetpoint", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetQuadMotorsSetpoint");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetQuadMotorsSetpoint");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetQuadMotorsSetpoint");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetQuadMotorsSetpoint");
   }
 
-  CommonMessagePostService_postSetQuadMotorsSetpoint_args args;
+  CommonMessagePost_postSetQuadMotorsSetpoint_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetQuadMotorsSetpoint", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetQuadMotorsSetpoint", bytes);
   }
 
-  CommonMessagePostService_postSetQuadMotorsSetpoint_result result;
+  CommonMessagePost_postSetQuadMotorsSetpoint_result result;
   try {
     iface_->postSetQuadMotorsSetpoint(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21274,7 +21274,7 @@ void CommonMessagePostServiceProcessor::process_postSetQuadMotorsSetpoint(int32_
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetQuadMotorsSetpoint");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetQuadMotorsSetpoint");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21287,7 +21287,7 @@ void CommonMessagePostServiceProcessor::process_postSetQuadMotorsSetpoint(int32_
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetQuadMotorsSetpoint");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetQuadMotorsSetpoint");
   }
 
   oprot->writeMessageBegin("postSetQuadMotorsSetpoint", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21297,32 +21297,32 @@ void CommonMessagePostServiceProcessor::process_postSetQuadMotorsSetpoint(int32_
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetQuadMotorsSetpoint", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetQuadMotorsSetpoint", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetQuadSwarmRollPitchYawThrust(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetQuadSwarmRollPitchYawThrust(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetQuadSwarmRollPitchYawThrust", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetQuadSwarmRollPitchYawThrust", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetQuadSwarmRollPitchYawThrust");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetQuadSwarmRollPitchYawThrust");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetQuadSwarmRollPitchYawThrust");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetQuadSwarmRollPitchYawThrust");
   }
 
-  CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_args args;
+  CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetQuadSwarmRollPitchYawThrust", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetQuadSwarmRollPitchYawThrust", bytes);
   }
 
-  CommonMessagePostService_postSetQuadSwarmRollPitchYawThrust_result result;
+  CommonMessagePost_postSetQuadSwarmRollPitchYawThrust_result result;
   try {
     iface_->postSetQuadSwarmRollPitchYawThrust(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21330,7 +21330,7 @@ void CommonMessagePostServiceProcessor::process_postSetQuadSwarmRollPitchYawThru
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetQuadSwarmRollPitchYawThrust");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetQuadSwarmRollPitchYawThrust");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21343,7 +21343,7 @@ void CommonMessagePostServiceProcessor::process_postSetQuadSwarmRollPitchYawThru
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetQuadSwarmRollPitchYawThrust");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetQuadSwarmRollPitchYawThrust");
   }
 
   oprot->writeMessageBegin("postSetQuadSwarmRollPitchYawThrust", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21353,32 +21353,32 @@ void CommonMessagePostServiceProcessor::process_postSetQuadSwarmRollPitchYawThru
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetQuadSwarmRollPitchYawThrust", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetQuadSwarmRollPitchYawThrust", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postNavControllerOutput(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postNavControllerOutput(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postNavControllerOutput", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postNavControllerOutput", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postNavControllerOutput");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postNavControllerOutput");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postNavControllerOutput");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postNavControllerOutput");
   }
 
-  CommonMessagePostService_postNavControllerOutput_args args;
+  CommonMessagePost_postNavControllerOutput_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postNavControllerOutput", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postNavControllerOutput", bytes);
   }
 
-  CommonMessagePostService_postNavControllerOutput_result result;
+  CommonMessagePost_postNavControllerOutput_result result;
   try {
     iface_->postNavControllerOutput(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21386,7 +21386,7 @@ void CommonMessagePostServiceProcessor::process_postNavControllerOutput(int32_t 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postNavControllerOutput");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postNavControllerOutput");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21399,7 +21399,7 @@ void CommonMessagePostServiceProcessor::process_postNavControllerOutput(int32_t 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postNavControllerOutput");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postNavControllerOutput");
   }
 
   oprot->writeMessageBegin("postNavControllerOutput", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21409,32 +21409,32 @@ void CommonMessagePostServiceProcessor::process_postNavControllerOutput(int32_t 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postNavControllerOutput", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postNavControllerOutput", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetQuadSwarmLedRollPitchYawThrust(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetQuadSwarmLedRollPitchYawThrust(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetQuadSwarmLedRollPitchYawThrust", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetQuadSwarmLedRollPitchYawThrust", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetQuadSwarmLedRollPitchYawThrust");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetQuadSwarmLedRollPitchYawThrust");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetQuadSwarmLedRollPitchYawThrust");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetQuadSwarmLedRollPitchYawThrust");
   }
 
-  CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_args args;
+  CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetQuadSwarmLedRollPitchYawThrust", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetQuadSwarmLedRollPitchYawThrust", bytes);
   }
 
-  CommonMessagePostService_postSetQuadSwarmLedRollPitchYawThrust_result result;
+  CommonMessagePost_postSetQuadSwarmLedRollPitchYawThrust_result result;
   try {
     iface_->postSetQuadSwarmLedRollPitchYawThrust(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21442,7 +21442,7 @@ void CommonMessagePostServiceProcessor::process_postSetQuadSwarmLedRollPitchYawT
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetQuadSwarmLedRollPitchYawThrust");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetQuadSwarmLedRollPitchYawThrust");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21455,7 +21455,7 @@ void CommonMessagePostServiceProcessor::process_postSetQuadSwarmLedRollPitchYawT
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetQuadSwarmLedRollPitchYawThrust");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetQuadSwarmLedRollPitchYawThrust");
   }
 
   oprot->writeMessageBegin("postSetQuadSwarmLedRollPitchYawThrust", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21465,32 +21465,32 @@ void CommonMessagePostServiceProcessor::process_postSetQuadSwarmLedRollPitchYawT
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetQuadSwarmLedRollPitchYawThrust", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetQuadSwarmLedRollPitchYawThrust", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postStateCorrection(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postStateCorrection(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postStateCorrection", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postStateCorrection", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postStateCorrection");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postStateCorrection");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postStateCorrection");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postStateCorrection");
   }
 
-  CommonMessagePostService_postStateCorrection_args args;
+  CommonMessagePost_postStateCorrection_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postStateCorrection", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postStateCorrection", bytes);
   }
 
-  CommonMessagePostService_postStateCorrection_result result;
+  CommonMessagePost_postStateCorrection_result result;
   try {
     iface_->postStateCorrection(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21498,7 +21498,7 @@ void CommonMessagePostServiceProcessor::process_postStateCorrection(int32_t seqi
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postStateCorrection");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postStateCorrection");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21511,7 +21511,7 @@ void CommonMessagePostServiceProcessor::process_postStateCorrection(int32_t seqi
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postStateCorrection");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postStateCorrection");
   }
 
   oprot->writeMessageBegin("postStateCorrection", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21521,32 +21521,32 @@ void CommonMessagePostServiceProcessor::process_postStateCorrection(int32_t seqi
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postStateCorrection", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postStateCorrection", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postRequestDataStream(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postRequestDataStream(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postRequestDataStream", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postRequestDataStream", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postRequestDataStream");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postRequestDataStream");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postRequestDataStream");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postRequestDataStream");
   }
 
-  CommonMessagePostService_postRequestDataStream_args args;
+  CommonMessagePost_postRequestDataStream_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postRequestDataStream", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postRequestDataStream", bytes);
   }
 
-  CommonMessagePostService_postRequestDataStream_result result;
+  CommonMessagePost_postRequestDataStream_result result;
   try {
     iface_->postRequestDataStream(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21554,7 +21554,7 @@ void CommonMessagePostServiceProcessor::process_postRequestDataStream(int32_t se
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postRequestDataStream");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postRequestDataStream");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21567,7 +21567,7 @@ void CommonMessagePostServiceProcessor::process_postRequestDataStream(int32_t se
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postRequestDataStream");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postRequestDataStream");
   }
 
   oprot->writeMessageBegin("postRequestDataStream", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21577,32 +21577,32 @@ void CommonMessagePostServiceProcessor::process_postRequestDataStream(int32_t se
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postRequestDataStream", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postRequestDataStream", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postDataStream(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postDataStream(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postDataStream", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postDataStream", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postDataStream");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postDataStream");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postDataStream");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postDataStream");
   }
 
-  CommonMessagePostService_postDataStream_args args;
+  CommonMessagePost_postDataStream_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postDataStream", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postDataStream", bytes);
   }
 
-  CommonMessagePostService_postDataStream_result result;
+  CommonMessagePost_postDataStream_result result;
   try {
     iface_->postDataStream(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21610,7 +21610,7 @@ void CommonMessagePostServiceProcessor::process_postDataStream(int32_t seqid, ::
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postDataStream");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postDataStream");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21623,7 +21623,7 @@ void CommonMessagePostServiceProcessor::process_postDataStream(int32_t seqid, ::
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postDataStream");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postDataStream");
   }
 
   oprot->writeMessageBegin("postDataStream", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21633,32 +21633,32 @@ void CommonMessagePostServiceProcessor::process_postDataStream(int32_t seqid, ::
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postDataStream", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postDataStream", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postManualControl(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postManualControl(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postManualControl", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postManualControl", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postManualControl");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postManualControl");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postManualControl");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postManualControl");
   }
 
-  CommonMessagePostService_postManualControl_args args;
+  CommonMessagePost_postManualControl_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postManualControl", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postManualControl", bytes);
   }
 
-  CommonMessagePostService_postManualControl_result result;
+  CommonMessagePost_postManualControl_result result;
   try {
     iface_->postManualControl(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21666,7 +21666,7 @@ void CommonMessagePostServiceProcessor::process_postManualControl(int32_t seqid,
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postManualControl");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postManualControl");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21679,7 +21679,7 @@ void CommonMessagePostServiceProcessor::process_postManualControl(int32_t seqid,
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postManualControl");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postManualControl");
   }
 
   oprot->writeMessageBegin("postManualControl", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21689,32 +21689,32 @@ void CommonMessagePostServiceProcessor::process_postManualControl(int32_t seqid,
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postManualControl", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postManualControl", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postRcChannelsOverride(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postRcChannelsOverride(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postRcChannelsOverride", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postRcChannelsOverride", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postRcChannelsOverride");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postRcChannelsOverride");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postRcChannelsOverride");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postRcChannelsOverride");
   }
 
-  CommonMessagePostService_postRcChannelsOverride_args args;
+  CommonMessagePost_postRcChannelsOverride_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postRcChannelsOverride", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postRcChannelsOverride", bytes);
   }
 
-  CommonMessagePostService_postRcChannelsOverride_result result;
+  CommonMessagePost_postRcChannelsOverride_result result;
   try {
     iface_->postRcChannelsOverride(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21722,7 +21722,7 @@ void CommonMessagePostServiceProcessor::process_postRcChannelsOverride(int32_t s
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postRcChannelsOverride");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postRcChannelsOverride");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21735,7 +21735,7 @@ void CommonMessagePostServiceProcessor::process_postRcChannelsOverride(int32_t s
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postRcChannelsOverride");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postRcChannelsOverride");
   }
 
   oprot->writeMessageBegin("postRcChannelsOverride", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21745,32 +21745,32 @@ void CommonMessagePostServiceProcessor::process_postRcChannelsOverride(int32_t s
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postRcChannelsOverride", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postRcChannelsOverride", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postVfrHud(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postVfrHud(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postVfrHud", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postVfrHud", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postVfrHud");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postVfrHud");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postVfrHud");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postVfrHud");
   }
 
-  CommonMessagePostService_postVfrHud_args args;
+  CommonMessagePost_postVfrHud_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postVfrHud", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postVfrHud", bytes);
   }
 
-  CommonMessagePostService_postVfrHud_result result;
+  CommonMessagePost_postVfrHud_result result;
   try {
     iface_->postVfrHud(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21778,7 +21778,7 @@ void CommonMessagePostServiceProcessor::process_postVfrHud(int32_t seqid, ::apac
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postVfrHud");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postVfrHud");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21791,7 +21791,7 @@ void CommonMessagePostServiceProcessor::process_postVfrHud(int32_t seqid, ::apac
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postVfrHud");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postVfrHud");
   }
 
   oprot->writeMessageBegin("postVfrHud", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21801,32 +21801,32 @@ void CommonMessagePostServiceProcessor::process_postVfrHud(int32_t seqid, ::apac
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postVfrHud", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postVfrHud", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postCommandLong(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postCommandLong(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postCommandLong", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postCommandLong", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postCommandLong");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postCommandLong");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postCommandLong");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postCommandLong");
   }
 
-  CommonMessagePostService_postCommandLong_args args;
+  CommonMessagePost_postCommandLong_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postCommandLong", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postCommandLong", bytes);
   }
 
-  CommonMessagePostService_postCommandLong_result result;
+  CommonMessagePost_postCommandLong_result result;
   try {
     iface_->postCommandLong(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21834,7 +21834,7 @@ void CommonMessagePostServiceProcessor::process_postCommandLong(int32_t seqid, :
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postCommandLong");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postCommandLong");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21847,7 +21847,7 @@ void CommonMessagePostServiceProcessor::process_postCommandLong(int32_t seqid, :
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postCommandLong");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postCommandLong");
   }
 
   oprot->writeMessageBegin("postCommandLong", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21857,32 +21857,32 @@ void CommonMessagePostServiceProcessor::process_postCommandLong(int32_t seqid, :
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postCommandLong", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postCommandLong", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postCommandAck(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postCommandAck(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postCommandAck", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postCommandAck", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postCommandAck");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postCommandAck");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postCommandAck");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postCommandAck");
   }
 
-  CommonMessagePostService_postCommandAck_args args;
+  CommonMessagePost_postCommandAck_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postCommandAck", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postCommandAck", bytes);
   }
 
-  CommonMessagePostService_postCommandAck_result result;
+  CommonMessagePost_postCommandAck_result result;
   try {
     iface_->postCommandAck(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21890,7 +21890,7 @@ void CommonMessagePostServiceProcessor::process_postCommandAck(int32_t seqid, ::
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postCommandAck");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postCommandAck");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21903,7 +21903,7 @@ void CommonMessagePostServiceProcessor::process_postCommandAck(int32_t seqid, ::
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postCommandAck");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postCommandAck");
   }
 
   oprot->writeMessageBegin("postCommandAck", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21913,32 +21913,32 @@ void CommonMessagePostServiceProcessor::process_postCommandAck(int32_t seqid, ::
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postCommandAck", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postCommandAck", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postRollPitchYawRatesThrustSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postRollPitchYawRatesThrustSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postRollPitchYawRatesThrustSetpoint", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postRollPitchYawRatesThrustSetpoint", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postRollPitchYawRatesThrustSetpoint");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postRollPitchYawRatesThrustSetpoint");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postRollPitchYawRatesThrustSetpoint");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postRollPitchYawRatesThrustSetpoint");
   }
 
-  CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_args args;
+  CommonMessagePost_postRollPitchYawRatesThrustSetpoint_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postRollPitchYawRatesThrustSetpoint", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postRollPitchYawRatesThrustSetpoint", bytes);
   }
 
-  CommonMessagePostService_postRollPitchYawRatesThrustSetpoint_result result;
+  CommonMessagePost_postRollPitchYawRatesThrustSetpoint_result result;
   try {
     iface_->postRollPitchYawRatesThrustSetpoint(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -21946,7 +21946,7 @@ void CommonMessagePostServiceProcessor::process_postRollPitchYawRatesThrustSetpo
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postRollPitchYawRatesThrustSetpoint");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postRollPitchYawRatesThrustSetpoint");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -21959,7 +21959,7 @@ void CommonMessagePostServiceProcessor::process_postRollPitchYawRatesThrustSetpo
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postRollPitchYawRatesThrustSetpoint");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postRollPitchYawRatesThrustSetpoint");
   }
 
   oprot->writeMessageBegin("postRollPitchYawRatesThrustSetpoint", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -21969,32 +21969,32 @@ void CommonMessagePostServiceProcessor::process_postRollPitchYawRatesThrustSetpo
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postRollPitchYawRatesThrustSetpoint", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postRollPitchYawRatesThrustSetpoint", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postManualSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postManualSetpoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postManualSetpoint", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postManualSetpoint", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postManualSetpoint");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postManualSetpoint");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postManualSetpoint");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postManualSetpoint");
   }
 
-  CommonMessagePostService_postManualSetpoint_args args;
+  CommonMessagePost_postManualSetpoint_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postManualSetpoint", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postManualSetpoint", bytes);
   }
 
-  CommonMessagePostService_postManualSetpoint_result result;
+  CommonMessagePost_postManualSetpoint_result result;
   try {
     iface_->postManualSetpoint(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22002,7 +22002,7 @@ void CommonMessagePostServiceProcessor::process_postManualSetpoint(int32_t seqid
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postManualSetpoint");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postManualSetpoint");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22015,7 +22015,7 @@ void CommonMessagePostServiceProcessor::process_postManualSetpoint(int32_t seqid
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postManualSetpoint");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postManualSetpoint");
   }
 
   oprot->writeMessageBegin("postManualSetpoint", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22025,32 +22025,32 @@ void CommonMessagePostServiceProcessor::process_postManualSetpoint(int32_t seqid
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postManualSetpoint", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postManualSetpoint", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postLocalPositionNedSystemGlobalOffset(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postLocalPositionNedSystemGlobalOffset(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postLocalPositionNedSystemGlobalOffset", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postLocalPositionNedSystemGlobalOffset", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postLocalPositionNedSystemGlobalOffset");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postLocalPositionNedSystemGlobalOffset");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postLocalPositionNedSystemGlobalOffset");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postLocalPositionNedSystemGlobalOffset");
   }
 
-  CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_args args;
+  CommonMessagePost_postLocalPositionNedSystemGlobalOffset_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postLocalPositionNedSystemGlobalOffset", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postLocalPositionNedSystemGlobalOffset", bytes);
   }
 
-  CommonMessagePostService_postLocalPositionNedSystemGlobalOffset_result result;
+  CommonMessagePost_postLocalPositionNedSystemGlobalOffset_result result;
   try {
     iface_->postLocalPositionNedSystemGlobalOffset(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22058,7 +22058,7 @@ void CommonMessagePostServiceProcessor::process_postLocalPositionNedSystemGlobal
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postLocalPositionNedSystemGlobalOffset");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postLocalPositionNedSystemGlobalOffset");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22071,7 +22071,7 @@ void CommonMessagePostServiceProcessor::process_postLocalPositionNedSystemGlobal
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postLocalPositionNedSystemGlobalOffset");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postLocalPositionNedSystemGlobalOffset");
   }
 
   oprot->writeMessageBegin("postLocalPositionNedSystemGlobalOffset", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22081,32 +22081,32 @@ void CommonMessagePostServiceProcessor::process_postLocalPositionNedSystemGlobal
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postLocalPositionNedSystemGlobalOffset", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postLocalPositionNedSystemGlobalOffset", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postHilState(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postHilState(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postHilState", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postHilState", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postHilState");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postHilState");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postHilState");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postHilState");
   }
 
-  CommonMessagePostService_postHilState_args args;
+  CommonMessagePost_postHilState_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postHilState", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postHilState", bytes);
   }
 
-  CommonMessagePostService_postHilState_result result;
+  CommonMessagePost_postHilState_result result;
   try {
     iface_->postHilState(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22114,7 +22114,7 @@ void CommonMessagePostServiceProcessor::process_postHilState(int32_t seqid, ::ap
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postHilState");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postHilState");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22127,7 +22127,7 @@ void CommonMessagePostServiceProcessor::process_postHilState(int32_t seqid, ::ap
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postHilState");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postHilState");
   }
 
   oprot->writeMessageBegin("postHilState", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22137,32 +22137,32 @@ void CommonMessagePostServiceProcessor::process_postHilState(int32_t seqid, ::ap
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postHilState", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postHilState", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postHilControls(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postHilControls(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postHilControls", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postHilControls", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postHilControls");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postHilControls");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postHilControls");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postHilControls");
   }
 
-  CommonMessagePostService_postHilControls_args args;
+  CommonMessagePost_postHilControls_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postHilControls", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postHilControls", bytes);
   }
 
-  CommonMessagePostService_postHilControls_result result;
+  CommonMessagePost_postHilControls_result result;
   try {
     iface_->postHilControls(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22170,7 +22170,7 @@ void CommonMessagePostServiceProcessor::process_postHilControls(int32_t seqid, :
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postHilControls");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postHilControls");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22183,7 +22183,7 @@ void CommonMessagePostServiceProcessor::process_postHilControls(int32_t seqid, :
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postHilControls");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postHilControls");
   }
 
   oprot->writeMessageBegin("postHilControls", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22193,32 +22193,32 @@ void CommonMessagePostServiceProcessor::process_postHilControls(int32_t seqid, :
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postHilControls", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postHilControls", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postHilRcInputsRaw(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postHilRcInputsRaw(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postHilRcInputsRaw", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postHilRcInputsRaw", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postHilRcInputsRaw");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postHilRcInputsRaw");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postHilRcInputsRaw");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postHilRcInputsRaw");
   }
 
-  CommonMessagePostService_postHilRcInputsRaw_args args;
+  CommonMessagePost_postHilRcInputsRaw_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postHilRcInputsRaw", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postHilRcInputsRaw", bytes);
   }
 
-  CommonMessagePostService_postHilRcInputsRaw_result result;
+  CommonMessagePost_postHilRcInputsRaw_result result;
   try {
     iface_->postHilRcInputsRaw(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22226,7 +22226,7 @@ void CommonMessagePostServiceProcessor::process_postHilRcInputsRaw(int32_t seqid
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postHilRcInputsRaw");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postHilRcInputsRaw");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22239,7 +22239,7 @@ void CommonMessagePostServiceProcessor::process_postHilRcInputsRaw(int32_t seqid
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postHilRcInputsRaw");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postHilRcInputsRaw");
   }
 
   oprot->writeMessageBegin("postHilRcInputsRaw", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22249,32 +22249,32 @@ void CommonMessagePostServiceProcessor::process_postHilRcInputsRaw(int32_t seqid
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postHilRcInputsRaw", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postHilRcInputsRaw", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postOpticalFlow(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postOpticalFlow(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postOpticalFlow", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postOpticalFlow", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postOpticalFlow");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postOpticalFlow");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postOpticalFlow");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postOpticalFlow");
   }
 
-  CommonMessagePostService_postOpticalFlow_args args;
+  CommonMessagePost_postOpticalFlow_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postOpticalFlow", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postOpticalFlow", bytes);
   }
 
-  CommonMessagePostService_postOpticalFlow_result result;
+  CommonMessagePost_postOpticalFlow_result result;
   try {
     iface_->postOpticalFlow(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22282,7 +22282,7 @@ void CommonMessagePostServiceProcessor::process_postOpticalFlow(int32_t seqid, :
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postOpticalFlow");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postOpticalFlow");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22295,7 +22295,7 @@ void CommonMessagePostServiceProcessor::process_postOpticalFlow(int32_t seqid, :
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postOpticalFlow");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postOpticalFlow");
   }
 
   oprot->writeMessageBegin("postOpticalFlow", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22305,32 +22305,32 @@ void CommonMessagePostServiceProcessor::process_postOpticalFlow(int32_t seqid, :
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postOpticalFlow", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postOpticalFlow", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postGlobalVisionPositionEstimate(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postGlobalVisionPositionEstimate(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postGlobalVisionPositionEstimate", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postGlobalVisionPositionEstimate", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postGlobalVisionPositionEstimate");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postGlobalVisionPositionEstimate");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postGlobalVisionPositionEstimate");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postGlobalVisionPositionEstimate");
   }
 
-  CommonMessagePostService_postGlobalVisionPositionEstimate_args args;
+  CommonMessagePost_postGlobalVisionPositionEstimate_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postGlobalVisionPositionEstimate", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postGlobalVisionPositionEstimate", bytes);
   }
 
-  CommonMessagePostService_postGlobalVisionPositionEstimate_result result;
+  CommonMessagePost_postGlobalVisionPositionEstimate_result result;
   try {
     iface_->postGlobalVisionPositionEstimate(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22338,7 +22338,7 @@ void CommonMessagePostServiceProcessor::process_postGlobalVisionPositionEstimate
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postGlobalVisionPositionEstimate");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postGlobalVisionPositionEstimate");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22351,7 +22351,7 @@ void CommonMessagePostServiceProcessor::process_postGlobalVisionPositionEstimate
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postGlobalVisionPositionEstimate");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postGlobalVisionPositionEstimate");
   }
 
   oprot->writeMessageBegin("postGlobalVisionPositionEstimate", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22361,32 +22361,32 @@ void CommonMessagePostServiceProcessor::process_postGlobalVisionPositionEstimate
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postGlobalVisionPositionEstimate", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postGlobalVisionPositionEstimate", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postVisionPositionEstimate(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postVisionPositionEstimate(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postVisionPositionEstimate", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postVisionPositionEstimate", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postVisionPositionEstimate");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postVisionPositionEstimate");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postVisionPositionEstimate");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postVisionPositionEstimate");
   }
 
-  CommonMessagePostService_postVisionPositionEstimate_args args;
+  CommonMessagePost_postVisionPositionEstimate_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postVisionPositionEstimate", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postVisionPositionEstimate", bytes);
   }
 
-  CommonMessagePostService_postVisionPositionEstimate_result result;
+  CommonMessagePost_postVisionPositionEstimate_result result;
   try {
     iface_->postVisionPositionEstimate(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22394,7 +22394,7 @@ void CommonMessagePostServiceProcessor::process_postVisionPositionEstimate(int32
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postVisionPositionEstimate");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postVisionPositionEstimate");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22407,7 +22407,7 @@ void CommonMessagePostServiceProcessor::process_postVisionPositionEstimate(int32
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postVisionPositionEstimate");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postVisionPositionEstimate");
   }
 
   oprot->writeMessageBegin("postVisionPositionEstimate", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22417,32 +22417,32 @@ void CommonMessagePostServiceProcessor::process_postVisionPositionEstimate(int32
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postVisionPositionEstimate", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postVisionPositionEstimate", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postVisionSpeedEstimate(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postVisionSpeedEstimate(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postVisionSpeedEstimate", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postVisionSpeedEstimate", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postVisionSpeedEstimate");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postVisionSpeedEstimate");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postVisionSpeedEstimate");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postVisionSpeedEstimate");
   }
 
-  CommonMessagePostService_postVisionSpeedEstimate_args args;
+  CommonMessagePost_postVisionSpeedEstimate_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postVisionSpeedEstimate", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postVisionSpeedEstimate", bytes);
   }
 
-  CommonMessagePostService_postVisionSpeedEstimate_result result;
+  CommonMessagePost_postVisionSpeedEstimate_result result;
   try {
     iface_->postVisionSpeedEstimate(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22450,7 +22450,7 @@ void CommonMessagePostServiceProcessor::process_postVisionSpeedEstimate(int32_t 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postVisionSpeedEstimate");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postVisionSpeedEstimate");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22463,7 +22463,7 @@ void CommonMessagePostServiceProcessor::process_postVisionSpeedEstimate(int32_t 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postVisionSpeedEstimate");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postVisionSpeedEstimate");
   }
 
   oprot->writeMessageBegin("postVisionSpeedEstimate", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22473,32 +22473,32 @@ void CommonMessagePostServiceProcessor::process_postVisionSpeedEstimate(int32_t 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postVisionSpeedEstimate", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postVisionSpeedEstimate", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postViconPositionEstimate(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postViconPositionEstimate(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postViconPositionEstimate", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postViconPositionEstimate", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postViconPositionEstimate");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postViconPositionEstimate");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postViconPositionEstimate");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postViconPositionEstimate");
   }
 
-  CommonMessagePostService_postViconPositionEstimate_args args;
+  CommonMessagePost_postViconPositionEstimate_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postViconPositionEstimate", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postViconPositionEstimate", bytes);
   }
 
-  CommonMessagePostService_postViconPositionEstimate_result result;
+  CommonMessagePost_postViconPositionEstimate_result result;
   try {
     iface_->postViconPositionEstimate(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22506,7 +22506,7 @@ void CommonMessagePostServiceProcessor::process_postViconPositionEstimate(int32_
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postViconPositionEstimate");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postViconPositionEstimate");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22519,7 +22519,7 @@ void CommonMessagePostServiceProcessor::process_postViconPositionEstimate(int32_
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postViconPositionEstimate");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postViconPositionEstimate");
   }
 
   oprot->writeMessageBegin("postViconPositionEstimate", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22529,32 +22529,32 @@ void CommonMessagePostServiceProcessor::process_postViconPositionEstimate(int32_
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postViconPositionEstimate", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postViconPositionEstimate", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postHighresImu(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postHighresImu(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postHighresImu", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postHighresImu", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postHighresImu");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postHighresImu");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postHighresImu");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postHighresImu");
   }
 
-  CommonMessagePostService_postHighresImu_args args;
+  CommonMessagePost_postHighresImu_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postHighresImu", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postHighresImu", bytes);
   }
 
-  CommonMessagePostService_postHighresImu_result result;
+  CommonMessagePost_postHighresImu_result result;
   try {
     iface_->postHighresImu(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22562,7 +22562,7 @@ void CommonMessagePostServiceProcessor::process_postHighresImu(int32_t seqid, ::
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postHighresImu");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postHighresImu");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22575,7 +22575,7 @@ void CommonMessagePostServiceProcessor::process_postHighresImu(int32_t seqid, ::
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postHighresImu");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postHighresImu");
   }
 
   oprot->writeMessageBegin("postHighresImu", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22585,32 +22585,32 @@ void CommonMessagePostServiceProcessor::process_postHighresImu(int32_t seqid, ::
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postHighresImu", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postHighresImu", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postOmnidirectionalFlow(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postOmnidirectionalFlow(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postOmnidirectionalFlow", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postOmnidirectionalFlow", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postOmnidirectionalFlow");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postOmnidirectionalFlow");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postOmnidirectionalFlow");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postOmnidirectionalFlow");
   }
 
-  CommonMessagePostService_postOmnidirectionalFlow_args args;
+  CommonMessagePost_postOmnidirectionalFlow_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postOmnidirectionalFlow", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postOmnidirectionalFlow", bytes);
   }
 
-  CommonMessagePostService_postOmnidirectionalFlow_result result;
+  CommonMessagePost_postOmnidirectionalFlow_result result;
   try {
     iface_->postOmnidirectionalFlow(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22618,7 +22618,7 @@ void CommonMessagePostServiceProcessor::process_postOmnidirectionalFlow(int32_t 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postOmnidirectionalFlow");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postOmnidirectionalFlow");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22631,7 +22631,7 @@ void CommonMessagePostServiceProcessor::process_postOmnidirectionalFlow(int32_t 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postOmnidirectionalFlow");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postOmnidirectionalFlow");
   }
 
   oprot->writeMessageBegin("postOmnidirectionalFlow", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22641,32 +22641,32 @@ void CommonMessagePostServiceProcessor::process_postOmnidirectionalFlow(int32_t 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postOmnidirectionalFlow", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postOmnidirectionalFlow", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postFileTransferStart(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postFileTransferStart(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postFileTransferStart", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postFileTransferStart", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postFileTransferStart");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postFileTransferStart");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postFileTransferStart");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postFileTransferStart");
   }
 
-  CommonMessagePostService_postFileTransferStart_args args;
+  CommonMessagePost_postFileTransferStart_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postFileTransferStart", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postFileTransferStart", bytes);
   }
 
-  CommonMessagePostService_postFileTransferStart_result result;
+  CommonMessagePost_postFileTransferStart_result result;
   try {
     iface_->postFileTransferStart(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22674,7 +22674,7 @@ void CommonMessagePostServiceProcessor::process_postFileTransferStart(int32_t se
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postFileTransferStart");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postFileTransferStart");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22687,7 +22687,7 @@ void CommonMessagePostServiceProcessor::process_postFileTransferStart(int32_t se
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postFileTransferStart");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postFileTransferStart");
   }
 
   oprot->writeMessageBegin("postFileTransferStart", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22697,32 +22697,32 @@ void CommonMessagePostServiceProcessor::process_postFileTransferStart(int32_t se
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postFileTransferStart", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postFileTransferStart", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postFileTransferDirList(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postFileTransferDirList(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postFileTransferDirList", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postFileTransferDirList", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postFileTransferDirList");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postFileTransferDirList");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postFileTransferDirList");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postFileTransferDirList");
   }
 
-  CommonMessagePostService_postFileTransferDirList_args args;
+  CommonMessagePost_postFileTransferDirList_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postFileTransferDirList", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postFileTransferDirList", bytes);
   }
 
-  CommonMessagePostService_postFileTransferDirList_result result;
+  CommonMessagePost_postFileTransferDirList_result result;
   try {
     iface_->postFileTransferDirList(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22730,7 +22730,7 @@ void CommonMessagePostServiceProcessor::process_postFileTransferDirList(int32_t 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postFileTransferDirList");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postFileTransferDirList");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22743,7 +22743,7 @@ void CommonMessagePostServiceProcessor::process_postFileTransferDirList(int32_t 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postFileTransferDirList");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postFileTransferDirList");
   }
 
   oprot->writeMessageBegin("postFileTransferDirList", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22753,32 +22753,32 @@ void CommonMessagePostServiceProcessor::process_postFileTransferDirList(int32_t 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postFileTransferDirList", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postFileTransferDirList", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postFileTransferRes(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postFileTransferRes(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postFileTransferRes", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postFileTransferRes", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postFileTransferRes");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postFileTransferRes");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postFileTransferRes");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postFileTransferRes");
   }
 
-  CommonMessagePostService_postFileTransferRes_args args;
+  CommonMessagePost_postFileTransferRes_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postFileTransferRes", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postFileTransferRes", bytes);
   }
 
-  CommonMessagePostService_postFileTransferRes_result result;
+  CommonMessagePost_postFileTransferRes_result result;
   try {
     iface_->postFileTransferRes(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22786,7 +22786,7 @@ void CommonMessagePostServiceProcessor::process_postFileTransferRes(int32_t seqi
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postFileTransferRes");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postFileTransferRes");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22799,7 +22799,7 @@ void CommonMessagePostServiceProcessor::process_postFileTransferRes(int32_t seqi
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postFileTransferRes");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postFileTransferRes");
   }
 
   oprot->writeMessageBegin("postFileTransferRes", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22809,32 +22809,32 @@ void CommonMessagePostServiceProcessor::process_postFileTransferRes(int32_t seqi
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postFileTransferRes", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postFileTransferRes", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postBatteryStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postBatteryStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postBatteryStatus", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postBatteryStatus", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postBatteryStatus");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postBatteryStatus");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postBatteryStatus");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postBatteryStatus");
   }
 
-  CommonMessagePostService_postBatteryStatus_args args;
+  CommonMessagePost_postBatteryStatus_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postBatteryStatus", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postBatteryStatus", bytes);
   }
 
-  CommonMessagePostService_postBatteryStatus_result result;
+  CommonMessagePost_postBatteryStatus_result result;
   try {
     iface_->postBatteryStatus(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22842,7 +22842,7 @@ void CommonMessagePostServiceProcessor::process_postBatteryStatus(int32_t seqid,
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postBatteryStatus");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postBatteryStatus");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22855,7 +22855,7 @@ void CommonMessagePostServiceProcessor::process_postBatteryStatus(int32_t seqid,
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postBatteryStatus");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postBatteryStatus");
   }
 
   oprot->writeMessageBegin("postBatteryStatus", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22865,32 +22865,32 @@ void CommonMessagePostServiceProcessor::process_postBatteryStatus(int32_t seqid,
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postBatteryStatus", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postBatteryStatus", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetpoint8dof(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetpoint8dof(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetpoint8dof", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetpoint8dof", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetpoint8dof");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetpoint8dof");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetpoint8dof");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetpoint8dof");
   }
 
-  CommonMessagePostService_postSetpoint8dof_args args;
+  CommonMessagePost_postSetpoint8dof_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetpoint8dof", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetpoint8dof", bytes);
   }
 
-  CommonMessagePostService_postSetpoint8dof_result result;
+  CommonMessagePost_postSetpoint8dof_result result;
   try {
     iface_->postSetpoint8dof(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22898,7 +22898,7 @@ void CommonMessagePostServiceProcessor::process_postSetpoint8dof(int32_t seqid, 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetpoint8dof");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetpoint8dof");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22911,7 +22911,7 @@ void CommonMessagePostServiceProcessor::process_postSetpoint8dof(int32_t seqid, 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetpoint8dof");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetpoint8dof");
   }
 
   oprot->writeMessageBegin("postSetpoint8dof", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22921,32 +22921,32 @@ void CommonMessagePostServiceProcessor::process_postSetpoint8dof(int32_t seqid, 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetpoint8dof", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetpoint8dof", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postSetpoint6dof(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postSetpoint6dof(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postSetpoint6dof", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postSetpoint6dof", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postSetpoint6dof");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postSetpoint6dof");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postSetpoint6dof");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postSetpoint6dof");
   }
 
-  CommonMessagePostService_postSetpoint6dof_args args;
+  CommonMessagePost_postSetpoint6dof_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postSetpoint6dof", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postSetpoint6dof", bytes);
   }
 
-  CommonMessagePostService_postSetpoint6dof_result result;
+  CommonMessagePost_postSetpoint6dof_result result;
   try {
     iface_->postSetpoint6dof(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -22954,7 +22954,7 @@ void CommonMessagePostServiceProcessor::process_postSetpoint6dof(int32_t seqid, 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postSetpoint6dof");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postSetpoint6dof");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -22967,7 +22967,7 @@ void CommonMessagePostServiceProcessor::process_postSetpoint6dof(int32_t seqid, 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postSetpoint6dof");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postSetpoint6dof");
   }
 
   oprot->writeMessageBegin("postSetpoint6dof", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -22977,32 +22977,32 @@ void CommonMessagePostServiceProcessor::process_postSetpoint6dof(int32_t seqid, 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postSetpoint6dof", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postSetpoint6dof", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postMemoryVect(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postMemoryVect(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postMemoryVect", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postMemoryVect", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postMemoryVect");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postMemoryVect");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postMemoryVect");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postMemoryVect");
   }
 
-  CommonMessagePostService_postMemoryVect_args args;
+  CommonMessagePost_postMemoryVect_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postMemoryVect", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postMemoryVect", bytes);
   }
 
-  CommonMessagePostService_postMemoryVect_result result;
+  CommonMessagePost_postMemoryVect_result result;
   try {
     iface_->postMemoryVect(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -23010,7 +23010,7 @@ void CommonMessagePostServiceProcessor::process_postMemoryVect(int32_t seqid, ::
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postMemoryVect");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postMemoryVect");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -23023,7 +23023,7 @@ void CommonMessagePostServiceProcessor::process_postMemoryVect(int32_t seqid, ::
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postMemoryVect");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postMemoryVect");
   }
 
   oprot->writeMessageBegin("postMemoryVect", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -23033,32 +23033,32 @@ void CommonMessagePostServiceProcessor::process_postMemoryVect(int32_t seqid, ::
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postMemoryVect", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postMemoryVect", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postDebugVect(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postDebugVect(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postDebugVect", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postDebugVect", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postDebugVect");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postDebugVect");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postDebugVect");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postDebugVect");
   }
 
-  CommonMessagePostService_postDebugVect_args args;
+  CommonMessagePost_postDebugVect_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postDebugVect", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postDebugVect", bytes);
   }
 
-  CommonMessagePostService_postDebugVect_result result;
+  CommonMessagePost_postDebugVect_result result;
   try {
     iface_->postDebugVect(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -23066,7 +23066,7 @@ void CommonMessagePostServiceProcessor::process_postDebugVect(int32_t seqid, ::a
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postDebugVect");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postDebugVect");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -23079,7 +23079,7 @@ void CommonMessagePostServiceProcessor::process_postDebugVect(int32_t seqid, ::a
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postDebugVect");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postDebugVect");
   }
 
   oprot->writeMessageBegin("postDebugVect", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -23089,32 +23089,32 @@ void CommonMessagePostServiceProcessor::process_postDebugVect(int32_t seqid, ::a
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postDebugVect", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postDebugVect", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postNamedValueFloat(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postNamedValueFloat(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postNamedValueFloat", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postNamedValueFloat", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postNamedValueFloat");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postNamedValueFloat");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postNamedValueFloat");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postNamedValueFloat");
   }
 
-  CommonMessagePostService_postNamedValueFloat_args args;
+  CommonMessagePost_postNamedValueFloat_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postNamedValueFloat", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postNamedValueFloat", bytes);
   }
 
-  CommonMessagePostService_postNamedValueFloat_result result;
+  CommonMessagePost_postNamedValueFloat_result result;
   try {
     iface_->postNamedValueFloat(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -23122,7 +23122,7 @@ void CommonMessagePostServiceProcessor::process_postNamedValueFloat(int32_t seqi
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postNamedValueFloat");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postNamedValueFloat");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -23135,7 +23135,7 @@ void CommonMessagePostServiceProcessor::process_postNamedValueFloat(int32_t seqi
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postNamedValueFloat");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postNamedValueFloat");
   }
 
   oprot->writeMessageBegin("postNamedValueFloat", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -23145,32 +23145,32 @@ void CommonMessagePostServiceProcessor::process_postNamedValueFloat(int32_t seqi
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postNamedValueFloat", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postNamedValueFloat", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postNamedValueInt(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postNamedValueInt(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postNamedValueInt", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postNamedValueInt", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postNamedValueInt");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postNamedValueInt");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postNamedValueInt");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postNamedValueInt");
   }
 
-  CommonMessagePostService_postNamedValueInt_args args;
+  CommonMessagePost_postNamedValueInt_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postNamedValueInt", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postNamedValueInt", bytes);
   }
 
-  CommonMessagePostService_postNamedValueInt_result result;
+  CommonMessagePost_postNamedValueInt_result result;
   try {
     iface_->postNamedValueInt(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -23178,7 +23178,7 @@ void CommonMessagePostServiceProcessor::process_postNamedValueInt(int32_t seqid,
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postNamedValueInt");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postNamedValueInt");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -23191,7 +23191,7 @@ void CommonMessagePostServiceProcessor::process_postNamedValueInt(int32_t seqid,
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postNamedValueInt");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postNamedValueInt");
   }
 
   oprot->writeMessageBegin("postNamedValueInt", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -23201,32 +23201,32 @@ void CommonMessagePostServiceProcessor::process_postNamedValueInt(int32_t seqid,
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postNamedValueInt", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postNamedValueInt", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postStatustext(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postStatustext(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postStatustext", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postStatustext", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postStatustext");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postStatustext");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postStatustext");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postStatustext");
   }
 
-  CommonMessagePostService_postStatustext_args args;
+  CommonMessagePost_postStatustext_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postStatustext", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postStatustext", bytes);
   }
 
-  CommonMessagePostService_postStatustext_result result;
+  CommonMessagePost_postStatustext_result result;
   try {
     iface_->postStatustext(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -23234,7 +23234,7 @@ void CommonMessagePostServiceProcessor::process_postStatustext(int32_t seqid, ::
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postStatustext");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postStatustext");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -23247,7 +23247,7 @@ void CommonMessagePostServiceProcessor::process_postStatustext(int32_t seqid, ::
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postStatustext");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postStatustext");
   }
 
   oprot->writeMessageBegin("postStatustext", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -23257,32 +23257,32 @@ void CommonMessagePostServiceProcessor::process_postStatustext(int32_t seqid, ::
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postStatustext", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postStatustext", bytes);
   }
 }
 
-void CommonMessagePostServiceProcessor::process_postDebug(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void CommonMessagePostProcessor::process_postDebug(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("CommonMessagePostService.postDebug", callContext);
+    ctx = this->eventHandler_->getContext("CommonMessagePost.postDebug", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePostService.postDebug");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "CommonMessagePost.postDebug");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "CommonMessagePostService.postDebug");
+    this->eventHandler_->preRead(ctx, "CommonMessagePost.postDebug");
   }
 
-  CommonMessagePostService_postDebug_args args;
+  CommonMessagePost_postDebug_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "CommonMessagePostService.postDebug", bytes);
+    this->eventHandler_->postRead(ctx, "CommonMessagePost.postDebug", bytes);
   }
 
-  CommonMessagePostService_postDebug_result result;
+  CommonMessagePost_postDebug_result result;
   try {
     iface_->postDebug(args.msg);
   } catch (InvalidMavlinkMessage &err) {
@@ -23290,7 +23290,7 @@ void CommonMessagePostServiceProcessor::process_postDebug(int32_t seqid, ::apach
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "CommonMessagePostService.postDebug");
+      this->eventHandler_->handlerError(ctx, "CommonMessagePost.postDebug");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -23303,7 +23303,7 @@ void CommonMessagePostServiceProcessor::process_postDebug(int32_t seqid, ::apach
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "CommonMessagePostService.postDebug");
+    this->eventHandler_->preWrite(ctx, "CommonMessagePost.postDebug");
   }
 
   oprot->writeMessageBegin("postDebug", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -23313,14 +23313,14 @@ void CommonMessagePostServiceProcessor::process_postDebug(int32_t seqid, ::apach
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "CommonMessagePostService.postDebug", bytes);
+    this->eventHandler_->postWrite(ctx, "CommonMessagePost.postDebug", bytes);
   }
 }
 
-::boost::shared_ptr< ::apache::thrift::TProcessor > CommonMessagePostServiceProcessorFactory::getProcessor(const ::apache::thrift::TConnectionInfo& connInfo) {
-  ::apache::thrift::ReleaseHandler< CommonMessagePostServiceIfFactory > cleanup(handlerFactory_);
-  ::boost::shared_ptr< CommonMessagePostServiceIf > handler(handlerFactory_->getHandler(connInfo), cleanup);
-  ::boost::shared_ptr< ::apache::thrift::TProcessor > processor(new CommonMessagePostServiceProcessor(handler));
+::boost::shared_ptr< ::apache::thrift::TProcessor > CommonMessagePostProcessorFactory::getProcessor(const ::apache::thrift::TConnectionInfo& connInfo) {
+  ::apache::thrift::ReleaseHandler< CommonMessagePostIfFactory > cleanup(handlerFactory_);
+  ::boost::shared_ptr< CommonMessagePostIf > handler(handlerFactory_->getHandler(connInfo), cleanup);
+  ::boost::shared_ptr< ::apache::thrift::TProcessor > processor(new CommonMessagePostProcessor(handler));
   return processor;
 }
 }} // namespace

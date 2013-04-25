@@ -4,11 +4,11 @@
  * DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
  *  @generated
  */
-#include "ArdupilotmegaMessagePostService.h"
+#include "ArdupilotmegaMessagePost.h"
 
 namespace mavlink { namespace thrift {
 
-uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postSensorOffsets_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -48,9 +48,9 @@ uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_args::read(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postSensorOffsets_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postSensorOffsets_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postSensorOffsets_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -61,9 +61,9 @@ uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_args::write(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postSensorOffsets_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postSensorOffsets_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postSensorOffsets_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -74,7 +74,7 @@ uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_pargs::write(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postSensorOffsets_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -114,11 +114,11 @@ uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_result::read(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postSensorOffsets_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postSensorOffsets_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postSensorOffsets_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -130,7 +130,7 @@ uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_result::write(::apach
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postSensorOffsets_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -170,7 +170,7 @@ uint32_t ArdupilotmegaMessagePostService_postSensorOffsets_presult::read(::apach
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postSetMagOffsets_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -210,9 +210,9 @@ uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_args::read(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postSetMagOffsets_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postSetMagOffsets_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postSetMagOffsets_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -223,9 +223,9 @@ uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_args::write(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postSetMagOffsets_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postSetMagOffsets_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postSetMagOffsets_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -236,7 +236,7 @@ uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_pargs::write(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postSetMagOffsets_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -276,11 +276,11 @@ uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_result::read(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postSetMagOffsets_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postSetMagOffsets_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postSetMagOffsets_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -292,7 +292,7 @@ uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_result::write(::apach
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postSetMagOffsets_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -332,7 +332,7 @@ uint32_t ArdupilotmegaMessagePostService_postSetMagOffsets_presult::read(::apach
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMeminfo_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMeminfo_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -372,9 +372,9 @@ uint32_t ArdupilotmegaMessagePostService_postMeminfo_args::read(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMeminfo_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMeminfo_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMeminfo_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMeminfo_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -385,9 +385,9 @@ uint32_t ArdupilotmegaMessagePostService_postMeminfo_args::write(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMeminfo_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMeminfo_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMeminfo_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMeminfo_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -398,7 +398,7 @@ uint32_t ArdupilotmegaMessagePostService_postMeminfo_pargs::write(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMeminfo_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMeminfo_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -438,11 +438,11 @@ uint32_t ArdupilotmegaMessagePostService_postMeminfo_result::read(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMeminfo_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMeminfo_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMeminfo_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMeminfo_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -454,7 +454,7 @@ uint32_t ArdupilotmegaMessagePostService_postMeminfo_result::write(::apache::thr
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMeminfo_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMeminfo_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -494,7 +494,7 @@ uint32_t ArdupilotmegaMessagePostService_postMeminfo_presult::read(::apache::thr
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postApAdc_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postApAdc_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -534,9 +534,9 @@ uint32_t ArdupilotmegaMessagePostService_postApAdc_args::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postApAdc_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postApAdc_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postApAdc_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postApAdc_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -547,9 +547,9 @@ uint32_t ArdupilotmegaMessagePostService_postApAdc_args::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postApAdc_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postApAdc_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postApAdc_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postApAdc_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -560,7 +560,7 @@ uint32_t ArdupilotmegaMessagePostService_postApAdc_pargs::write(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postApAdc_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postApAdc_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -600,11 +600,11 @@ uint32_t ArdupilotmegaMessagePostService_postApAdc_result::read(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postApAdc_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postApAdc_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postApAdc_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postApAdc_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -616,7 +616,7 @@ uint32_t ArdupilotmegaMessagePostService_postApAdc_result::write(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postApAdc_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postApAdc_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -656,7 +656,7 @@ uint32_t ArdupilotmegaMessagePostService_postApAdc_presult::read(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postDigicamConfigure_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -696,9 +696,9 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_args::read(::apach
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postDigicamConfigure_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postDigicamConfigure_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postDigicamConfigure_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -709,9 +709,9 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_args::write(::apac
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postDigicamConfigure_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postDigicamConfigure_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postDigicamConfigure_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -722,7 +722,7 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_pargs::write(::apa
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postDigicamConfigure_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -762,11 +762,11 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_result::read(::apa
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postDigicamConfigure_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postDigicamConfigure_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postDigicamConfigure_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -778,7 +778,7 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_result::write(::ap
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postDigicamConfigure_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -818,7 +818,7 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamConfigure_presult::read(::ap
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamControl_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postDigicamControl_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -858,9 +858,9 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamControl_args::read(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamControl_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postDigicamControl_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postDigicamControl_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postDigicamControl_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -871,9 +871,9 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamControl_args::write(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamControl_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postDigicamControl_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postDigicamControl_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postDigicamControl_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -884,7 +884,7 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamControl_pargs::write(::apach
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamControl_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postDigicamControl_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -924,11 +924,11 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamControl_result::read(::apach
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamControl_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postDigicamControl_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postDigicamControl_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postDigicamControl_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -940,7 +940,7 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamControl_result::write(::apac
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postDigicamControl_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postDigicamControl_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -980,7 +980,7 @@ uint32_t ArdupilotmegaMessagePostService_postDigicamControl_presult::read(::apac
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountConfigure_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMountConfigure_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1020,9 +1020,9 @@ uint32_t ArdupilotmegaMessagePostService_postMountConfigure_args::read(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountConfigure_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMountConfigure_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMountConfigure_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMountConfigure_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1033,9 +1033,9 @@ uint32_t ArdupilotmegaMessagePostService_postMountConfigure_args::write(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountConfigure_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMountConfigure_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMountConfigure_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMountConfigure_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1046,7 +1046,7 @@ uint32_t ArdupilotmegaMessagePostService_postMountConfigure_pargs::write(::apach
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountConfigure_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMountConfigure_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1086,11 +1086,11 @@ uint32_t ArdupilotmegaMessagePostService_postMountConfigure_result::read(::apach
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountConfigure_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMountConfigure_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMountConfigure_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMountConfigure_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1102,7 +1102,7 @@ uint32_t ArdupilotmegaMessagePostService_postMountConfigure_result::write(::apac
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountConfigure_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMountConfigure_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1142,7 +1142,7 @@ uint32_t ArdupilotmegaMessagePostService_postMountConfigure_presult::read(::apac
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountControl_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMountControl_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1182,9 +1182,9 @@ uint32_t ArdupilotmegaMessagePostService_postMountControl_args::read(::apache::t
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountControl_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMountControl_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMountControl_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMountControl_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1195,9 +1195,9 @@ uint32_t ArdupilotmegaMessagePostService_postMountControl_args::write(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountControl_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMountControl_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMountControl_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMountControl_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1208,7 +1208,7 @@ uint32_t ArdupilotmegaMessagePostService_postMountControl_pargs::write(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountControl_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMountControl_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1248,11 +1248,11 @@ uint32_t ArdupilotmegaMessagePostService_postMountControl_result::read(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountControl_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMountControl_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMountControl_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMountControl_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1264,7 +1264,7 @@ uint32_t ArdupilotmegaMessagePostService_postMountControl_result::write(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountControl_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMountControl_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1304,7 +1304,7 @@ uint32_t ArdupilotmegaMessagePostService_postMountControl_presult::read(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMountStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1344,9 +1344,9 @@ uint32_t ArdupilotmegaMessagePostService_postMountStatus_args::read(::apache::th
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMountStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMountStatus_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMountStatus_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1357,9 +1357,9 @@ uint32_t ArdupilotmegaMessagePostService_postMountStatus_args::write(::apache::t
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMountStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMountStatus_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMountStatus_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1370,7 +1370,7 @@ uint32_t ArdupilotmegaMessagePostService_postMountStatus_pargs::write(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMountStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1410,11 +1410,11 @@ uint32_t ArdupilotmegaMessagePostService_postMountStatus_result::read(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postMountStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postMountStatus_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postMountStatus_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1426,7 +1426,7 @@ uint32_t ArdupilotmegaMessagePostService_postMountStatus_result::write(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postMountStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postMountStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1466,7 +1466,7 @@ uint32_t ArdupilotmegaMessagePostService_postMountStatus_presult::read(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFencePoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postFencePoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1506,9 +1506,9 @@ uint32_t ArdupilotmegaMessagePostService_postFencePoint_args::read(::apache::thr
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFencePoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postFencePoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postFencePoint_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postFencePoint_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1519,9 +1519,9 @@ uint32_t ArdupilotmegaMessagePostService_postFencePoint_args::write(::apache::th
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFencePoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postFencePoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postFencePoint_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postFencePoint_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1532,7 +1532,7 @@ uint32_t ArdupilotmegaMessagePostService_postFencePoint_pargs::write(::apache::t
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFencePoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postFencePoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1572,11 +1572,11 @@ uint32_t ArdupilotmegaMessagePostService_postFencePoint_result::read(::apache::t
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFencePoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postFencePoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postFencePoint_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postFencePoint_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1588,7 +1588,7 @@ uint32_t ArdupilotmegaMessagePostService_postFencePoint_result::write(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFencePoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postFencePoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1628,7 +1628,7 @@ uint32_t ArdupilotmegaMessagePostService_postFencePoint_presult::read(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postFenceFetchPoint_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1668,9 +1668,9 @@ uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_args::read(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postFenceFetchPoint_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postFenceFetchPoint_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postFenceFetchPoint_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1681,9 +1681,9 @@ uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_args::write(::apach
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postFenceFetchPoint_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postFenceFetchPoint_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postFenceFetchPoint_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1694,7 +1694,7 @@ uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_pargs::write(::apac
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postFenceFetchPoint_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1734,11 +1734,11 @@ uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_result::read(::apac
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postFenceFetchPoint_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postFenceFetchPoint_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postFenceFetchPoint_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1750,7 +1750,7 @@ uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_result::write(::apa
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postFenceFetchPoint_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1790,7 +1790,7 @@ uint32_t ArdupilotmegaMessagePostService_postFenceFetchPoint_presult::read(::apa
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postFenceStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1830,9 +1830,9 @@ uint32_t ArdupilotmegaMessagePostService_postFenceStatus_args::read(::apache::th
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postFenceStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postFenceStatus_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postFenceStatus_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -1843,9 +1843,9 @@ uint32_t ArdupilotmegaMessagePostService_postFenceStatus_args::write(::apache::t
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postFenceStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postFenceStatus_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postFenceStatus_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -1856,7 +1856,7 @@ uint32_t ArdupilotmegaMessagePostService_postFenceStatus_pargs::write(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postFenceStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1896,11 +1896,11 @@ uint32_t ArdupilotmegaMessagePostService_postFenceStatus_result::read(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postFenceStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postFenceStatus_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postFenceStatus_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -1912,7 +1912,7 @@ uint32_t ArdupilotmegaMessagePostService_postFenceStatus_result::write(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postFenceStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postFenceStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1952,7 +1952,7 @@ uint32_t ArdupilotmegaMessagePostService_postFenceStatus_presult::read(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postAhrs_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postAhrs_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -1992,9 +1992,9 @@ uint32_t ArdupilotmegaMessagePostService_postAhrs_args::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postAhrs_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postAhrs_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postAhrs_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postAhrs_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2005,9 +2005,9 @@ uint32_t ArdupilotmegaMessagePostService_postAhrs_args::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postAhrs_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postAhrs_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postAhrs_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postAhrs_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2018,7 +2018,7 @@ uint32_t ArdupilotmegaMessagePostService_postAhrs_pargs::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postAhrs_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postAhrs_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2058,11 +2058,11 @@ uint32_t ArdupilotmegaMessagePostService_postAhrs_result::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postAhrs_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postAhrs_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postAhrs_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postAhrs_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2074,7 +2074,7 @@ uint32_t ArdupilotmegaMessagePostService_postAhrs_result::write(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postAhrs_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postAhrs_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2114,7 +2114,7 @@ uint32_t ArdupilotmegaMessagePostService_postAhrs_presult::read(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSimstate_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postSimstate_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2154,9 +2154,9 @@ uint32_t ArdupilotmegaMessagePostService_postSimstate_args::read(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSimstate_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postSimstate_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postSimstate_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postSimstate_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2167,9 +2167,9 @@ uint32_t ArdupilotmegaMessagePostService_postSimstate_args::write(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSimstate_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postSimstate_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postSimstate_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postSimstate_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2180,7 +2180,7 @@ uint32_t ArdupilotmegaMessagePostService_postSimstate_pargs::write(::apache::thr
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSimstate_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postSimstate_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2220,11 +2220,11 @@ uint32_t ArdupilotmegaMessagePostService_postSimstate_result::read(::apache::thr
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSimstate_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postSimstate_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postSimstate_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postSimstate_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2236,7 +2236,7 @@ uint32_t ArdupilotmegaMessagePostService_postSimstate_result::write(::apache::th
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postSimstate_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postSimstate_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2276,7 +2276,7 @@ uint32_t ArdupilotmegaMessagePostService_postSimstate_presult::read(::apache::th
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postHwstatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postHwstatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2316,9 +2316,9 @@ uint32_t ArdupilotmegaMessagePostService_postHwstatus_args::read(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postHwstatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postHwstatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postHwstatus_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postHwstatus_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2329,9 +2329,9 @@ uint32_t ArdupilotmegaMessagePostService_postHwstatus_args::write(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postHwstatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postHwstatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postHwstatus_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postHwstatus_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2342,7 +2342,7 @@ uint32_t ArdupilotmegaMessagePostService_postHwstatus_pargs::write(::apache::thr
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postHwstatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postHwstatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2382,11 +2382,11 @@ uint32_t ArdupilotmegaMessagePostService_postHwstatus_result::read(::apache::thr
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postHwstatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postHwstatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postHwstatus_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postHwstatus_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2398,7 +2398,7 @@ uint32_t ArdupilotmegaMessagePostService_postHwstatus_result::write(::apache::th
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postHwstatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postHwstatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2438,7 +2438,7 @@ uint32_t ArdupilotmegaMessagePostService_postHwstatus_presult::read(::apache::th
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRadio_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postRadio_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2478,9 +2478,9 @@ uint32_t ArdupilotmegaMessagePostService_postRadio_args::read(::apache::thrift::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRadio_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postRadio_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postRadio_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postRadio_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2491,9 +2491,9 @@ uint32_t ArdupilotmegaMessagePostService_postRadio_args::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRadio_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postRadio_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postRadio_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postRadio_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2504,7 +2504,7 @@ uint32_t ArdupilotmegaMessagePostService_postRadio_pargs::write(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRadio_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postRadio_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2544,11 +2544,11 @@ uint32_t ArdupilotmegaMessagePostService_postRadio_result::read(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRadio_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postRadio_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postRadio_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postRadio_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2560,7 +2560,7 @@ uint32_t ArdupilotmegaMessagePostService_postRadio_result::write(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRadio_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postRadio_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2600,7 +2600,7 @@ uint32_t ArdupilotmegaMessagePostService_postRadio_presult::read(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postLimitsStatus_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2640,9 +2640,9 @@ uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_args::read(::apache::t
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postLimitsStatus_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postLimitsStatus_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postLimitsStatus_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2653,9 +2653,9 @@ uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_args::write(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postLimitsStatus_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postLimitsStatus_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postLimitsStatus_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2666,7 +2666,7 @@ uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_pargs::write(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postLimitsStatus_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2706,11 +2706,11 @@ uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_result::read(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postLimitsStatus_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postLimitsStatus_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postLimitsStatus_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2722,7 +2722,7 @@ uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_result::write(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postLimitsStatus_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2762,7 +2762,7 @@ uint32_t ArdupilotmegaMessagePostService_postLimitsStatus_presult::read(::apache
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postWind_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postWind_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2802,9 +2802,9 @@ uint32_t ArdupilotmegaMessagePostService_postWind_args::read(::apache::thrift::p
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postWind_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postWind_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postWind_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postWind_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2815,9 +2815,9 @@ uint32_t ArdupilotmegaMessagePostService_postWind_args::write(::apache::thrift::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postWind_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postWind_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postWind_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postWind_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2828,7 +2828,7 @@ uint32_t ArdupilotmegaMessagePostService_postWind_pargs::write(::apache::thrift:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postWind_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postWind_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2868,11 +2868,11 @@ uint32_t ArdupilotmegaMessagePostService_postWind_result::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postWind_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postWind_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postWind_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postWind_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -2884,7 +2884,7 @@ uint32_t ArdupilotmegaMessagePostService_postWind_result::write(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postWind_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postWind_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2924,7 +2924,7 @@ uint32_t ArdupilotmegaMessagePostService_postWind_presult::read(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData16_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData16_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -2964,9 +2964,9 @@ uint32_t ArdupilotmegaMessagePostService_postData16_args::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData16_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData16_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData16_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData16_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -2977,9 +2977,9 @@ uint32_t ArdupilotmegaMessagePostService_postData16_args::write(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData16_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData16_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData16_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData16_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -2990,7 +2990,7 @@ uint32_t ArdupilotmegaMessagePostService_postData16_pargs::write(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData16_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData16_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3030,11 +3030,11 @@ uint32_t ArdupilotmegaMessagePostService_postData16_result::read(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData16_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData16_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData16_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData16_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3046,7 +3046,7 @@ uint32_t ArdupilotmegaMessagePostService_postData16_result::write(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData16_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData16_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3086,7 +3086,7 @@ uint32_t ArdupilotmegaMessagePostService_postData16_presult::read(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData32_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData32_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3126,9 +3126,9 @@ uint32_t ArdupilotmegaMessagePostService_postData32_args::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData32_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData32_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData32_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData32_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -3139,9 +3139,9 @@ uint32_t ArdupilotmegaMessagePostService_postData32_args::write(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData32_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData32_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData32_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData32_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -3152,7 +3152,7 @@ uint32_t ArdupilotmegaMessagePostService_postData32_pargs::write(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData32_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData32_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3192,11 +3192,11 @@ uint32_t ArdupilotmegaMessagePostService_postData32_result::read(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData32_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData32_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData32_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData32_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3208,7 +3208,7 @@ uint32_t ArdupilotmegaMessagePostService_postData32_result::write(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData32_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData32_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3248,7 +3248,7 @@ uint32_t ArdupilotmegaMessagePostService_postData32_presult::read(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData64_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData64_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3288,9 +3288,9 @@ uint32_t ArdupilotmegaMessagePostService_postData64_args::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData64_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData64_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData64_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData64_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -3301,9 +3301,9 @@ uint32_t ArdupilotmegaMessagePostService_postData64_args::write(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData64_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData64_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData64_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData64_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -3314,7 +3314,7 @@ uint32_t ArdupilotmegaMessagePostService_postData64_pargs::write(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData64_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData64_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3354,11 +3354,11 @@ uint32_t ArdupilotmegaMessagePostService_postData64_result::read(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData64_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData64_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData64_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData64_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3370,7 +3370,7 @@ uint32_t ArdupilotmegaMessagePostService_postData64_result::write(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData64_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData64_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3410,7 +3410,7 @@ uint32_t ArdupilotmegaMessagePostService_postData64_presult::read(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData96_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData96_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3450,9 +3450,9 @@ uint32_t ArdupilotmegaMessagePostService_postData96_args::read(::apache::thrift:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData96_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData96_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData96_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData96_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -3463,9 +3463,9 @@ uint32_t ArdupilotmegaMessagePostService_postData96_args::write(::apache::thrift
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData96_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData96_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData96_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData96_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -3476,7 +3476,7 @@ uint32_t ArdupilotmegaMessagePostService_postData96_pargs::write(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData96_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData96_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3516,11 +3516,11 @@ uint32_t ArdupilotmegaMessagePostService_postData96_result::read(::apache::thrif
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData96_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postData96_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postData96_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postData96_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3532,7 +3532,7 @@ uint32_t ArdupilotmegaMessagePostService_postData96_result::write(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postData96_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postData96_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3572,7 +3572,7 @@ uint32_t ArdupilotmegaMessagePostService_postData96_presult::read(::apache::thri
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRangefinder_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postRangefinder_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3612,9 +3612,9 @@ uint32_t ArdupilotmegaMessagePostService_postRangefinder_args::read(::apache::th
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRangefinder_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postRangefinder_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postRangefinder_args");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postRangefinder_args");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->msg.write(oprot);
@@ -3625,9 +3625,9 @@ uint32_t ArdupilotmegaMessagePostService_postRangefinder_args::write(::apache::t
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRangefinder_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postRangefinder_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postRangefinder_pargs");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postRangefinder_pargs");
 
   xfer += oprot->writeFieldBegin("msg", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->msg)).write(oprot);
@@ -3638,7 +3638,7 @@ uint32_t ArdupilotmegaMessagePostService_postRangefinder_pargs::write(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRangefinder_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postRangefinder_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3678,11 +3678,11 @@ uint32_t ArdupilotmegaMessagePostService_postRangefinder_result::read(::apache::
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRangefinder_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t ArdupilotmegaMessagePost_postRangefinder_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePostService_postRangefinder_result");
+  xfer += oprot->writeStructBegin("ArdupilotmegaMessagePost_postRangefinder_result");
 
   if (this->__isset.err) {
     xfer += oprot->writeFieldBegin("err", ::apache::thrift::protocol::T_STRUCT, 1);
@@ -3694,7 +3694,7 @@ uint32_t ArdupilotmegaMessagePostService_postRangefinder_result::write(::apache:
   return xfer;
 }
 
-uint32_t ArdupilotmegaMessagePostService_postRangefinder_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t ArdupilotmegaMessagePost_postRangefinder_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -3734,18 +3734,18 @@ uint32_t ArdupilotmegaMessagePostService_postRangefinder_presult::read(::apache:
   return xfer;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postSensorOffsets(const SensorOffsets& msg)
+void ArdupilotmegaMessagePostClient::postSensorOffsets(const SensorOffsets& msg)
 {
   send_postSensorOffsets(msg);
   recv_postSensorOffsets();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postSensorOffsets(const SensorOffsets& msg)
+void ArdupilotmegaMessagePostClient::send_postSensorOffsets(const SensorOffsets& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSensorOffsets", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postSensorOffsets_pargs args;
+  ArdupilotmegaMessagePost_postSensorOffsets_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -3754,7 +3754,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postSensorOffsets(const SensorO
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postSensorOffsets()
+void ArdupilotmegaMessagePostClient::recv_postSensorOffsets()
 {
 
   int32_t rseqid = 0;
@@ -3779,7 +3779,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postSensorOffsets()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postSensorOffsets_presult result;
+  ArdupilotmegaMessagePost_postSensorOffsets_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -3790,18 +3790,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postSensorOffsets()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postSetMagOffsets(const SetMagOffsets& msg)
+void ArdupilotmegaMessagePostClient::postSetMagOffsets(const SetMagOffsets& msg)
 {
   send_postSetMagOffsets(msg);
   recv_postSetMagOffsets();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postSetMagOffsets(const SetMagOffsets& msg)
+void ArdupilotmegaMessagePostClient::send_postSetMagOffsets(const SetMagOffsets& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSetMagOffsets", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postSetMagOffsets_pargs args;
+  ArdupilotmegaMessagePost_postSetMagOffsets_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -3810,7 +3810,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postSetMagOffsets(const SetMagO
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postSetMagOffsets()
+void ArdupilotmegaMessagePostClient::recv_postSetMagOffsets()
 {
 
   int32_t rseqid = 0;
@@ -3835,7 +3835,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postSetMagOffsets()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postSetMagOffsets_presult result;
+  ArdupilotmegaMessagePost_postSetMagOffsets_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -3846,18 +3846,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postSetMagOffsets()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postMeminfo(const Meminfo& msg)
+void ArdupilotmegaMessagePostClient::postMeminfo(const Meminfo& msg)
 {
   send_postMeminfo(msg);
   recv_postMeminfo();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postMeminfo(const Meminfo& msg)
+void ArdupilotmegaMessagePostClient::send_postMeminfo(const Meminfo& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMeminfo", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postMeminfo_pargs args;
+  ArdupilotmegaMessagePost_postMeminfo_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -3866,7 +3866,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postMeminfo(const Meminfo& msg)
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postMeminfo()
+void ArdupilotmegaMessagePostClient::recv_postMeminfo()
 {
 
   int32_t rseqid = 0;
@@ -3891,7 +3891,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postMeminfo()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postMeminfo_presult result;
+  ArdupilotmegaMessagePost_postMeminfo_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -3902,18 +3902,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postMeminfo()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postApAdc(const ApAdc& msg)
+void ArdupilotmegaMessagePostClient::postApAdc(const ApAdc& msg)
 {
   send_postApAdc(msg);
   recv_postApAdc();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postApAdc(const ApAdc& msg)
+void ArdupilotmegaMessagePostClient::send_postApAdc(const ApAdc& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postApAdc", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postApAdc_pargs args;
+  ArdupilotmegaMessagePost_postApAdc_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -3922,7 +3922,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postApAdc(const ApAdc& msg)
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postApAdc()
+void ArdupilotmegaMessagePostClient::recv_postApAdc()
 {
 
   int32_t rseqid = 0;
@@ -3947,7 +3947,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postApAdc()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postApAdc_presult result;
+  ArdupilotmegaMessagePost_postApAdc_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -3958,18 +3958,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postApAdc()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postDigicamConfigure(const DigicamConfigure& msg)
+void ArdupilotmegaMessagePostClient::postDigicamConfigure(const DigicamConfigure& msg)
 {
   send_postDigicamConfigure(msg);
   recv_postDigicamConfigure();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postDigicamConfigure(const DigicamConfigure& msg)
+void ArdupilotmegaMessagePostClient::send_postDigicamConfigure(const DigicamConfigure& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postDigicamConfigure", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postDigicamConfigure_pargs args;
+  ArdupilotmegaMessagePost_postDigicamConfigure_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -3978,7 +3978,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postDigicamConfigure(const Digi
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postDigicamConfigure()
+void ArdupilotmegaMessagePostClient::recv_postDigicamConfigure()
 {
 
   int32_t rseqid = 0;
@@ -4003,7 +4003,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postDigicamConfigure()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postDigicamConfigure_presult result;
+  ArdupilotmegaMessagePost_postDigicamConfigure_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4014,18 +4014,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postDigicamConfigure()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postDigicamControl(const DigicamControl& msg)
+void ArdupilotmegaMessagePostClient::postDigicamControl(const DigicamControl& msg)
 {
   send_postDigicamControl(msg);
   recv_postDigicamControl();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postDigicamControl(const DigicamControl& msg)
+void ArdupilotmegaMessagePostClient::send_postDigicamControl(const DigicamControl& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postDigicamControl", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postDigicamControl_pargs args;
+  ArdupilotmegaMessagePost_postDigicamControl_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4034,7 +4034,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postDigicamControl(const Digica
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postDigicamControl()
+void ArdupilotmegaMessagePostClient::recv_postDigicamControl()
 {
 
   int32_t rseqid = 0;
@@ -4059,7 +4059,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postDigicamControl()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postDigicamControl_presult result;
+  ArdupilotmegaMessagePost_postDigicamControl_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4070,18 +4070,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postDigicamControl()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postMountConfigure(const MountConfigure& msg)
+void ArdupilotmegaMessagePostClient::postMountConfigure(const MountConfigure& msg)
 {
   send_postMountConfigure(msg);
   recv_postMountConfigure();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postMountConfigure(const MountConfigure& msg)
+void ArdupilotmegaMessagePostClient::send_postMountConfigure(const MountConfigure& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMountConfigure", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postMountConfigure_pargs args;
+  ArdupilotmegaMessagePost_postMountConfigure_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4090,7 +4090,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postMountConfigure(const MountC
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postMountConfigure()
+void ArdupilotmegaMessagePostClient::recv_postMountConfigure()
 {
 
   int32_t rseqid = 0;
@@ -4115,7 +4115,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postMountConfigure()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postMountConfigure_presult result;
+  ArdupilotmegaMessagePost_postMountConfigure_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4126,18 +4126,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postMountConfigure()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postMountControl(const MountControl& msg)
+void ArdupilotmegaMessagePostClient::postMountControl(const MountControl& msg)
 {
   send_postMountControl(msg);
   recv_postMountControl();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postMountControl(const MountControl& msg)
+void ArdupilotmegaMessagePostClient::send_postMountControl(const MountControl& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMountControl", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postMountControl_pargs args;
+  ArdupilotmegaMessagePost_postMountControl_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4146,7 +4146,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postMountControl(const MountCon
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postMountControl()
+void ArdupilotmegaMessagePostClient::recv_postMountControl()
 {
 
   int32_t rseqid = 0;
@@ -4171,7 +4171,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postMountControl()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postMountControl_presult result;
+  ArdupilotmegaMessagePost_postMountControl_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4182,18 +4182,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postMountControl()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postMountStatus(const MountStatus& msg)
+void ArdupilotmegaMessagePostClient::postMountStatus(const MountStatus& msg)
 {
   send_postMountStatus(msg);
   recv_postMountStatus();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postMountStatus(const MountStatus& msg)
+void ArdupilotmegaMessagePostClient::send_postMountStatus(const MountStatus& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postMountStatus", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postMountStatus_pargs args;
+  ArdupilotmegaMessagePost_postMountStatus_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4202,7 +4202,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postMountStatus(const MountStat
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postMountStatus()
+void ArdupilotmegaMessagePostClient::recv_postMountStatus()
 {
 
   int32_t rseqid = 0;
@@ -4227,7 +4227,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postMountStatus()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postMountStatus_presult result;
+  ArdupilotmegaMessagePost_postMountStatus_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4238,18 +4238,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postMountStatus()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postFencePoint(const FencePoint& msg)
+void ArdupilotmegaMessagePostClient::postFencePoint(const FencePoint& msg)
 {
   send_postFencePoint(msg);
   recv_postFencePoint();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postFencePoint(const FencePoint& msg)
+void ArdupilotmegaMessagePostClient::send_postFencePoint(const FencePoint& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postFencePoint", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postFencePoint_pargs args;
+  ArdupilotmegaMessagePost_postFencePoint_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4258,7 +4258,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postFencePoint(const FencePoint
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postFencePoint()
+void ArdupilotmegaMessagePostClient::recv_postFencePoint()
 {
 
   int32_t rseqid = 0;
@@ -4283,7 +4283,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postFencePoint()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postFencePoint_presult result;
+  ArdupilotmegaMessagePost_postFencePoint_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4294,18 +4294,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postFencePoint()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postFenceFetchPoint(const FenceFetchPoint& msg)
+void ArdupilotmegaMessagePostClient::postFenceFetchPoint(const FenceFetchPoint& msg)
 {
   send_postFenceFetchPoint(msg);
   recv_postFenceFetchPoint();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postFenceFetchPoint(const FenceFetchPoint& msg)
+void ArdupilotmegaMessagePostClient::send_postFenceFetchPoint(const FenceFetchPoint& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postFenceFetchPoint", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postFenceFetchPoint_pargs args;
+  ArdupilotmegaMessagePost_postFenceFetchPoint_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4314,7 +4314,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postFenceFetchPoint(const Fence
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postFenceFetchPoint()
+void ArdupilotmegaMessagePostClient::recv_postFenceFetchPoint()
 {
 
   int32_t rseqid = 0;
@@ -4339,7 +4339,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postFenceFetchPoint()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postFenceFetchPoint_presult result;
+  ArdupilotmegaMessagePost_postFenceFetchPoint_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4350,18 +4350,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postFenceFetchPoint()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postFenceStatus(const FenceStatus& msg)
+void ArdupilotmegaMessagePostClient::postFenceStatus(const FenceStatus& msg)
 {
   send_postFenceStatus(msg);
   recv_postFenceStatus();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postFenceStatus(const FenceStatus& msg)
+void ArdupilotmegaMessagePostClient::send_postFenceStatus(const FenceStatus& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postFenceStatus", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postFenceStatus_pargs args;
+  ArdupilotmegaMessagePost_postFenceStatus_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4370,7 +4370,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postFenceStatus(const FenceStat
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postFenceStatus()
+void ArdupilotmegaMessagePostClient::recv_postFenceStatus()
 {
 
   int32_t rseqid = 0;
@@ -4395,7 +4395,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postFenceStatus()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postFenceStatus_presult result;
+  ArdupilotmegaMessagePost_postFenceStatus_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4406,18 +4406,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postFenceStatus()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postAhrs(const Ahrs& msg)
+void ArdupilotmegaMessagePostClient::postAhrs(const Ahrs& msg)
 {
   send_postAhrs(msg);
   recv_postAhrs();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postAhrs(const Ahrs& msg)
+void ArdupilotmegaMessagePostClient::send_postAhrs(const Ahrs& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postAhrs", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postAhrs_pargs args;
+  ArdupilotmegaMessagePost_postAhrs_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4426,7 +4426,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postAhrs(const Ahrs& msg)
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postAhrs()
+void ArdupilotmegaMessagePostClient::recv_postAhrs()
 {
 
   int32_t rseqid = 0;
@@ -4451,7 +4451,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postAhrs()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postAhrs_presult result;
+  ArdupilotmegaMessagePost_postAhrs_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4462,18 +4462,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postAhrs()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postSimstate(const Simstate& msg)
+void ArdupilotmegaMessagePostClient::postSimstate(const Simstate& msg)
 {
   send_postSimstate(msg);
   recv_postSimstate();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postSimstate(const Simstate& msg)
+void ArdupilotmegaMessagePostClient::send_postSimstate(const Simstate& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postSimstate", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postSimstate_pargs args;
+  ArdupilotmegaMessagePost_postSimstate_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4482,7 +4482,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postSimstate(const Simstate& ms
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postSimstate()
+void ArdupilotmegaMessagePostClient::recv_postSimstate()
 {
 
   int32_t rseqid = 0;
@@ -4507,7 +4507,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postSimstate()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postSimstate_presult result;
+  ArdupilotmegaMessagePost_postSimstate_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4518,18 +4518,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postSimstate()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postHwstatus(const Hwstatus& msg)
+void ArdupilotmegaMessagePostClient::postHwstatus(const Hwstatus& msg)
 {
   send_postHwstatus(msg);
   recv_postHwstatus();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postHwstatus(const Hwstatus& msg)
+void ArdupilotmegaMessagePostClient::send_postHwstatus(const Hwstatus& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postHwstatus", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postHwstatus_pargs args;
+  ArdupilotmegaMessagePost_postHwstatus_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4538,7 +4538,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postHwstatus(const Hwstatus& ms
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postHwstatus()
+void ArdupilotmegaMessagePostClient::recv_postHwstatus()
 {
 
   int32_t rseqid = 0;
@@ -4563,7 +4563,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postHwstatus()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postHwstatus_presult result;
+  ArdupilotmegaMessagePost_postHwstatus_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4574,18 +4574,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postHwstatus()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postRadio(const Radio& msg)
+void ArdupilotmegaMessagePostClient::postRadio(const Radio& msg)
 {
   send_postRadio(msg);
   recv_postRadio();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postRadio(const Radio& msg)
+void ArdupilotmegaMessagePostClient::send_postRadio(const Radio& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRadio", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postRadio_pargs args;
+  ArdupilotmegaMessagePost_postRadio_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4594,7 +4594,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postRadio(const Radio& msg)
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postRadio()
+void ArdupilotmegaMessagePostClient::recv_postRadio()
 {
 
   int32_t rseqid = 0;
@@ -4619,7 +4619,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postRadio()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postRadio_presult result;
+  ArdupilotmegaMessagePost_postRadio_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4630,18 +4630,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postRadio()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postLimitsStatus(const LimitsStatus& msg)
+void ArdupilotmegaMessagePostClient::postLimitsStatus(const LimitsStatus& msg)
 {
   send_postLimitsStatus(msg);
   recv_postLimitsStatus();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postLimitsStatus(const LimitsStatus& msg)
+void ArdupilotmegaMessagePostClient::send_postLimitsStatus(const LimitsStatus& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postLimitsStatus", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postLimitsStatus_pargs args;
+  ArdupilotmegaMessagePost_postLimitsStatus_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4650,7 +4650,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postLimitsStatus(const LimitsSt
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postLimitsStatus()
+void ArdupilotmegaMessagePostClient::recv_postLimitsStatus()
 {
 
   int32_t rseqid = 0;
@@ -4675,7 +4675,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postLimitsStatus()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postLimitsStatus_presult result;
+  ArdupilotmegaMessagePost_postLimitsStatus_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4686,18 +4686,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postLimitsStatus()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postWind(const Wind& msg)
+void ArdupilotmegaMessagePostClient::postWind(const Wind& msg)
 {
   send_postWind(msg);
   recv_postWind();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postWind(const Wind& msg)
+void ArdupilotmegaMessagePostClient::send_postWind(const Wind& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postWind", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postWind_pargs args;
+  ArdupilotmegaMessagePost_postWind_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4706,7 +4706,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postWind(const Wind& msg)
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postWind()
+void ArdupilotmegaMessagePostClient::recv_postWind()
 {
 
   int32_t rseqid = 0;
@@ -4731,7 +4731,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postWind()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postWind_presult result;
+  ArdupilotmegaMessagePost_postWind_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4742,18 +4742,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postWind()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postData16(const Data16& msg)
+void ArdupilotmegaMessagePostClient::postData16(const Data16& msg)
 {
   send_postData16(msg);
   recv_postData16();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postData16(const Data16& msg)
+void ArdupilotmegaMessagePostClient::send_postData16(const Data16& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postData16", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postData16_pargs args;
+  ArdupilotmegaMessagePost_postData16_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4762,7 +4762,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postData16(const Data16& msg)
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postData16()
+void ArdupilotmegaMessagePostClient::recv_postData16()
 {
 
   int32_t rseqid = 0;
@@ -4787,7 +4787,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postData16()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postData16_presult result;
+  ArdupilotmegaMessagePost_postData16_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4798,18 +4798,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postData16()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postData32(const Data32& msg)
+void ArdupilotmegaMessagePostClient::postData32(const Data32& msg)
 {
   send_postData32(msg);
   recv_postData32();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postData32(const Data32& msg)
+void ArdupilotmegaMessagePostClient::send_postData32(const Data32& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postData32", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postData32_pargs args;
+  ArdupilotmegaMessagePost_postData32_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4818,7 +4818,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postData32(const Data32& msg)
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postData32()
+void ArdupilotmegaMessagePostClient::recv_postData32()
 {
 
   int32_t rseqid = 0;
@@ -4843,7 +4843,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postData32()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postData32_presult result;
+  ArdupilotmegaMessagePost_postData32_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4854,18 +4854,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postData32()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postData64(const Data64& msg)
+void ArdupilotmegaMessagePostClient::postData64(const Data64& msg)
 {
   send_postData64(msg);
   recv_postData64();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postData64(const Data64& msg)
+void ArdupilotmegaMessagePostClient::send_postData64(const Data64& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postData64", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postData64_pargs args;
+  ArdupilotmegaMessagePost_postData64_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4874,7 +4874,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postData64(const Data64& msg)
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postData64()
+void ArdupilotmegaMessagePostClient::recv_postData64()
 {
 
   int32_t rseqid = 0;
@@ -4899,7 +4899,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postData64()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postData64_presult result;
+  ArdupilotmegaMessagePost_postData64_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4910,18 +4910,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postData64()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postData96(const Data96& msg)
+void ArdupilotmegaMessagePostClient::postData96(const Data96& msg)
 {
   send_postData96(msg);
   recv_postData96();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postData96(const Data96& msg)
+void ArdupilotmegaMessagePostClient::send_postData96(const Data96& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postData96", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postData96_pargs args;
+  ArdupilotmegaMessagePost_postData96_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4930,7 +4930,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postData96(const Data96& msg)
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postData96()
+void ArdupilotmegaMessagePostClient::recv_postData96()
 {
 
   int32_t rseqid = 0;
@@ -4955,7 +4955,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postData96()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postData96_presult result;
+  ArdupilotmegaMessagePost_postData96_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -4966,18 +4966,18 @@ void ArdupilotmegaMessagePostServiceClient::recv_postData96()
   return;
 }
 
-void ArdupilotmegaMessagePostServiceClient::postRangefinder(const Rangefinder& msg)
+void ArdupilotmegaMessagePostClient::postRangefinder(const Rangefinder& msg)
 {
   send_postRangefinder(msg);
   recv_postRangefinder();
 }
 
-void ArdupilotmegaMessagePostServiceClient::send_postRangefinder(const Rangefinder& msg)
+void ArdupilotmegaMessagePostClient::send_postRangefinder(const Rangefinder& msg)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("postRangefinder", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  ArdupilotmegaMessagePostService_postRangefinder_pargs args;
+  ArdupilotmegaMessagePost_postRangefinder_pargs args;
   args.msg = &msg;
   args.write(oprot_);
 
@@ -4986,7 +4986,7 @@ void ArdupilotmegaMessagePostServiceClient::send_postRangefinder(const Rangefind
   oprot_->getTransport()->flush();
 }
 
-void ArdupilotmegaMessagePostServiceClient::recv_postRangefinder()
+void ArdupilotmegaMessagePostClient::recv_postRangefinder()
 {
 
   int32_t rseqid = 0;
@@ -5011,7 +5011,7 @@ void ArdupilotmegaMessagePostServiceClient::recv_postRangefinder()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  ArdupilotmegaMessagePostService_postRangefinder_presult result;
+  ArdupilotmegaMessagePost_postRangefinder_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -5022,38 +5022,38 @@ void ArdupilotmegaMessagePostServiceClient::recv_postRangefinder()
   return;
 }
 
-bool ArdupilotmegaMessagePostServiceProcessor::dispatchCall(::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, const std::string& fname, int32_t seqid, void* callContext) {
+bool ArdupilotmegaMessagePostProcessor::dispatchCall(::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, const std::string& fname, int32_t seqid, void* callContext) {
   ProcessMap::iterator pfn;
   pfn = processMap_.find(fname);
   if (pfn == processMap_.end()) {
-    return  ::mavlink::thrift::CommonMessagePostServiceProcessor::dispatchCall(iprot, oprot, fname, seqid, callContext);
+    return  ::mavlink::thrift::CommonMessagePostProcessor::dispatchCall(iprot, oprot, fname, seqid, callContext);
   }
   (this->*(pfn->second))(seqid, iprot, oprot, callContext);
   return true;
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postSensorOffsets(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postSensorOffsets(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postSensorOffsets", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postSensorOffsets", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postSensorOffsets");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postSensorOffsets");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postSensorOffsets");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postSensorOffsets");
   }
 
-  ArdupilotmegaMessagePostService_postSensorOffsets_args args;
+  ArdupilotmegaMessagePost_postSensorOffsets_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postSensorOffsets", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postSensorOffsets", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postSensorOffsets_result result;
+  ArdupilotmegaMessagePost_postSensorOffsets_result result;
   try {
     iface_->postSensorOffsets(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5061,7 +5061,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postSensorOffsets(int32_t
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postSensorOffsets");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postSensorOffsets");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5074,7 +5074,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postSensorOffsets(int32_t
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postSensorOffsets");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postSensorOffsets");
   }
 
   oprot->writeMessageBegin("postSensorOffsets", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5084,32 +5084,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postSensorOffsets(int32_t
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postSensorOffsets", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postSensorOffsets", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postSetMagOffsets(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postSetMagOffsets(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postSetMagOffsets", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postSetMagOffsets", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postSetMagOffsets");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postSetMagOffsets");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postSetMagOffsets");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postSetMagOffsets");
   }
 
-  ArdupilotmegaMessagePostService_postSetMagOffsets_args args;
+  ArdupilotmegaMessagePost_postSetMagOffsets_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postSetMagOffsets", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postSetMagOffsets", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postSetMagOffsets_result result;
+  ArdupilotmegaMessagePost_postSetMagOffsets_result result;
   try {
     iface_->postSetMagOffsets(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5117,7 +5117,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postSetMagOffsets(int32_t
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postSetMagOffsets");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postSetMagOffsets");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5130,7 +5130,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postSetMagOffsets(int32_t
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postSetMagOffsets");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postSetMagOffsets");
   }
 
   oprot->writeMessageBegin("postSetMagOffsets", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5140,32 +5140,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postSetMagOffsets(int32_t
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postSetMagOffsets", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postSetMagOffsets", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postMeminfo(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postMeminfo(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postMeminfo", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postMeminfo", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postMeminfo");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postMeminfo");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postMeminfo");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postMeminfo");
   }
 
-  ArdupilotmegaMessagePostService_postMeminfo_args args;
+  ArdupilotmegaMessagePost_postMeminfo_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postMeminfo", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postMeminfo", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postMeminfo_result result;
+  ArdupilotmegaMessagePost_postMeminfo_result result;
   try {
     iface_->postMeminfo(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5173,7 +5173,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMeminfo(int32_t seqid
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postMeminfo");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postMeminfo");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5186,7 +5186,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMeminfo(int32_t seqid
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postMeminfo");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postMeminfo");
   }
 
   oprot->writeMessageBegin("postMeminfo", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5196,32 +5196,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMeminfo(int32_t seqid
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postMeminfo", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postMeminfo", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postApAdc(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postApAdc(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postApAdc", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postApAdc", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postApAdc");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postApAdc");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postApAdc");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postApAdc");
   }
 
-  ArdupilotmegaMessagePostService_postApAdc_args args;
+  ArdupilotmegaMessagePost_postApAdc_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postApAdc", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postApAdc", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postApAdc_result result;
+  ArdupilotmegaMessagePost_postApAdc_result result;
   try {
     iface_->postApAdc(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5229,7 +5229,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postApAdc(int32_t seqid, 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postApAdc");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postApAdc");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5242,7 +5242,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postApAdc(int32_t seqid, 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postApAdc");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postApAdc");
   }
 
   oprot->writeMessageBegin("postApAdc", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5252,32 +5252,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postApAdc(int32_t seqid, 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postApAdc", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postApAdc", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postDigicamConfigure(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postDigicamConfigure(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postDigicamConfigure", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postDigicamConfigure", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postDigicamConfigure");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postDigicamConfigure");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postDigicamConfigure");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postDigicamConfigure");
   }
 
-  ArdupilotmegaMessagePostService_postDigicamConfigure_args args;
+  ArdupilotmegaMessagePost_postDigicamConfigure_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postDigicamConfigure", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postDigicamConfigure", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postDigicamConfigure_result result;
+  ArdupilotmegaMessagePost_postDigicamConfigure_result result;
   try {
     iface_->postDigicamConfigure(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5285,7 +5285,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postDigicamConfigure(int3
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postDigicamConfigure");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postDigicamConfigure");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5298,7 +5298,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postDigicamConfigure(int3
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postDigicamConfigure");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postDigicamConfigure");
   }
 
   oprot->writeMessageBegin("postDigicamConfigure", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5308,32 +5308,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postDigicamConfigure(int3
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postDigicamConfigure", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postDigicamConfigure", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postDigicamControl(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postDigicamControl(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postDigicamControl", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postDigicamControl", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postDigicamControl");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postDigicamControl");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postDigicamControl");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postDigicamControl");
   }
 
-  ArdupilotmegaMessagePostService_postDigicamControl_args args;
+  ArdupilotmegaMessagePost_postDigicamControl_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postDigicamControl", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postDigicamControl", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postDigicamControl_result result;
+  ArdupilotmegaMessagePost_postDigicamControl_result result;
   try {
     iface_->postDigicamControl(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5341,7 +5341,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postDigicamControl(int32_
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postDigicamControl");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postDigicamControl");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5354,7 +5354,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postDigicamControl(int32_
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postDigicamControl");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postDigicamControl");
   }
 
   oprot->writeMessageBegin("postDigicamControl", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5364,32 +5364,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postDigicamControl(int32_
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postDigicamControl", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postDigicamControl", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postMountConfigure(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postMountConfigure(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postMountConfigure", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postMountConfigure", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postMountConfigure");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postMountConfigure");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postMountConfigure");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postMountConfigure");
   }
 
-  ArdupilotmegaMessagePostService_postMountConfigure_args args;
+  ArdupilotmegaMessagePost_postMountConfigure_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postMountConfigure", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postMountConfigure", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postMountConfigure_result result;
+  ArdupilotmegaMessagePost_postMountConfigure_result result;
   try {
     iface_->postMountConfigure(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5397,7 +5397,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMountConfigure(int32_
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postMountConfigure");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postMountConfigure");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5410,7 +5410,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMountConfigure(int32_
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postMountConfigure");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postMountConfigure");
   }
 
   oprot->writeMessageBegin("postMountConfigure", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5420,32 +5420,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMountConfigure(int32_
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postMountConfigure", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postMountConfigure", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postMountControl(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postMountControl(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postMountControl", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postMountControl", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postMountControl");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postMountControl");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postMountControl");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postMountControl");
   }
 
-  ArdupilotmegaMessagePostService_postMountControl_args args;
+  ArdupilotmegaMessagePost_postMountControl_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postMountControl", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postMountControl", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postMountControl_result result;
+  ArdupilotmegaMessagePost_postMountControl_result result;
   try {
     iface_->postMountControl(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5453,7 +5453,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMountControl(int32_t 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postMountControl");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postMountControl");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5466,7 +5466,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMountControl(int32_t 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postMountControl");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postMountControl");
   }
 
   oprot->writeMessageBegin("postMountControl", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5476,32 +5476,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMountControl(int32_t 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postMountControl", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postMountControl", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postMountStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postMountStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postMountStatus", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postMountStatus", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postMountStatus");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postMountStatus");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postMountStatus");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postMountStatus");
   }
 
-  ArdupilotmegaMessagePostService_postMountStatus_args args;
+  ArdupilotmegaMessagePost_postMountStatus_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postMountStatus", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postMountStatus", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postMountStatus_result result;
+  ArdupilotmegaMessagePost_postMountStatus_result result;
   try {
     iface_->postMountStatus(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5509,7 +5509,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMountStatus(int32_t s
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postMountStatus");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postMountStatus");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5522,7 +5522,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMountStatus(int32_t s
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postMountStatus");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postMountStatus");
   }
 
   oprot->writeMessageBegin("postMountStatus", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5532,32 +5532,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postMountStatus(int32_t s
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postMountStatus", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postMountStatus", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postFencePoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postFencePoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postFencePoint", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postFencePoint", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postFencePoint");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postFencePoint");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postFencePoint");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postFencePoint");
   }
 
-  ArdupilotmegaMessagePostService_postFencePoint_args args;
+  ArdupilotmegaMessagePost_postFencePoint_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postFencePoint", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postFencePoint", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postFencePoint_result result;
+  ArdupilotmegaMessagePost_postFencePoint_result result;
   try {
     iface_->postFencePoint(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5565,7 +5565,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postFencePoint(int32_t se
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postFencePoint");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postFencePoint");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5578,7 +5578,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postFencePoint(int32_t se
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postFencePoint");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postFencePoint");
   }
 
   oprot->writeMessageBegin("postFencePoint", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5588,32 +5588,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postFencePoint(int32_t se
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postFencePoint", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postFencePoint", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postFenceFetchPoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postFenceFetchPoint(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postFenceFetchPoint", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postFenceFetchPoint", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postFenceFetchPoint");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postFenceFetchPoint");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postFenceFetchPoint");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postFenceFetchPoint");
   }
 
-  ArdupilotmegaMessagePostService_postFenceFetchPoint_args args;
+  ArdupilotmegaMessagePost_postFenceFetchPoint_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postFenceFetchPoint", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postFenceFetchPoint", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postFenceFetchPoint_result result;
+  ArdupilotmegaMessagePost_postFenceFetchPoint_result result;
   try {
     iface_->postFenceFetchPoint(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5621,7 +5621,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postFenceFetchPoint(int32
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postFenceFetchPoint");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postFenceFetchPoint");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5634,7 +5634,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postFenceFetchPoint(int32
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postFenceFetchPoint");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postFenceFetchPoint");
   }
 
   oprot->writeMessageBegin("postFenceFetchPoint", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5644,32 +5644,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postFenceFetchPoint(int32
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postFenceFetchPoint", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postFenceFetchPoint", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postFenceStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postFenceStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postFenceStatus", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postFenceStatus", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postFenceStatus");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postFenceStatus");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postFenceStatus");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postFenceStatus");
   }
 
-  ArdupilotmegaMessagePostService_postFenceStatus_args args;
+  ArdupilotmegaMessagePost_postFenceStatus_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postFenceStatus", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postFenceStatus", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postFenceStatus_result result;
+  ArdupilotmegaMessagePost_postFenceStatus_result result;
   try {
     iface_->postFenceStatus(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5677,7 +5677,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postFenceStatus(int32_t s
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postFenceStatus");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postFenceStatus");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5690,7 +5690,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postFenceStatus(int32_t s
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postFenceStatus");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postFenceStatus");
   }
 
   oprot->writeMessageBegin("postFenceStatus", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5700,32 +5700,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postFenceStatus(int32_t s
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postFenceStatus", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postFenceStatus", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postAhrs(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postAhrs(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postAhrs", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postAhrs", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postAhrs");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postAhrs");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postAhrs");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postAhrs");
   }
 
-  ArdupilotmegaMessagePostService_postAhrs_args args;
+  ArdupilotmegaMessagePost_postAhrs_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postAhrs", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postAhrs", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postAhrs_result result;
+  ArdupilotmegaMessagePost_postAhrs_result result;
   try {
     iface_->postAhrs(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5733,7 +5733,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postAhrs(int32_t seqid, :
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postAhrs");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postAhrs");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5746,7 +5746,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postAhrs(int32_t seqid, :
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postAhrs");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postAhrs");
   }
 
   oprot->writeMessageBegin("postAhrs", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5756,32 +5756,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postAhrs(int32_t seqid, :
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postAhrs", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postAhrs", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postSimstate(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postSimstate(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postSimstate", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postSimstate", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postSimstate");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postSimstate");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postSimstate");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postSimstate");
   }
 
-  ArdupilotmegaMessagePostService_postSimstate_args args;
+  ArdupilotmegaMessagePost_postSimstate_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postSimstate", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postSimstate", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postSimstate_result result;
+  ArdupilotmegaMessagePost_postSimstate_result result;
   try {
     iface_->postSimstate(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5789,7 +5789,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postSimstate(int32_t seqi
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postSimstate");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postSimstate");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5802,7 +5802,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postSimstate(int32_t seqi
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postSimstate");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postSimstate");
   }
 
   oprot->writeMessageBegin("postSimstate", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5812,32 +5812,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postSimstate(int32_t seqi
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postSimstate", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postSimstate", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postHwstatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postHwstatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postHwstatus", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postHwstatus", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postHwstatus");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postHwstatus");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postHwstatus");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postHwstatus");
   }
 
-  ArdupilotmegaMessagePostService_postHwstatus_args args;
+  ArdupilotmegaMessagePost_postHwstatus_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postHwstatus", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postHwstatus", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postHwstatus_result result;
+  ArdupilotmegaMessagePost_postHwstatus_result result;
   try {
     iface_->postHwstatus(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5845,7 +5845,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postHwstatus(int32_t seqi
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postHwstatus");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postHwstatus");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5858,7 +5858,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postHwstatus(int32_t seqi
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postHwstatus");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postHwstatus");
   }
 
   oprot->writeMessageBegin("postHwstatus", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5868,32 +5868,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postHwstatus(int32_t seqi
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postHwstatus", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postHwstatus", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postRadio(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postRadio(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postRadio", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postRadio", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postRadio");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postRadio");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postRadio");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postRadio");
   }
 
-  ArdupilotmegaMessagePostService_postRadio_args args;
+  ArdupilotmegaMessagePost_postRadio_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postRadio", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postRadio", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postRadio_result result;
+  ArdupilotmegaMessagePost_postRadio_result result;
   try {
     iface_->postRadio(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5901,7 +5901,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postRadio(int32_t seqid, 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postRadio");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postRadio");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5914,7 +5914,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postRadio(int32_t seqid, 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postRadio");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postRadio");
   }
 
   oprot->writeMessageBegin("postRadio", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5924,32 +5924,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postRadio(int32_t seqid, 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postRadio", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postRadio", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postLimitsStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postLimitsStatus(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postLimitsStatus", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postLimitsStatus", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postLimitsStatus");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postLimitsStatus");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postLimitsStatus");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postLimitsStatus");
   }
 
-  ArdupilotmegaMessagePostService_postLimitsStatus_args args;
+  ArdupilotmegaMessagePost_postLimitsStatus_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postLimitsStatus", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postLimitsStatus", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postLimitsStatus_result result;
+  ArdupilotmegaMessagePost_postLimitsStatus_result result;
   try {
     iface_->postLimitsStatus(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -5957,7 +5957,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postLimitsStatus(int32_t 
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postLimitsStatus");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postLimitsStatus");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -5970,7 +5970,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postLimitsStatus(int32_t 
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postLimitsStatus");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postLimitsStatus");
   }
 
   oprot->writeMessageBegin("postLimitsStatus", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -5980,32 +5980,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postLimitsStatus(int32_t 
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postLimitsStatus", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postLimitsStatus", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postWind(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postWind(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postWind", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postWind", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postWind");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postWind");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postWind");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postWind");
   }
 
-  ArdupilotmegaMessagePostService_postWind_args args;
+  ArdupilotmegaMessagePost_postWind_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postWind", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postWind", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postWind_result result;
+  ArdupilotmegaMessagePost_postWind_result result;
   try {
     iface_->postWind(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -6013,7 +6013,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postWind(int32_t seqid, :
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postWind");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postWind");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -6026,7 +6026,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postWind(int32_t seqid, :
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postWind");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postWind");
   }
 
   oprot->writeMessageBegin("postWind", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -6036,32 +6036,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postWind(int32_t seqid, :
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postWind", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postWind", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postData16(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postData16(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postData16", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postData16", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postData16");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postData16");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postData16");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postData16");
   }
 
-  ArdupilotmegaMessagePostService_postData16_args args;
+  ArdupilotmegaMessagePost_postData16_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postData16", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postData16", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postData16_result result;
+  ArdupilotmegaMessagePost_postData16_result result;
   try {
     iface_->postData16(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -6069,7 +6069,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData16(int32_t seqid,
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postData16");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postData16");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -6082,7 +6082,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData16(int32_t seqid,
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postData16");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postData16");
   }
 
   oprot->writeMessageBegin("postData16", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -6092,32 +6092,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData16(int32_t seqid,
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postData16", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postData16", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postData32(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postData32(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postData32", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postData32", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postData32");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postData32");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postData32");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postData32");
   }
 
-  ArdupilotmegaMessagePostService_postData32_args args;
+  ArdupilotmegaMessagePost_postData32_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postData32", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postData32", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postData32_result result;
+  ArdupilotmegaMessagePost_postData32_result result;
   try {
     iface_->postData32(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -6125,7 +6125,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData32(int32_t seqid,
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postData32");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postData32");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -6138,7 +6138,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData32(int32_t seqid,
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postData32");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postData32");
   }
 
   oprot->writeMessageBegin("postData32", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -6148,32 +6148,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData32(int32_t seqid,
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postData32", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postData32", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postData64(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postData64(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postData64", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postData64", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postData64");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postData64");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postData64");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postData64");
   }
 
-  ArdupilotmegaMessagePostService_postData64_args args;
+  ArdupilotmegaMessagePost_postData64_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postData64", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postData64", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postData64_result result;
+  ArdupilotmegaMessagePost_postData64_result result;
   try {
     iface_->postData64(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -6181,7 +6181,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData64(int32_t seqid,
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postData64");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postData64");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -6194,7 +6194,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData64(int32_t seqid,
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postData64");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postData64");
   }
 
   oprot->writeMessageBegin("postData64", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -6204,32 +6204,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData64(int32_t seqid,
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postData64", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postData64", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postData96(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postData96(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postData96", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postData96", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postData96");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postData96");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postData96");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postData96");
   }
 
-  ArdupilotmegaMessagePostService_postData96_args args;
+  ArdupilotmegaMessagePost_postData96_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postData96", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postData96", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postData96_result result;
+  ArdupilotmegaMessagePost_postData96_result result;
   try {
     iface_->postData96(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -6237,7 +6237,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData96(int32_t seqid,
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postData96");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postData96");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -6250,7 +6250,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData96(int32_t seqid,
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postData96");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postData96");
   }
 
   oprot->writeMessageBegin("postData96", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -6260,32 +6260,32 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postData96(int32_t seqid,
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postData96", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postData96", bytes);
   }
 }
 
-void ArdupilotmegaMessagePostServiceProcessor::process_postRangefinder(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ArdupilotmegaMessagePostProcessor::process_postRangefinder(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePostService.postRangefinder", callContext);
+    ctx = this->eventHandler_->getContext("ArdupilotmegaMessagePost.postRangefinder", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePostService.postRangefinder");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "ArdupilotmegaMessagePost.postRangefinder");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePostService.postRangefinder");
+    this->eventHandler_->preRead(ctx, "ArdupilotmegaMessagePost.postRangefinder");
   }
 
-  ArdupilotmegaMessagePostService_postRangefinder_args args;
+  ArdupilotmegaMessagePost_postRangefinder_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePostService.postRangefinder", bytes);
+    this->eventHandler_->postRead(ctx, "ArdupilotmegaMessagePost.postRangefinder", bytes);
   }
 
-  ArdupilotmegaMessagePostService_postRangefinder_result result;
+  ArdupilotmegaMessagePost_postRangefinder_result result;
   try {
     iface_->postRangefinder(args.msg);
   } catch ( ::mavlink::thrift::InvalidMavlinkMessage &err) {
@@ -6293,7 +6293,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postRangefinder(int32_t s
     result.__isset.err = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePostService.postRangefinder");
+      this->eventHandler_->handlerError(ctx, "ArdupilotmegaMessagePost.postRangefinder");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
@@ -6306,7 +6306,7 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postRangefinder(int32_t s
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePostService.postRangefinder");
+    this->eventHandler_->preWrite(ctx, "ArdupilotmegaMessagePost.postRangefinder");
   }
 
   oprot->writeMessageBegin("postRangefinder", ::apache::thrift::protocol::T_REPLY, seqid);
@@ -6316,14 +6316,14 @@ void ArdupilotmegaMessagePostServiceProcessor::process_postRangefinder(int32_t s
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePostService.postRangefinder", bytes);
+    this->eventHandler_->postWrite(ctx, "ArdupilotmegaMessagePost.postRangefinder", bytes);
   }
 }
 
-::boost::shared_ptr< ::apache::thrift::TProcessor > ArdupilotmegaMessagePostServiceProcessorFactory::getProcessor(const ::apache::thrift::TConnectionInfo& connInfo) {
-  ::apache::thrift::ReleaseHandler< ArdupilotmegaMessagePostServiceIfFactory > cleanup(handlerFactory_);
-  ::boost::shared_ptr< ArdupilotmegaMessagePostServiceIf > handler(handlerFactory_->getHandler(connInfo), cleanup);
-  ::boost::shared_ptr< ::apache::thrift::TProcessor > processor(new ArdupilotmegaMessagePostServiceProcessor(handler));
+::boost::shared_ptr< ::apache::thrift::TProcessor > ArdupilotmegaMessagePostProcessorFactory::getProcessor(const ::apache::thrift::TConnectionInfo& connInfo) {
+  ::apache::thrift::ReleaseHandler< ArdupilotmegaMessagePostIfFactory > cleanup(handlerFactory_);
+  ::boost::shared_ptr< ArdupilotmegaMessagePostIf > handler(handlerFactory_->getHandler(connInfo), cleanup);
+  ::boost::shared_ptr< ::apache::thrift::TProcessor > processor(new ArdupilotmegaMessagePostProcessor(handler));
   return processor;
 }
 }} // namespace

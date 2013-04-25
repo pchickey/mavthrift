@@ -398,7 +398,7 @@ struct Rangefinder {
 
 
 /* services: */
-service ArdupilotmegaMessagePostService  extends common.CommonMessagePostService {
+service ArdupilotmegaMessagePost  extends common.CommonMessagePost {
   void postSensorOffsets(1: SensorOffsets msg) throws (1: common.InvalidMavlinkMessage err),
   void postSetMagOffsets(1: SetMagOffsets msg) throws (1: common.InvalidMavlinkMessage err),
   void postMeminfo(1: Meminfo msg) throws (1: common.InvalidMavlinkMessage err),
@@ -424,29 +424,29 @@ service ArdupilotmegaMessagePostService  extends common.CommonMessagePostService
   void postRangefinder(1: Rangefinder msg) throws (1: common.InvalidMavlinkMessage err)
 }
 
-service ArdupilotmegaMessageFetchService  extends common.CommonMessageFetchService {
+service ArdupilotmegaMessageFetch  extends common.CommonMessageFetch {
   map<ArdupilotmegaMessageTypes,i32> availableMessages(),
-  void fetchSensorOffsets(1: list<SensorOffsets> msg),
-  void fetchSetMagOffsets(1: list<SetMagOffsets> msg),
-  void fetchMeminfo(1: list<Meminfo> msg),
-  void fetchApAdc(1: list<ApAdc> msg),
-  void fetchDigicamConfigure(1: list<DigicamConfigure> msg),
-  void fetchDigicamControl(1: list<DigicamControl> msg),
-  void fetchMountConfigure(1: list<MountConfigure> msg),
-  void fetchMountControl(1: list<MountControl> msg),
-  void fetchMountStatus(1: list<MountStatus> msg),
-  void fetchFencePoint(1: list<FencePoint> msg),
-  void fetchFenceFetchPoint(1: list<FenceFetchPoint> msg),
-  void fetchFenceStatus(1: list<FenceStatus> msg),
-  void fetchAhrs(1: list<Ahrs> msg),
-  void fetchSimstate(1: list<Simstate> msg),
-  void fetchHwstatus(1: list<Hwstatus> msg),
-  void fetchRadio(1: list<Radio> msg),
-  void fetchLimitsStatus(1: list<LimitsStatus> msg),
-  void fetchWind(1: list<Wind> msg),
-  void fetchData16(1: list<Data16> msg),
-  void fetchData32(1: list<Data32> msg),
-  void fetchData64(1: list<Data64> msg),
-  void fetchData96(1: list<Data96> msg),
-  void fetchRangefinder(1: list<Rangefinder> msg)
+  list<SensorOffsets> fetchSensorOffsets(),
+  list<SetMagOffsets> fetchSetMagOffsets(),
+  list<Meminfo> fetchMeminfo(),
+  list<ApAdc> fetchApAdc(),
+  list<DigicamConfigure> fetchDigicamConfigure(),
+  list<DigicamControl> fetchDigicamControl(),
+  list<MountConfigure> fetchMountConfigure(),
+  list<MountControl> fetchMountControl(),
+  list<MountStatus> fetchMountStatus(),
+  list<FencePoint> fetchFencePoint(),
+  list<FenceFetchPoint> fetchFenceFetchPoint(),
+  list<FenceStatus> fetchFenceStatus(),
+  list<Ahrs> fetchAhrs(),
+  list<Simstate> fetchSimstate(),
+  list<Hwstatus> fetchHwstatus(),
+  list<Radio> fetchRadio(),
+  list<LimitsStatus> fetchLimitsStatus(),
+  list<Wind> fetchWind(),
+  list<Data16> fetchData16(),
+  list<Data32> fetchData32(),
+  list<Data64> fetchData64(),
+  list<Data96> fetchData96(),
+  list<Rangefinder> fetchRangefinder()
 }

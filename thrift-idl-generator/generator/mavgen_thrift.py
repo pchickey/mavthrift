@@ -122,9 +122,9 @@ def generate_message_post_service(xml,doc):
         ex = TException("common.InvalidMavlinkMessage")
         doc.include('common.thrift')
 
-    service = TService(leadingcap(xml.basename) + "MessagePostService")
+    service = TService(leadingcap(xml.basename) + "MessagePost")
     if (xml.basename != "common"):
-        service.extends("common.CommonMessagePostService")
+        service.extends("common.CommonMessagePost")
 
     for s in doc.structs:
         m = TVoidMethod("post" + leadingcap(s.typename))
@@ -134,15 +134,14 @@ def generate_message_post_service(xml,doc):
     doc.service(service)
 
 def generate_message_fetch_service(xml,doc,typeenum):
-    service = TService(leadingcap(xml.basename) + "MessageFetchService")
+    service = TService(leadingcap(xml.basename) + "MessageFetch")
     if (xml.basename != "common"):
-        service.extends("common.CommonMessageFetchService")
+        service.extends("common.CommonMessageFetch")
 
     service.method(TMethod("availableMessages", TMap(typeenum,TTyped('i32'))))
 
     for s in doc.structs:
-        m = TVoidMethod("fetch" + leadingcap(s.typename))
-        m.arg(TList(s),"msg")
+        m = TMethod("fetch" + leadingcap(s.typename),TList(s))
         service.method(m)
 
     doc.service(service)
