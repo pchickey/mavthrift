@@ -8,5 +8,7 @@ licensed under the GPL.
 ### Purpose ###
 
 Provides a tool to translate mavlink message xml specifications, found in
-`message_definitions/`, into thrift IDL definitions.
+`../message_definitions/`, into thrift IDL definitions.
+
+Run `generate.py` to produce thrift definitions.
 

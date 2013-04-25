@@ -72,11 +72,21 @@ def enumentryname(s, parent):
         # give up
         return s.encode('ascii')
 
-def generate_mavlink_thrift(xml):
+def generate_mavlink_thrift(xml, parent):
     print ("generate_mavlink_thrift for xml " + xml.basename)
-    ns = "mavlink." + xml.basename
+    ns = "mavlink.thrift"
     doc = TDoc(xml.basename)
     doc.namespace("cpp",ns)
+
+    typeenum = TEnum(leadingcap(xml.basename) + 'MessageTypes')
+    if parent:
+        for msg in parent.message:
+            typeenum.entry(msg.name)
+    for msg in xml.message:
+        typeenum.entry(msg.name)
+
+    doc.enum(typeenum)
+
     for e in xml.enum:
         te = TEnum(enumname(e.name))
         for ee in e.entry:
@@ -84,6 +94,7 @@ def generate_mavlink_thrift(xml):
             if entryname != "ENUM_END":
                 te.entry(entryname, ee.value)
         doc.enum(te)
+
 
     for msg in xml.message:
         ts = TStruct(msg.name_module)
@@ -95,7 +106,46 @@ def generate_mavlink_thrift(xml):
             else:
                 ts.list_field(tname, ttype)
         doc.struct(ts)
+    generate_message_post_service(xml,doc)
+    generate_message_fetch_service(xml,doc,typeenum)
     return doc.pp()
+
+def leadingcap(s):
+    return s[:1].upper() + s[1:]
+
+def generate_message_post_service(xml,doc):
+    if (xml.basename == "common"):
+        ex = TException("InvalidMavlinkMessage")
+        ex.atom_field("error","string")
+        doc.exception(ex)
+    else:
+        ex = TException("common.InvalidMavlinkMessage")
+        doc.include('common.thrift')
+
+    service = TService(leadingcap(xml.basename) + "MessagePostService")
+    if (xml.basename != "common"):
+        service.extends("common.CommonMessagePostService")
+
+    for s in doc.structs:
+        m = TVoidMethod("post" + leadingcap(s.typename))
+        m.arg(s,"msg")
+        m.throws(ex,"err")
+        service.method(m)
+    doc.service(service)
+
+def generate_message_fetch_service(xml,doc,typeenum):
+    service = TService(leadingcap(xml.basename) + "MessageFetchService")
+    if (xml.basename != "common"):
+        service.extends("common.CommonMessageFetchService")
+
+    service.method(TMethod("availableMessages", TMap(typeenum,TTyped('i32'))))
+
+    for s in doc.structs:
+        m = TVoidMethod("fetch" + leadingcap(s.typename))
+        m.arg(TList(s),"msg")
+        service.method(m)
+
+    doc.service(service)
 
 def generate_mavlink_debug(xml):
     print ("debug mavlink for " + xml.basename)
@@ -121,8 +171,21 @@ def writethrift(t, outputdir, basename):
 
 def generate(xml_list, outputdirectory):
     mavparse.mkdir_p(outputdirectory)
+
+    # I've really punted on doing dependencies right -
+    # it would take some significant work.
+    # We'll go back to it later.
+
+    common = None
     for xml in xml_list:
         mavgen_process_xml.process_xml(xml)
-        r = generate_mavlink_thrift(xml)
+        if xml.basename == "common":
+            common = xml
+
+    for xml in xml_list:
+        if xml.basename == "common":
+            r = generate_mavlink_thrift(xml, None)
+        else:
+            r = generate_mavlink_thrift(xml, common)
         writethrift(r,outputdirectory,xml.basename)
 

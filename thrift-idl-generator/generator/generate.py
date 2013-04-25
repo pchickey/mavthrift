@@ -71,7 +71,7 @@ def mavgen_validate(fname, schema, errorLimitNumber) :
     """Uses minixsv to validate an XML file with a given XSD schema file."""
     # use default values of minixsv, location of the schema file must be specified in the XML file
     domTreeWrapper = pyxsval.parseAndValidate(fname, xsdFile=schema, errorLimit=errorLimitNumber)
-            
+
     # domTree is a minidom document object
     domTree = domTreeWrapper.getTree()
 
@@ -81,8 +81,8 @@ if __name__=="__main__":
 
     parser = OptionParser("%prog [options] <XML files>")
 
-    parser.add_option("-o", "--output", dest="output", default="Mavlink",
-                    help="output directory for SMACCMPilot.Mavlink module")
+    parser.add_option("-o", "--output", dest="output", default="gen-thrift",
+                    help="output directory for thrift files")
     parser.add_option("--error-limit", dest="error_limit", default=200,
                     help="maximum number of validation errors")
 
